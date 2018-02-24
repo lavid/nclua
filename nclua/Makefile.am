@@ -43,10 +43,10 @@ canvas.def:
 
 canvas_la_DEPENDENCIES= $(canvas_def_dependency)
 canvas_la_CFLAGS= $(AM_CFLAGS) $(CAIRO_CFLAGS)\
-  $(GLIB_CFLAGS) $(PANGO_CFLAGS)
+  $(GLIB_CFLAGS) $(PANGO_CFLAGS) $(LIBJPEG_CFLAGS)
 canvas_la_LDFLAGS= $(AM_LDFLAGS) $(CAIRO_LIBS)\
-  $(GLIB_LIBS) $(PANGO_LIBS) $(canvas_export_symbols)
-canvas_la_SOURCES= canvas.c canvas-color-table.h
+  $(GLIB_LIBS) $(PANGO_LIBS) $(LIBJPEG_LIBS) $(canvas_export_symbols)
+canvas_la_SOURCES= cairo_jpg.c canvas.c canvas-color-table.h cairo_jpg.h
 
 if WITH_NCLUA_GTK
 canvas_la_CFLAGS+= $(GTK_CFLAGS)

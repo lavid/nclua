@@ -50,6 +50,7 @@ ASSERT_CHECK_API {
    drawRect = 'function',
    drawRoundRect = 'function',
    drawText = 'function',
+   dump = 'function',
    flush = 'function',
    measureText = 'function',
    new = 'function',

@@ -114,6 +114,7 @@ scripts+= test-canvas-drawPolygon.lua
 scripts+= test-canvas-drawRect.lua
 scripts+= test-canvas-drawRoundRect.lua
 scripts+= test-canvas-drawText.lua
+scripts+= test-canvas-dump.lua
 scripts+= test-canvas-flush.lua
 scripts+= test-canvas-measureText.lua
 scripts+= test-canvas-pixel.lua

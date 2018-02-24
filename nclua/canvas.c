@@ -22,10 +22,12 @@ along with NCLua.  If not, see <https://www.gnu.org/licenses/>.  */
 #include "aux-lua.h"
 
 #include <cairo.h>
+#include "cairo_jpg.h"
 #include <pango/pangocairo.h>
+#include <string.h>
 
 #if defined WITH_GTK && WITH_GTK
-# include <gtk/gtk.h>
+#include <gtk/gtk.h>
 #endif
 
 PRAGMA_DIAG_IGNORE (-Wimplicit-fallthrough)
@@ -1527,6 +1529,84 @@ l_canvas_drawLine (lua_State *L)
 }
 
 /*-
+ *  (filepath [, format [, quality]]) -> dumped: boolean; err_msg: string
+ *
+ *   Salva o estado atual do canvas em um arquivo definido por filepath.
+ *   Retorna true se o dump for realizado com sucesso e false caso contrário,
+ *   mais uma mensagem de erro.
+ */
+static int
+l_canvas_dump (lua_State *L)
+{
+  canvas_t *canvas;
+  cairo_status_t err;
+  const char *text;
+  canvas = canvas_check (L, 1, NULL);
+
+  if( lua_gettop (L) >= 3 ){
+  text=luaL_checkstring (L, 3);
+  
+    if (strcmp(text, "jpeg"))
+    {
+        int quality=75;
+        if( lua_gettop (L) >=4 )
+        {
+          quality= luaL_checknumber (L, 4);
+          if(quality>100)
+            quality=100;
+          if(quality<0)
+            quality=0;
+        }
+          err= cairo_image_surface_write_to_jpeg (canvas->sfc, luaL_checkstring (L, 2),quality);
+          if (unlikely (err != CAIRO_STATUS_SUCCESS))
+          {
+            lua_pushboolean (L, FALSE);
+            lua_pushstring (L, cairo_status_to_string (err));
+            return 2;
+          }
+          lua_pushboolean (L, TRUE);
+
+          return 11;
+        
+    }
+    else if (strcmp(text, "png"))
+    {
+      err = cairo_surface_write_to_png (canvas->sfc, luaL_checkstring (L, 2));
+      if (unlikely (err != CAIRO_STATUS_SUCCESS))
+      {
+        lua_pushboolean (L, FALSE);
+        lua_pushstring (L, cairo_status_to_string (err));
+        return 2;
+      }
+      lua_pushboolean (L, TRUE);
+
+      return 3;
+      
+    }
+    else
+    {
+      lua_pushboolean (L, FALSE);
+      lua_pushstring (L, "format invalid");
+      return 4;
+
+    }
+  }
+  else
+  {
+    err = cairo_surface_write_to_png (canvas->sfc, luaL_checkstring (L, 2));
+   if (unlikely (err != CAIRO_STATUS_SUCCESS))
+      {
+        lua_pushboolean (L, FALSE);
+        lua_pushstring (L, cairo_status_to_string (err));
+        return 5;
+      }
+      lua_pushboolean (L, TRUE);
+
+      return 6;
+  }
+}
+
+/*-
  * canvas:drawPolygon (mode:string)
  *
  * Returns an anonymous binary drawer function that receives the coordinate
@@ -1922,6 +2002,7 @@ static const struct luaL_Reg funcs[] = {
   {"compose", l_canvas_compose},
   {"drawEllipse", l_canvas_drawEllipse},
   {"drawLine", l_canvas_drawLine},
+  {"dump", l_canvas_dump},
   {"drawPolygon", l_canvas_drawPolygon},
   {"drawRect", l_canvas_drawRect},
   {"drawRoundRect", l_canvas_drawRoundRect},
