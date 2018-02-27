@@ -45,6 +45,7 @@ EXTRA_DIST+=\
   build-aux/gitlog-to-changelog\
   build-aux/manywarnings.m4\
   build-aux/perl.m4\
+  build-aux/libcurl.m4\
   build-aux/syntax-check-copyright\
   build-aux/syntax-check\
   build-aux/useless-if-before-free\
@@ -94,6 +95,7 @@ MAINTAINERCLEANFILES+=\
   build-aux/ltoptions.m4\
   build-aux/ltsugar.m4\
   build-aux/ltversion.m4\
+  build-aux/libcurl.m4\
   build-aux/lt~obsolete.m4\
   build-aux/missing\
   build-aux/mkinstalldirs\
