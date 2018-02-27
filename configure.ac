@@ -59,9 +59,9 @@ m4_define([glib_required_version], [2.32.4])
 m4_define([gstreamer_required_version], [1.4.0])
 m4_define([gtk_required_version], [3.4.2])
 m4_define([lua_required_version], [5.2])
-m4_define([libcurl_required_version], [7.47.0])
 m4_define([pango_required_version], [1.30.0])
 m4_define([soup_required_version], [2.42])
+m4_define([libcurl_required_version], [7.47.0])
 AC_SUBST([CAIRO_REQUIRED_VERSION], cairo_required_version)
 AC_SUBST([GLIB_REQUIRED_VERSION], glib_required_version)
 AC_SUBST([GSTREAMER_REQUIRED_VERSION], gstreamer_required_version)
@@ -215,6 +215,16 @@ AU_CHECK_OPTIONAL_PKG([event-http], [build the http event class], [],
  ]])],
  [AC_LANG_PROGRAM([[]], [[soup_session_new_with_options (0, 0, 0);]])])
 
+# Check for LIBJPEG (optional).
+# AU_VERSION_BREAK([libjpeg], libjpeg_required_version)
+AU_CHECK_OPTIONAL_PKG([canvas-jpeg], [build export canvas as jpeg support], [],
+ [LIBJPEG], libjpeg , [], [])
+
+# Check for LIBCURL (optional).
+# AU_VERSION_BREAK([libcurl], libcurl_required_version)
+AU_CHECK_OPTIONAL_PKG([libcurl], [URL and SSL support], [],
+ [LIBCURL], libcurl >= libcurl_required_version , [], [])
+
 # Check for GStreamer (optional).
 AU_VERSION_BREAK([gstreamer], gstreamer_required_version)
 AU_CHECK_OPTIONAL_PKG([nclua-gst],
@@ -286,6 +296,8 @@ AC_MSG_NOTICE([summary of main build options:
   library types:      Shared=${enable_shared}, Static=${enable_static}
   valgrind:           ${VALGRIND}
 
+  build canvas-jpeg:  ${with_canvas_jpeg_result}
+  build libcurl:      ${with_libcurl_result}
   build http:         ${with_event_http_result}
   build tcp:          ${with_event_tcp_result}
   build gstnclua:     ${with_nclua_gst_result}
