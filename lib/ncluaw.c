@@ -45,6 +45,8 @@ static const char *plugin_list[] = {
 #if defined WITH_SOUP && WITH_SOUP
   "http",
 #endif
+  "zip",
+  "sectionfilter",
   "key",
   "ncl",
   "pointer",

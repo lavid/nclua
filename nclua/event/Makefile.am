@@ -40,6 +40,8 @@ dist_eventdata_DATA=\
   pointer.lua\
   queue.lua\
   user.lua\
+  zip.lua\
+  sectionfilter.lua\
   $(NULL)
 
 if WITH_EVENT_GEOLOCATION
@@ -83,6 +85,38 @@ http_soup_la_SOURCES=\
   http_soup.c\
   $(NULL)
 endif
+
+# zip
+eventlib_LTLIBRARIES+= zip_impl.la
+if OS_WIN32
+zip_impl_def_dependency= zip_impl.def
+def_dependency+= $(zip_impl_def_dependency)
+zip_impl_export_symbols= -export-symbols $(zip_impl_def_dependency)\
+  -no-undefined
+endif
+zip_impl_la_DEPENDENCIES= $(zip_impl_def_dependency)
+zip_impl_la_CFLAGS= $(AM_CFLAGS) $(GLIB_CFLAGS)
+zip_impl_la_LDFLAGS= $(AM_LDFLAGS) $(GLIB_LIBS)\
+  $(zip_impl_export_symbols)
+zip_impl_la_SOURCES=\
+  zip_impl.c\
+  $(NULL)
+
+# sectionfilter
+eventlib_LTLIBRARIES+= sectionfilter_impl.la
+if OS_WIN32
+sectionfilter_impl_def_dependency= sectionfilter_impl.def
+def_dependency+= $(sectionfilter_impl_def_dependency)
+sectionfilter_impl_export_symbols= -export-symbols $(sectionfilter_impl_def_dependency)\
+  -no-undefined
+endif
+sectionfilter_impl_la_DEPENDENCIES= $(sectionfilter_impl_def_dependency)
+sectionfilter_impl_la_CFLAGS= $(AM_CFLAGS) $(GLIB_CFLAGS)
+sectionfilter_impl_la_LDFLAGS= $(AM_LDFLAGS) $(GLIB_LIBS)\
+  $(sectionfilter_impl_export_symbols)
+sectionfilter_impl_la_SOURCES=\
+  sectionfilter_impl.c\
+  $(NULL)
 
 # stopwatch
 eventlib_LTLIBRARIES+= stopwatch.la

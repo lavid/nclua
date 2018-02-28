@@ -69,13 +69,15 @@ SH_LOG_COMPILER= $(SHELL)
 # Setup tests environment.
 canvas_so= canvas$(SOEXT)
 stopwatch_so= stopwatch$(SOEXT)
+zip_impl_so= zip_impl$(SOEXT)
+sectionfilter_impl_so= sectionfilter_impl$(SOEXT)
 if WITH_EVENT_HTTP
 http_soup_so= http_soup$(SOEXT)
 endif
 if WITH_EVENT_TCP
 tcp_socket_so= tcp_socket$(SOEXT)
 endif
-LD_PRELOAD= $(canvas_so):$(stopwatch_so):$(http_soup_so):$(tcp_socket_so)
+LD_PRELOAD= $(canvas_so):$(stopwatch_so):$(http_soup_so):$(tcp_socket_so):$(zip_impl_so):$(sectionfilter_impl_so)
 
 AM_TESTS_ENVIRONMENT=\
   export GST_DEBUG="nclua:DEBUG";\
@@ -139,6 +141,10 @@ scripts+= test-event-engine-cycle.lua
 scripts+= test-event-stopwatch-api.lua
 scripts+= test-event-stopwatch-new.lua
 scripts+= test-event-stopwatch-get-time.lua
+# zip_impl
+scripts+= test-event-zip.lua
+# sectionfilter_impl
+scripts+= test-event-sectionfilter.lua
 
 if WITH_EVENT_GEOLOCATION
 # event.geolocation (handler plugin)
