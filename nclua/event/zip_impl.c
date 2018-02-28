@@ -26,6 +26,7 @@ along with NCLua.  If not, see <https://www.gnu.org/licenses/>.  */
 #include "callback.h"
 
 /* Registry key for the zip_impl metatable.  */
+/* Test */
 #define ZIP_IMPL "nclua.event.zip_impl"
 
 
