@@ -25,6 +25,7 @@ AM_CFLAGS= $(WERROR_CFLAGS) $(WARN_CFLAGS) $(LUA_CFLAGS)
 AM_LDFLAGS= -module $(LT_MODULE_LDFLAGS) $(LUA_LIBS)
 
 noinst_HEADERS= callback.h
+include_HEADERS= zip.h miniz.h
 
 eventlib_LTLIBRARIES=
 eventlibdir= $(nclualibdir)/event
