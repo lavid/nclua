@@ -59,19 +59,29 @@ end
 --
 
 function zip:cycle ()
-  --  while not zip.INQ:is_empty () do
-  --     local evt = zip.INQ:dequeue ()
-  --     assert (evt.class == zip.class)
-  --     if evt.type == 'open' then
-  --        local status, errmsg = pcall (zip_impl.open)
-  --        if status == false then
-  --           evt.class = zip.class
-  --           -- TODO: fulfill event
-  --           zip.OUTQ:enqueue (evt)
-  --        end
-  --     end
-  --  end
-   zip_impl.cycle ()
+  
+  while not zip.INQ:is_empty () do
+  
+    local evt = zip.INQ:dequeue ()
+    assert (evt.class == zip.class)
+  
+    if evt.type == 'open' then
+  
+      local status, errmsg = pcall (zip_impl.open,
+                                    evt.path)
+  
+      if status == false then
+  
+        evt.class = zip.class
+        --TODO: fulfill event
+        zip.OUTQ:enqueue (evt)
+
+      end
+    end
+  end
+
+  zip_impl.cycle ()
+
 end
 
 return zip
