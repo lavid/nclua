@@ -96,10 +96,11 @@ zip_impl_export_symbols= -export-symbols $(zip_impl_def_dependency)\
 endif
 zip_impl_la_DEPENDENCIES= $(zip_impl_def_dependency)
 zip_impl_la_CFLAGS= $(AM_CFLAGS) $(GLIB_CFLAGS)
-zip_impl_la_LDFLAGS= $(AM_LDFLAGS) $(GLIB_LIBS)\
+zip_impl_la_LDFLAGS= $(AM_LDFLAGS) $(ZIP_LDFLAGS) $(ZIP_LIBS) $(GLIB_LIBS)\
   $(zip_impl_export_symbols)
 zip_impl_la_SOURCES=\
   zip_impl.c\
+  zip.c\
   $(NULL)
 
 # sectionfilter

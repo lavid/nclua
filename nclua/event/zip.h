@@ -14,9 +14,6 @@
 
 #include <string.h>
 
-#ifdef __cplusplus
-extern "C" {
-#endif
 
 #ifndef MAX_PATH
 #define MAX_PATH 32767 /* # chars in a path name including NULL */
@@ -249,12 +246,10 @@ extern int zip_create(const char *zipname, const char *filenames[], size_t len);
   Returns:
     The return code - 0 on success, negative number (< 0) on error.
 */
+
 extern int zip_extract(const char *zipname, const char *dir,
                        int (*on_extract_entry)(const char *filename, void *arg),
                        void *arg);
 
-#ifdef __cplusplus
-}
-#endif
 
 #endif

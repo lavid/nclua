@@ -1,0 +1,4685 @@
+[33mcommit a083bfb12f5a4105d8005f656087fa35cd2382b9[m
+Author: Astecz <astecz360@gmail.com>
+Date:   Wed Feb 28 17:48:14 2018 -0300
+
+    Teste de evento zip removido! Histórico no commit anterior
+
+[33mcommit 21bd617d3f8bb5d17e0893d783e240adfd0d36f2[m
+Author: Neto <jasnjp@gmail.com>
+Date:   Wed Feb 28 16:53:42 2018 -0300
+
+    first event test
+
+[33mcommit 0f9e1938c313147ffa8133ec6bf5b30e7b041093[m
+Author: Astecz <astecz360@gmail.com>
+Date:   Wed Feb 28 15:21:43 2018 -0300
+
+    Bibliotecas para o zip controller integradas, com zip mock em lua e c, falta completar
+
+[33mcommit 78e396bddbbcddf12a6b972bb914df884c5ca7ec[m
+Author: Neto <jasnjp@gmail.com>
+Date:   Wed Feb 28 14:50:21 2018 -0300
+
+    zip test in c implemented, but not tested
+
+[33mcommit 1c96e37837cdd1ce43198302becf995891bfd427[m
+Author: Astecz <astecz360@gmail.com>
+Date:   Wed Feb 28 14:47:36 2018 -0300
+
+    Bibliotecas para o zip controller integradas, falta implementar o controller e o lua-event
+
+[33mcommit cc9b3cd4cf40fd870582743c7009a6a54d757d2a[m
+Author: Neto <jasnjp@gmail.com>
+Date:   Wed Feb 28 13:22:30 2018 -0300
+
+    sending Zip lib files for linking
+
+[33mcommit 85f9e87997f25506928d6597b079f6390681e9fd[m
+Author: Richelieu Costa <richelieu.costa@lavid.ufpb.br>
+Date:   Tue Feb 27 07:12:48 2018 -0300
+
+    files fixed
+
+[33mcommit caa7481e91e1534aa61ceac74f69418f22eb6287[m
+Author: Richelieu Costa <richelieu.costa@lavid.ufpb.br>
+Date:   Mon Feb 26 22:47:44 2018 -0300
+
+    Gap SSL com teste em C pronto e integrado! Falta evento e integração lua
+
+[33mcommit de8a30110b898f7520f2a7d212c3d080eb4fca0f[m
+Author: Richelieu Costa <richelieu.costa@lavid.ufpb.br>
+Date:   Sat Feb 24 17:15:54 2018 -0300
+
+    Gap dump jpeg completo
+
+[33mcommit 2d631d43dd1fd547ef1da06bc9211d7b71b27d05[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Thu Feb 1 12:14:06 2018 -0200
+
+    maint: Update references to repo URL and maintainer's e-mail
+    
+    * README.md: Likewise.
+    * configure.ac: Likewise.
+    * debian/control: Likewise.
+    * debian/copyright: Likewise.
+    * examples/www/example-http.lua: Likewise.
+    * tests/test-event-http-engine.lua: Likewise.
+    * tests/test-event-http-soup-request.lua: Likewise.
+
+[33mcommit 5dd241e79375cef048b7522d7e9428085ff34b26[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Thu Feb 1 11:54:48 2018 -0200
+
+    build: Move auxiliary headers to gflima/autoutils
+    
+    * cfg.mk (fetch-remote-local): Updated accordingly.
+
+[33mcommit b3b33051bce295fdf29792da89dd4ba8cd1b8553[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Thu Feb 1 11:49:59 2018 -0200
+
+    build: Move utility stuff to gflima/autoutils
+    
+    * cfg.mk (fetch-remote-local): Updated accordingly.
+
+[33mcommit a6a8b6df3ba4a27c626553792f6bb046a0decc72[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Thu Feb 1 11:20:55 2018 -0200
+
+    build-aux: Sync remote files
+    
+    * build-aux/manywarnings.m4: Likewise.
+
+[33mcommit 380b90d37ea2efd46ac249904d36f1ef79e2998c[m
+Merge: 8de7561 356ac64
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Mon Jan 29 11:00:35 2018 -0200
+
+    Merge pull request #4 from robertogerson/master
+    
+    Get version from debian/changelog when creating .deb
+
+[33mcommit 356ac647e07e16c8adcba909e9cf0a68ec630922[m
+Author: Roberto Azevedo <robertogerson@telemidia.puc-rio.br>
+Date:   Sat Jan 27 13:45:58 2018 +0100
+
+    debian:  Add libgtk-3-dev to Build-Depends
+
+[33mcommit 889f2c2ec226c8db08937e431f8189e46cd25c0f[m
+Author: Roberto Azevedo <robertogerson@telemidia.puc-rio.br>
+Date:   Fri Jan 26 16:44:39 2018 +0100
+
+    debian:  Change urgency to medium
+
+[33mcommit 9567f67098304008331020a491ca2a8ae1a3eedb[m
+Author: Roberto Azevedo <robertogerson@telemidia.puc-rio.br>
+Date:   Fri Jan 26 16:32:26 2018 +0100
+
+    debian: Gen .tarball-version based on upstream
+
+[33mcommit 3c3de202686dce6abb594f16a42a1412b92b7aa6[m
+Author: Roberto Azevedo <robertogerson@telemidia.puc-rio.br>
+Date:   Fri Jan 26 14:41:38 2018 +0100
+
+    debian:  Go back to 3.0 (native) source format
+
+[33mcommit be4af30dc9040b9c684d29a8005541f38c6dc5a1[m
+Author: Roberto Azevedo <robertogerson@telemidia.puc-rio.br>
+Date:   Fri Jan 26 14:29:11 2018 +0100
+
+    debian:  Change source/format to 3.0 (git)
+
+[33mcommit 8e21fcfd17be1638db3a640853306513d424bd6d[m
+Author: Roberto Azevedo <robertogerson@telemidia.puc-rio.br>
+Date:   Fri Jan 26 01:05:56 2018 +0100
+
+    debian: Change source/format to 1.0
+
+[33mcommit 8de7561b850bc0ca5ee8b2a6873ff683525878ae[m
+Merge: 53d9277 d76fea8
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Mon Jan 22 14:13:55 2018 -0200
+
+    Merge pull request #3 from robertogerson/master
+    
+    Move contrib/debian to debian/
+
+[33mcommit d76fea858e1efdd5b6e18686570512cee798fed8[m
+Author: Roberto Azevedo <robertogerson@telemidia.puc-rio.br>
+Date:   Wed Jan 17 01:18:57 2018 +0100
+
+    debian: Add dh-autoreconf to Build-depends
+
+[33mcommit 4bf62ba6d9e9f8299b199dbe1220a38bc2709496[m
+Author: Roberto Azevedo <robertogerson@telemidia.puc-rio.br>
+Date:   Mon Jan 15 23:36:52 2018 +0100
+
+    maint:  Add libltdl-dev build-dependency in debian
+
+[33mcommit be3cbdb319631254397c3cde8f06043ff2e4678a[m
+Author: Roberto Azevedo <robertogerson@telemidia.puc-rio.br>
+Date:   Mon Jan 15 19:56:17 2018 +0100
+
+    maint: Update debian/rules
+
+[33mcommit ea4a1e9aba6433f7a783cddaef5fb9603e1314c6[m
+Author: Roberto Azevedo <robertogerson@telemidia.puc-rio.br>
+Date:   Mon Jan 15 19:55:42 2018 +0100
+
+    maint:  Add Build-depends to debian/control
+
+[33mcommit e8bbd9689679f9d94d7f61dfc5dde724ace40f1c[m
+Author: Roberto Azevedo <robertogerson@telemidia.puc-rio.br>
+Date:   Mon Jan 15 19:52:36 2018 +0100
+
+    maint: contrib/debian -> contrib
+
+[33mcommit 53d9277a7efa6c316e13bfe0b5bc60f2d4c3aef8[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Mon Jan 1 20:20:42 2018 -0200
+
+    nclua: Fix warning in canvas.c
+    
+    * nclua/canvas.c: Ignore implicit fall-through.
+
+[33mcommit e328f1d8179c0fc40a31c225aeab6ff5eff57503[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Mon Jan 1 20:17:22 2018 -0200
+
+    maint: Update copyright notice
+    
+    * Makefile.am: Likewise.
+    * bootstrap: Likewise.
+    * build-aux/Makefile.am.common: Likewise.
+    * build-aux/Makefile.am.coverage: Likewise.
+    * build-aux/Makefile.am.env: Likewise.
+    * build-aux/Makefile.am.gitlog: Likewise.
+    * build-aux/Makefile.am.link: Likewise.
+    * build-aux/Makefile.am.valgrind: Likewise.
+    * build-aux/syntax-check: Likewise.
+    * build-aux/syntax-check-copyright: Likewise.
+    * build-aux/util.m4: Likewise.
+    * cfg.mk: Likewise.
+    * configure.ac: Likewise.
+    * contrib/debian/copyright: Likewise.
+    * examples/circle.lua: Likewise.
+    * examples/follow.lua: Likewise.
+    * examples/fps.lua: Likewise.
+    * examples/input.lua: Likewise.
+    * examples/ls.lua: Likewise.
+    * examples/www/example-http.lua: Likewise.
+    * examples/www/example-http.ncl: Likewise.
+    * examples/www/example-tcp.lua: Likewise.
+    * examples/www/example-tcp.ncl: Likewise.
+    * examples/www/http.lua: Likewise.
+    * examples/www/http_get.lua: Likewise.
+    * examples/www/tcp.lua: Likewise.
+    * lib/Makefile.am: Likewise.
+    * lib/aux-glib.h: Likewise.
+    * lib/aux-gst.h: Likewise.
+    * lib/aux-lua.h: Likewise.
+    * lib/gstnclua.c: Likewise.
+    * lib/nclua.c: Likewise.
+    * lib/nclua.h: Likewise.
+    * lib/ncluaconf.h.in: Likewise.
+    * lib/ncluaw.c: Likewise.
+    * lib/ncluaw.h: Likewise.
+    * maint.mk: Likewise.
+    * nclua/Makefile.am: Likewise.
+    * nclua/canvas-color-table.h: Likewise.
+    * nclua/canvas.c: Likewise.
+    * nclua/dir.c: Likewise.
+    * nclua/event/Makefile.am: Likewise.
+    * nclua/event/callback.h: Likewise.
+    * nclua/event/check.lua: Likewise.
+    * nclua/event/engine.lua: Likewise.
+    * nclua/event/geolocation.lua: Likewise.
+    * nclua/event/http.lua: Likewise.
+    * nclua/event/http_soup.c: Likewise.
+    * nclua/event/init.lua: Likewise.
+    * nclua/event/key.lua: Likewise.
+    * nclua/event/ncl.lua: Likewise.
+    * nclua/event/pointer.lua: Likewise.
+    * nclua/event/queue.lua: Likewise.
+    * nclua/event/stopwatch.c: Likewise.
+    * nclua/event/tcp.lua: Likewise.
+    * nclua/event/tcp_socket.c: Likewise.
+    * nclua/event/user.lua: Likewise.
+    * src/Makefile.am: Likewise.
+    * src/nclua-gst.c: Likewise.
+    * src/nclua.c: Likewise.
+    * tests/Makefile.am: Likewise.
+    * tests/libnclua-echo.c: Likewise.
+    * tests/libnclua-echo.lua: Likewise.
+    * tests/lua.c: Likewise.
+    * tests/server.pl: Likewise.
+    * tests/server.sh: Likewise.
+    * tests/test-canvas-_resize.lua: Likewise.
+    * tests/test-canvas-api.lua: Likewise.
+    * tests/test-canvas-attrAntiAlias.lua: Likewise.
+    * tests/test-canvas-attrClip.lua: Likewise.
+    * tests/test-canvas-attrColor.lua: Likewise.
+    * tests/test-canvas-attrCrop.lua: Likewise.
+    * tests/test-canvas-attrFilter.lua: Likewise.
+    * tests/test-canvas-attrFlip.lua: Likewise.
+    * tests/test-canvas-attrFont.lua: Likewise.
+    * tests/test-canvas-attrLineWidth.lua: Likewise.
+    * tests/test-canvas-attrOpacity.lua: Likewise.
+    * tests/test-canvas-attrRotation.lua: Likewise.
+    * tests/test-canvas-attrScale.lua: Likewise.
+    * tests/test-canvas-attrSize.lua: Likewise.
+    * tests/test-canvas-clear.lua: Likewise.
+    * tests/test-canvas-compose.lua: Likewise.
+    * tests/test-canvas-drawEllipse.lua: Likewise.
+    * tests/test-canvas-drawLine.lua: Likewise.
+    * tests/test-canvas-drawPolygon.lua: Likewise.
+    * tests/test-canvas-drawRect.lua: Likewise.
+    * tests/test-canvas-drawRoundRect.lua: Likewise.
+    * tests/test-canvas-drawText.lua: Likewise.
+    * tests/test-canvas-flush.lua: Likewise.
+    * tests/test-canvas-measureText.lua: Likewise.
+    * tests/test-canvas-new.lua: Likewise.
+    * tests/test-canvas-pixel.lua: Likewise.
+    * tests/test-dir-api.lua: Likewise.
+    * tests/test-dir-dir.lua: Likewise.
+    * tests/test-dir-test.lua: Likewise.
+    * tests/test-event-engine-api.lua: Likewise.
+    * tests/test-event-engine-cycle.lua: Likewise.
+    * tests/test-event-engine-new.lua: Likewise.
+    * tests/test-event-engine-receive.lua: Likewise.
+    * tests/test-event-engine-reset.lua: Likewise.
+    * tests/test-event-engine-send.lua: Likewise.
+    * tests/test-event-geolocation-api.lua: Likewise.
+    * tests/test-event-geolocation-check.lua: Likewise.
+    * tests/test-event-geolocation-engine.lua: Likewise.
+    * tests/test-event-geolocation-filter.lua: Likewise.
+    * tests/test-event-http-api.lua: Likewise.
+    * tests/test-event-http-check.lua: Likewise.
+    * tests/test-event-http-engine.lua: Likewise.
+    * tests/test-event-http-filter.lua: Likewise.
+    * tests/test-event-http-soup-api.lua: Likewise.
+    * tests/test-event-http-soup-cancel.lua: Likewise.
+    * tests/test-event-http-soup-is-soup.lua: Likewise.
+    * tests/test-event-http-soup-new.lua: Likewise.
+    * tests/test-event-http-soup-request.lua: Likewise.
+    * tests/test-event-init-api.lua: Likewise.
+    * tests/test-event-init-cycle.lua: Likewise.
+    * tests/test-event-init-init.lua: Likewise.
+    * tests/test-event-init-load.lua: Likewise.
+    * tests/test-event-init-post.lua: Likewise.
+    * tests/test-event-init-register.lua: Likewise.
+    * tests/test-event-init-timer.lua: Likewise.
+    * tests/test-event-init-unload.lua: Likewise.
+    * tests/test-event-init-unregister.lua: Likewise.
+    * tests/test-event-init-uptime.lua: Likewise.
+    * tests/test-event-key-api.lua: Likewise.
+    * tests/test-event-key-check.lua: Likewise.
+    * tests/test-event-key-filter.lua: Likewise.
+    * tests/test-event-ncl-api.lua: Likewise.
+    * tests/test-event-ncl-check.lua: Likewise.
+    * tests/test-event-ncl-filter.lua: Likewise.
+    * tests/test-event-pointer-api.lua: Likewise.
+    * tests/test-event-pointer-check.lua: Likewise.
+    * tests/test-event-pointer-filter.lua: Likewise.
+    * tests/test-event-queue-api.lua: Likewise.
+    * tests/test-event-queue-dequeue.lua: Likewise.
+    * tests/test-event-queue-enqueue.lua: Likewise.
+    * tests/test-event-queue-new.lua: Likewise.
+    * tests/test-event-stopwatch-api.lua: Likewise.
+    * tests/test-event-stopwatch-get-time.lua: Likewise.
+    * tests/test-event-stopwatch-new.lua: Likewise.
+    * tests/test-event-tcp-api.lua: Likewise.
+    * tests/test-event-tcp-check.lua: Likewise.
+    * tests/test-event-tcp-engine.lua: Likewise.
+    * tests/test-event-tcp-filter.lua: Likewise.
+    * tests/test-event-tcp-socket-api.lua: Likewise.
+    * tests/test-event-tcp-socket-connect.lua: Likewise.
+    * tests/test-event-tcp-socket-echo.lua: Likewise.
+    * tests/test-event-tcp-socket-is-socket.lua: Likewise.
+    * tests/test-event-tcp-socket-new.lua: Likewise.
+    * tests/test-event-tcp-socket-receive.lua: Likewise.
+    * tests/test-event-tcp-socket-send.lua: Likewise.
+    * tests/test-event-tcp-socket-timeout.lua: Likewise.
+    * tests/test-event-user-api.lua: Likewise.
+    * tests/test-event-user-check.lua: Likewise.
+    * tests/test-event-user-engine.lua: Likewise.
+    * tests/test-event-user-filter.lua: Likewise.
+    * tests/test-event.lua: Likewise.
+    * tests/test-libnclua-close.c: Likewise.
+    * tests/test-libnclua-cycle.c: Likewise.
+    * tests/test-libnclua-debug-dump-surface.c: Likewise.
+    * tests/test-libnclua-debug-get-surface.c: Likewise.
+    * tests/test-libnclua-echo.sh: Likewise.
+    * tests/test-libnclua-open-x.c: Likewise.
+    * tests/test-libnclua-open.c: Likewise.
+    * tests/test-libnclua-paint.c: Likewise.
+    * tests/test-libnclua-resize.c: Likewise.
+    * tests/test-libncluaw-at-panic-x.c: Likewise.
+    * tests/test-libncluaw-at-panic.c: Likewise.
+    * tests/test-libncluaw-cycle.c: Likewise.
+    * tests/test-libncluaw-cycle.lua: Likewise.
+    * tests/test-libncluaw-debug-dump-surface.c: Likewise.
+    * tests/test-libncluaw-debug-get-surface.c: Likewise.
+    * tests/test-libncluaw-event-clone-x.c: Likewise.
+    * tests/test-libncluaw-event-clone.c: Likewise.
+    * tests/test-libncluaw-event-free-x.c: Likewise.
+    * tests/test-libncluaw-open.c: Likewise.
+    * tests/tests.h: Likewise.
+    * tests/tests.lua: Likewise.
+
+[33mcommit 17322f021c2948c863e10a408a186428bb730556[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Mon Jan 1 20:14:10 2018 -0200
+
+    build-aux: Sync remote files
+
+[33mcommit 109f1d038300276d8c0352b79c6a7fbe8363f06e[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Mon Jan 1 11:37:57 2018 -0200
+
+    maint: Update copyright year
+    
+    * Makefile.am: Likewise.
+    * NEWS: Likewise.
+    * README.md: Likewise.
+    * TODO: Likewise.
+    * bootstrap: Likewise.
+    * build-aux/Makefile.am.coverage: Likewise.
+    * build-aux/Makefile.am.env: Likewise.
+    * build-aux/Makefile.am.gitlog: Likewise.
+    * build-aux/Makefile.am.link: Likewise.
+    * build-aux/Makefile.am.valgrind: Likewise.
+    * build-aux/syntax-check: Likewise.
+    * build-aux/syntax-check-copyright: Likewise.
+    * build-aux/util.m4: Likewise.
+    * cfg.mk: Likewise.
+    * configure.ac: Likewise.
+    * contrib/debian/copyright: Likewise.
+    * examples/circle.lua: Likewise.
+    * examples/follow.lua: Likewise.
+    * examples/fps.lua: Likewise.
+    * examples/input.lua: Likewise.
+    * examples/ls.lua: Likewise.
+    * examples/www/example-http.lua: Likewise.
+    * examples/www/example-http.ncl: Likewise.
+    * examples/www/example-tcp.lua: Likewise.
+    * examples/www/example-tcp.ncl: Likewise.
+    * examples/www/http.lua: Likewise.
+    * examples/www/http_get.lua: Likewise.
+    * examples/www/tcp.lua: Likewise.
+    * lib/Makefile.am: Likewise.
+    * lib/aux-glib.h: Likewise.
+    * lib/aux-gst.h: Likewise.
+    * lib/aux-lua.h: Likewise.
+    * lib/gstnclua.c: Likewise.
+    * lib/nclua.c: Likewise.
+    * lib/nclua.h: Likewise.
+    * lib/nclua.rc.in: Likewise.
+    * lib/ncluaconf.h.in: Likewise.
+    * lib/ncluaw.c: Likewise.
+    * lib/ncluaw.h: Likewise.
+    * maint.mk: Likewise.
+    * nclua/Makefile.am: Likewise.
+    * nclua/canvas-color-table.h: Likewise.
+    * nclua/canvas.c: Likewise.
+    * nclua/dir.c: Likewise.
+    * nclua/event/Makefile.am: Likewise.
+    * nclua/event/callback.h: Likewise.
+    * nclua/event/check.lua: Likewise.
+    * nclua/event/engine.lua: Likewise.
+    * nclua/event/geolocation.lua: Likewise.
+    * nclua/event/http.lua: Likewise.
+    * nclua/event/http_soup.c: Likewise.
+    * nclua/event/init.lua: Likewise.
+    * nclua/event/key.lua: Likewise.
+    * nclua/event/ncl.lua: Likewise.
+    * nclua/event/pointer.lua: Likewise.
+    * nclua/event/queue.lua: Likewise.
+    * nclua/event/stopwatch.c: Likewise.
+    * nclua/event/tcp.lua: Likewise.
+    * nclua/event/tcp_socket.c: Likewise.
+    * nclua/event/user.lua: Likewise.
+    * src/Makefile.am: Likewise.
+    * src/nclua-gst.c: Likewise.
+    * src/nclua.c: Likewise.
+    * tests/Makefile.am: Likewise.
+    * tests/libnclua-echo.c: Likewise.
+    * tests/libnclua-echo.lua: Likewise.
+    * tests/lua.c: Likewise.
+    * tests/server.pl: Likewise.
+    * tests/server.sh: Likewise.
+    * tests/test-canvas-_resize.lua: Likewise.
+    * tests/test-canvas-api.lua: Likewise.
+    * tests/test-canvas-attrAntiAlias.lua: Likewise.
+    * tests/test-canvas-attrClip.lua: Likewise.
+    * tests/test-canvas-attrColor.lua: Likewise.
+    * tests/test-canvas-attrCrop.lua: Likewise.
+    * tests/test-canvas-attrFilter.lua: Likewise.
+    * tests/test-canvas-attrFlip.lua: Likewise.
+    * tests/test-canvas-attrFont.lua: Likewise.
+    * tests/test-canvas-attrLineWidth.lua: Likewise.
+    * tests/test-canvas-attrOpacity.lua: Likewise.
+    * tests/test-canvas-attrRotation.lua: Likewise.
+    * tests/test-canvas-attrScale.lua: Likewise.
+    * tests/test-canvas-attrSize.lua: Likewise.
+    * tests/test-canvas-clear.lua: Likewise.
+    * tests/test-canvas-compose.lua: Likewise.
+    * tests/test-canvas-drawEllipse.lua: Likewise.
+    * tests/test-canvas-drawLine.lua: Likewise.
+    * tests/test-canvas-drawPolygon.lua: Likewise.
+    * tests/test-canvas-drawRect.lua: Likewise.
+    * tests/test-canvas-drawRoundRect.lua: Likewise.
+    * tests/test-canvas-drawText.lua: Likewise.
+    * tests/test-canvas-flush.lua: Likewise.
+    * tests/test-canvas-measureText.lua: Likewise.
+    * tests/test-canvas-new.lua: Likewise.
+    * tests/test-canvas-pixel.lua: Likewise.
+    * tests/test-dir-api.lua: Likewise.
+    * tests/test-dir-dir.lua: Likewise.
+    * tests/test-dir-test.lua: Likewise.
+    * tests/test-event-engine-api.lua: Likewise.
+    * tests/test-event-engine-cycle.lua: Likewise.
+    * tests/test-event-engine-new.lua: Likewise.
+    * tests/test-event-engine-receive.lua: Likewise.
+    * tests/test-event-engine-reset.lua: Likewise.
+    * tests/test-event-engine-send.lua: Likewise.
+    * tests/test-event-geolocation-api.lua: Likewise.
+    * tests/test-event-geolocation-check.lua: Likewise.
+    * tests/test-event-geolocation-engine.lua: Likewise.
+    * tests/test-event-geolocation-filter.lua: Likewise.
+    * tests/test-event-http-api.lua: Likewise.
+    * tests/test-event-http-check.lua: Likewise.
+    * tests/test-event-http-engine.lua: Likewise.
+    * tests/test-event-http-filter.lua: Likewise.
+    * tests/test-event-http-soup-api.lua: Likewise.
+    * tests/test-event-http-soup-cancel.lua: Likewise.
+    * tests/test-event-http-soup-is-soup.lua: Likewise.
+    * tests/test-event-http-soup-new.lua: Likewise.
+    * tests/test-event-http-soup-request.lua: Likewise.
+    * tests/test-event-init-api.lua: Likewise.
+    * tests/test-event-init-cycle.lua: Likewise.
+    * tests/test-event-init-init.lua: Likewise.
+    * tests/test-event-init-load.lua: Likewise.
+    * tests/test-event-init-post.lua: Likewise.
+    * tests/test-event-init-register.lua: Likewise.
+    * tests/test-event-init-timer.lua: Likewise.
+    * tests/test-event-init-unload.lua: Likewise.
+    * tests/test-event-init-unregister.lua: Likewise.
+    * tests/test-event-init-uptime.lua: Likewise.
+    * tests/test-event-key-api.lua: Likewise.
+    * tests/test-event-key-check.lua: Likewise.
+    * tests/test-event-key-filter.lua: Likewise.
+    * tests/test-event-ncl-api.lua: Likewise.
+    * tests/test-event-ncl-check.lua: Likewise.
+    * tests/test-event-ncl-filter.lua: Likewise.
+    * tests/test-event-pointer-api.lua: Likewise.
+    * tests/test-event-pointer-check.lua: Likewise.
+    * tests/test-event-pointer-filter.lua: Likewise.
+    * tests/test-event-queue-api.lua: Likewise.
+    * tests/test-event-queue-dequeue.lua: Likewise.
+    * tests/test-event-queue-enqueue.lua: Likewise.
+    * tests/test-event-queue-new.lua: Likewise.
+    * tests/test-event-stopwatch-api.lua: Likewise.
+    * tests/test-event-stopwatch-get-time.lua: Likewise.
+    * tests/test-event-stopwatch-new.lua: Likewise.
+    * tests/test-event-tcp-api.lua: Likewise.
+    * tests/test-event-tcp-check.lua: Likewise.
+    * tests/test-event-tcp-engine.lua: Likewise.
+    * tests/test-event-tcp-filter.lua: Likewise.
+    * tests/test-event-tcp-socket-api.lua: Likewise.
+    * tests/test-event-tcp-socket-connect.lua: Likewise.
+    * tests/test-event-tcp-socket-echo.lua: Likewise.
+    * tests/test-event-tcp-socket-is-socket.lua: Likewise.
+    * tests/test-event-tcp-socket-new.lua: Likewise.
+    * tests/test-event-tcp-socket-receive.lua: Likewise.
+    * tests/test-event-tcp-socket-send.lua: Likewise.
+    * tests/test-event-tcp-socket-timeout.lua: Likewise.
+    * tests/test-event-user-api.lua: Likewise.
+    * tests/test-event-user-check.lua: Likewise.
+    * tests/test-event-user-engine.lua: Likewise.
+    * tests/test-event-user-filter.lua: Likewise.
+    * tests/test-event.lua: Likewise.
+    * tests/test-libnclua-close.c: Likewise.
+    * tests/test-libnclua-cycle.c: Likewise.
+    * tests/test-libnclua-debug-dump-surface.c: Likewise.
+    * tests/test-libnclua-debug-get-surface.c: Likewise.
+    * tests/test-libnclua-echo.sh: Likewise.
+    * tests/test-libnclua-open-x.c: Likewise.
+    * tests/test-libnclua-open.c: Likewise.
+    * tests/test-libnclua-paint.c: Likewise.
+    * tests/test-libnclua-resize.c: Likewise.
+    * tests/test-libncluaw-at-panic-x.c: Likewise.
+    * tests/test-libncluaw-at-panic.c: Likewise.
+    * tests/test-libncluaw-cycle.c: Likewise.
+    * tests/test-libncluaw-cycle.lua: Likewise.
+    * tests/test-libncluaw-debug-dump-surface.c: Likewise.
+    * tests/test-libncluaw-debug-get-surface.c: Likewise.
+    * tests/test-libncluaw-event-clone-x.c: Likewise.
+    * tests/test-libncluaw-event-clone.c: Likewise.
+    * tests/test-libncluaw-event-free-x.c: Likewise.
+    * tests/test-libncluaw-open.c: Likewise.
+    * tests/tests.h: Likewise.
+    * tests/tests.lua: Likewise.
+    * tests/tests0.c: Likewise.
+
+[33mcommit 2abf84e77b84c8fae9797621944de84b9067b1be[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Thu Dec 7 08:10:25 2017 -0200
+
+    build: Add INDENT_INCLUDE to maint.mk
+    
+    * maint.mk: Likewise.
+
+[33mcommit d2bf502232a010f0a039475c6d332be148667689[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Fri Sep 22 19:18:52 2017 -0300
+
+    build: Add -lm to some LDFLAGS
+    
+    * src/Makefile.am: Likewise.
+    * nclua/Makefile.am: Likewise.
+    * lib/Makefile.am: Syntax cleanup.
+    * configure.ac: Fix the case of summary messages.
+    * lib/aux-lua.h: Fix warning.
+
+[33mcommit 9f10aa74c7ff880188b6366bb6d2d52914c1df6d[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Fri Sep 15 23:10:02 2017 -0300
+
+    build: Link Lua modules to liblua
+    
+    This fixes "undefined symbol" crash in gstnclua when loaded by gst-launch.
+    
+    * lib/Makefile.am: Likewise.
+    * nclua/Makefile.am: Likewise.
+    * nclua/event/Makefile.am: Likewise.
+
+[33mcommit c7972e544e3034ed0ae2b2bf1a811184e7c83eba[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Fri Sep 15 18:51:43 2017 -0300
+
+    lib: Rename derefandset to tryset in aux-glib.h
+    
+    * lib/aux-glib.h: Likewise.
+    * lib/gstnclua.c: Updated accordingly.
+    * lib/ncluaw.c: Likewise.
+    * nclua/event/callback.h: Likewise.
+    * nclua/event/http_soup.c: Likewise.
+    * nclua/event/tcp_socket.c: Likewise.
+    * nclua/canvas.c: Likewise.
+
+[33mcommit 781c3fcd77fb2792d0f509b333438325834eb973[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Fri Sep 15 18:24:04 2017 -0300
+
+    maint: Use glib stuff as much as possible
+    
+    Replace lib/macros.h by lib/aux-glib.h, a thin wrapper over glib.
+    Also, make lib/aux-lua.h (old luax-macros.h) independent of glib.
+    
+    * build-aux/util.m4: Remove macros.h checks.
+    * configure.ac: Updated accordingly.
+    * lib/Makefile.am: Likewise.
+    * lib/aux-glib.h: New file.  Thin wrapper over glib.
+    * lib/aux-gst.h: Renamed from gstx-macros.h.
+    * lib/aux-lua.h: Renamed form luax-macros.h.
+    * lib/nclua.c: Updated accordingly.
+    * lib/ncluaw.c: Likewise.
+    * nclua/canvas-color-table.h: Likewise.
+    * nclua/canvas.c: Likewise.
+    * nclua/dir.c: Likewise.
+    * nclua/event/Makefile.am: Likewise.
+    * nclua/event/callback.h: Renamed from luax-callback.h.
+    * nclua/event/http_soup.c: Updated accordingly.
+    * nclua/event/tcp_socket.c: Likewise.
+    * src/nclua-gst.c: Likewise.
+    * src/nclua.c: Likewise.
+    * tests/lua.c: Likewise.
+    * tests/test-libnclua-open-x.c: Likewise.
+    * tests/test-libnclua-paint.c: Likewise.
+    * tests/test-libncluaw-debug-dump-surface.c: Likewise.
+    * tests/test-libncluaw-event-clone.c: Likewise.
+    * tests/test-libncluaw-open.c: Likewise.
+    * tests/tests.h: Likewise.
+    * tests/tests.lua: Likewise.
+    * tests/tests0.c: Likewise.
+
+[33mcommit 864437cfe7041895de7e3fa94c9c6d540c64e6cb[m
+Merge: 3948154 65dba77
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Wed Sep 13 14:05:09 2017 -0300
+
+    Merge branch 'master' of github.com:gflima/nclua
+
+[33mcommit 39481540aa1f8b6e718dd9fe042c19fe68469672[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Wed Sep 13 14:03:04 2017 -0300
+
+    build-aux: Update MINGW_ROOT in Makefile.am.env
+    
+    * build-aux/Makefile.am.env: Likewise.
+
+[33mcommit 65dba772068a37f525147e8d78821f05263dda9b[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Wed Sep 13 12:57:52 2017 -0300
+
+    maint: Enable dir API by default
+    
+    * lib/nclua.c: Likewise.
+    * README.md: Updated.
+    * examples/ls.lua: New example.
+    * nclua/dir.c: Fix comments.
+    * tests/test-dir-api.lua: New test.
+    * tests/test-dir-dir.lua: New test.
+    * tests/test-dir-test.lua: New test.
+    * tests/Makefile.am: Updated accordingly.
+
+[33mcommit f4531059d583aa8bf8808496511f553f636b04e5[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Wed Sep 13 11:28:10 2017 -0300
+
+    examples/www: Fix int conversion in example-http
+    
+    * examples/www/example-http.lua: Likewise.
+
+[33mcommit ba506c7486057cd4502be86f22b51fc850f9b8f9[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Wed Sep 13 11:25:28 2017 -0300
+
+    build: Fix build in mingw64
+    
+    * build-aux/Makefile.am.env: Use updated MINGW_ROOT.
+    * build-aux/Makefile.am.link: Do not link LTLIBRARIES automatically.
+    * build-aux/util.m4: Fix MINGW_ROOT detection.
+    * lib/Makefile.am: Fix linker parameters for dll's.
+    * nclua/Makefile.am: Likewise.
+    * nclua/event/Makefile.am: Likewise.
+    * tests/Makefile.am: Likewise.
+
+[33mcommit 066b6b53218a028688c9a70b00c581c3b159ce79[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Wed Sep 13 11:17:16 2017 -0300
+
+    lib: Fix broken http and tcp events
+    
+    * lib/ncluaw.c: The http and tcp plugins were not being loaded due to
+    erroneous #if checks.
+    * tests/test-libnclua-open.c: Updated accordingly.
+
+[33mcommit 856767fa26b93336718c187c1effd83e03fbac12[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Wed Aug 23 12:57:44 2017 -0300
+
+    build-aux: Fix seq call in util.m4
+    
+    * build-aux/util.m4: Fix call in GNU seq.
+
+[33mcommit b540e13f2092460b049b2ab5fc21af1080a26626[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Wed Aug 16 02:00:45 2017 -0300
+
+    build-aux: Search for Lua in decreasing order of version
+    
+    * build-aux/util.m4: Likewise.
+
+[33mcommit 32bc49e01ae73c275c86742d1800c029cbbe490a[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Wed Jun 21 12:46:29 2017 -0300
+
+    build-aux: Update util.m4
+    
+    * build-aux/util.m4 (AU_ARG_ENABLE_COVERAGE): Add C++ support.
+
+[33mcommit 1b92e25479aba6f18daf9888726661be74e54f02[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Wed Jun 21 12:45:31 2017 -0300
+
+    build-aux: Add targets to Makefile.am.coverage
+    
+    * Makefile.am.coverage (coverage-reset): Reset counters.
+    (coverage-genhtml): Generate the report.
+
+[33mcommit 6be187b8bc4909aacfff15f4a03b1e1cb9d1d87a[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Mon May 29 12:22:29 2017 -0300
+
+    build: Fix EXTRA_DIST re-definitions
+    
+    * Makefile.am: Likewise.
+    * lib/Makefile.am: Likewise.
+    * nclua/event/Makefile.am: Likewise.
+    * tests/Makefile.am: Likewise.
+
+[33mcommit ebc91ef65d17b81d30b38f7f5a3602b439cacd56[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Fri May 26 11:01:55 2017 -0300
+
+    build-aux: Update Makefile.am.common
+    
+    * build-aux/Makefile.am.common: Add CLEANDIRS and EXTRA_DIST.
+
+[33mcommit 6aba8edce9804f9db1ebc16594cd15a95775c92a[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Fri May 12 19:12:47 2017 -0300
+
+    build-aux: Add AU_LANG_CPLUSPLUS to util.m4
+    
+    * build-aux/util.m4: Likewise.
+
+[33mcommit 41280e329d4e9946cc3f1d71447b459953536c56[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Mon May 8 16:33:35 2017 -0300
+
+    build-aux: Fix status message in util.m4
+    
+    * build-aux/util.m4: Likewise.
+
+[33mcommit 3b9e7ed148d03e983ce6cc170b0b8031b641b592[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Tue Mar 14 14:06:54 2017 -0300
+
+    build: Fix cases where maint.mk is overridden by fetch-remote
+    
+    * maint.mk (fetch-remote): Likewise.
+
+[33mcommit 9e941bf4f527a1851836da4a22fe9bdca82aab39[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Tue Mar 14 13:52:50 2017 -0300
+
+    build: Fix missing configure.ac bug in maint.mk
+    
+    * maint.mk: Likewise.
+
+[33mcommit c8f7484bc562dd4476dec636b8942a81f84113ac[m
+Merge: bfb25e1 d3401d0
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Thu Feb 23 11:06:38 2017 -0300
+
+    Merge branch 'master' of github.com:gflima/nclua
+
+[33mcommit bfb25e1461699199417a222722bc19794f84a7ba[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Thu Feb 23 11:06:12 2017 -0300
+
+    doc: Update URL of releases in README.md
+    
+    * README.md: Likewise.
+
+[33mcommit d3401d01b5e6aeac492a57aa1bc7a6b8d4440940[m
+Merge: dd2237f b3b2841
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Thu Feb 23 10:59:37 2017 -0300
+
+    Merge pull request #2 from alanlivio/master
+    
+    Fix NCLua logo URL.
+
+[33mcommit b3b28417d3c9c5978a6c61c97b79e68f69c18092[m
+Merge: 86590a3 dd2237f
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Thu Feb 23 10:59:09 2017 -0300
+
+    Merge branch 'master' into master
+
+[33mcommit dd2237fe595509263588ed45a02d369a53941c34[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Thu Feb 23 10:55:34 2017 -0300
+
+    contrib: Add nclua.png
+    
+    * README.md: Updated accordingly.
+
+[33mcommit 86590a339d27b84f7c7e6c77b996a9522f7cdf48[m
+Author: Alan Livio <alan@telemidia.puc-rio.br>
+Date:   Wed Feb 22 14:20:16 2017 -0300
+
+    Fix NCLua logo URL.
+    
+    * README.md: Likewise.
+
+[33mcommit 0e30e0ee662fe18cecad2b29dad633685f002f14[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Thu Feb 16 17:50:29 2017 -0200
+
+    src: Fix bug in GTK if-def's
+    
+    * nclua/canvas.c: Renamed WITH_NCLUA_GTK to WITH_GTK.
+
+[33mcommit be125718a20cc1f5e0d38c9f1b21cd07900411f7[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Tue Feb 14 18:37:10 2017 -0200
+
+    build: Remove --enable-ansi option
+    
+    * configure.ac: Likewise.
+
+[33mcommit 33414bbe0698f33a91724a04872ab8517cb10539[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Mon Feb 13 12:02:06 2017 -0200
+
+    maint: Update copyright year
+    
+    * Makefile.am: Likewise.
+    * NEWS: Likewise.
+    * README.md: Likewise.
+    * TODO: Likewise.
+    * bootstrap: Likewise.
+    * build-aux/Makefile.am.coverage: Likewise.
+    * build-aux/Makefile.am.env: Likewise.
+    * build-aux/Makefile.am.gitlog: Likewise.
+    * build-aux/Makefile.am.link: Likewise.
+    * build-aux/Makefile.am.valgrind: Likewise.
+    * build-aux/syntax-check: Likewise.
+    * build-aux/syntax-check-copyright: Likewise.
+    * build-aux/util.m4: Likewise.
+    * cfg.mk: Likewise.
+    * configure.ac: Likewise.
+    * contrib/debian/copyright: Likewise.
+    * examples/circle.lua: Likewise.
+    * examples/follow.lua: Likewise.
+    * examples/fps.lua: Likewise.
+    * examples/input.lua: Likewise.
+    * examples/www/example-http.lua: Likewise.
+    * examples/www/example-http.ncl: Likewise.
+    * examples/www/example-tcp.lua: Likewise.
+    * examples/www/example-tcp.ncl: Likewise.
+    * examples/www/http.lua: Likewise.
+    * examples/www/http_get.lua: Likewise.
+    * examples/www/tcp.lua: Likewise.
+    * lib/Makefile.am: Likewise.
+    * lib/gstnclua.c: Likewise.
+    * lib/gstx-macros.h: Likewise.
+    * lib/luax-macros.h: Likewise.
+    * lib/macros.h: Likewise.
+    * lib/nclua.c: Likewise.
+    * lib/nclua.h: Likewise.
+    * lib/nclua.rc.in: Likewise.
+    * lib/ncluaconf.h.in: Likewise.
+    * lib/ncluaw.c: Likewise.
+    * lib/ncluaw.h: Likewise.
+    * maint.mk: Likewise.
+    * nclua/Makefile.am: Likewise.
+    * nclua/canvas-color-table.h: Likewise.
+    * nclua/canvas.c: Likewise.
+    * nclua/dir.c: Likewise.
+    * nclua/event/Makefile.am: Likewise.
+    * nclua/event/check.lua: Likewise.
+    * nclua/event/engine.lua: Likewise.
+    * nclua/event/geolocation.lua: Likewise.
+    * nclua/event/http.lua: Likewise.
+    * nclua/event/http_soup.c: Likewise.
+    * nclua/event/init.lua: Likewise.
+    * nclua/event/key.lua: Likewise.
+    * nclua/event/luax-callback.h: Likewise.
+    * nclua/event/ncl.lua: Likewise.
+    * nclua/event/pointer.lua: Likewise.
+    * nclua/event/queue.lua: Likewise.
+    * nclua/event/stopwatch.c: Likewise.
+    * nclua/event/tcp.lua: Likewise.
+    * nclua/event/tcp_socket.c: Likewise.
+    * nclua/event/user.lua: Likewise.
+    * src/Makefile.am: Likewise.
+    * src/nclua-gst.c: Likewise.
+    * src/nclua.c: Likewise.
+    * tests/Makefile.am: Likewise.
+    * tests/libnclua-echo.c: Likewise.
+    * tests/libnclua-echo.lua: Likewise.
+    * tests/lua.c: Likewise.
+    * tests/server.pl: Likewise.
+    * tests/server.sh: Likewise.
+    * tests/test-canvas-_resize.lua: Likewise.
+    * tests/test-canvas-api.lua: Likewise.
+    * tests/test-canvas-attrAntiAlias.lua: Likewise.
+    * tests/test-canvas-attrClip.lua: Likewise.
+    * tests/test-canvas-attrColor.lua: Likewise.
+    * tests/test-canvas-attrCrop.lua: Likewise.
+    * tests/test-canvas-attrFilter.lua: Likewise.
+    * tests/test-canvas-attrFlip.lua: Likewise.
+    * tests/test-canvas-attrFont.lua: Likewise.
+    * tests/test-canvas-attrLineWidth.lua: Likewise.
+    * tests/test-canvas-attrOpacity.lua: Likewise.
+    * tests/test-canvas-attrRotation.lua: Likewise.
+    * tests/test-canvas-attrScale.lua: Likewise.
+    * tests/test-canvas-attrSize.lua: Likewise.
+    * tests/test-canvas-clear.lua: Likewise.
+    * tests/test-canvas-compose.lua: Likewise.
+    * tests/test-canvas-drawEllipse.lua: Likewise.
+    * tests/test-canvas-drawLine.lua: Likewise.
+    * tests/test-canvas-drawPolygon.lua: Likewise.
+    * tests/test-canvas-drawRect.lua: Likewise.
+    * tests/test-canvas-drawRoundRect.lua: Likewise.
+    * tests/test-canvas-drawText.lua: Likewise.
+    * tests/test-canvas-flush.lua: Likewise.
+    * tests/test-canvas-measureText.lua: Likewise.
+    * tests/test-canvas-new.lua: Likewise.
+    * tests/test-canvas-pixel.lua: Likewise.
+    * tests/test-event-engine-api.lua: Likewise.
+    * tests/test-event-engine-cycle.lua: Likewise.
+    * tests/test-event-engine-new.lua: Likewise.
+    * tests/test-event-engine-receive.lua: Likewise.
+    * tests/test-event-engine-reset.lua: Likewise.
+    * tests/test-event-engine-send.lua: Likewise.
+    * tests/test-event-geolocation-api.lua: Likewise.
+    * tests/test-event-geolocation-check.lua: Likewise.
+    * tests/test-event-geolocation-engine.lua: Likewise.
+    * tests/test-event-geolocation-filter.lua: Likewise.
+    * tests/test-event-http-api.lua: Likewise.
+    * tests/test-event-http-check.lua: Likewise.
+    * tests/test-event-http-engine.lua: Likewise.
+    * tests/test-event-http-filter.lua: Likewise.
+    * tests/test-event-http-soup-api.lua: Likewise.
+    * tests/test-event-http-soup-cancel.lua: Likewise.
+    * tests/test-event-http-soup-is-soup.lua: Likewise.
+    * tests/test-event-http-soup-new.lua: Likewise.
+    * tests/test-event-http-soup-request.lua: Likewise.
+    * tests/test-event-init-api.lua: Likewise.
+    * tests/test-event-init-cycle.lua: Likewise.
+    * tests/test-event-init-init.lua: Likewise.
+    * tests/test-event-init-load.lua: Likewise.
+    * tests/test-event-init-post.lua: Likewise.
+    * tests/test-event-init-register.lua: Likewise.
+    * tests/test-event-init-timer.lua: Likewise.
+    * tests/test-event-init-unload.lua: Likewise.
+    * tests/test-event-init-unregister.lua: Likewise.
+    * tests/test-event-init-uptime.lua: Likewise.
+    * tests/test-event-key-api.lua: Likewise.
+    * tests/test-event-key-check.lua: Likewise.
+    * tests/test-event-key-filter.lua: Likewise.
+    * tests/test-event-ncl-api.lua: Likewise.
+    * tests/test-event-ncl-check.lua: Likewise.
+    * tests/test-event-ncl-filter.lua: Likewise.
+    * tests/test-event-pointer-api.lua: Likewise.
+    * tests/test-event-pointer-check.lua: Likewise.
+    * tests/test-event-pointer-filter.lua: Likewise.
+    * tests/test-event-queue-api.lua: Likewise.
+    * tests/test-event-queue-dequeue.lua: Likewise.
+    * tests/test-event-queue-enqueue.lua: Likewise.
+    * tests/test-event-queue-new.lua: Likewise.
+    * tests/test-event-stopwatch-api.lua: Likewise.
+    * tests/test-event-stopwatch-get-time.lua: Likewise.
+    * tests/test-event-stopwatch-new.lua: Likewise.
+    * tests/test-event-tcp-api.lua: Likewise.
+    * tests/test-event-tcp-check.lua: Likewise.
+    * tests/test-event-tcp-engine.lua: Likewise.
+    * tests/test-event-tcp-filter.lua: Likewise.
+    * tests/test-event-tcp-socket-api.lua: Likewise.
+    * tests/test-event-tcp-socket-connect.lua: Likewise.
+    * tests/test-event-tcp-socket-echo.lua: Likewise.
+    * tests/test-event-tcp-socket-is-socket.lua: Likewise.
+    * tests/test-event-tcp-socket-new.lua: Likewise.
+    * tests/test-event-tcp-socket-receive.lua: Likewise.
+    * tests/test-event-tcp-socket-send.lua: Likewise.
+    * tests/test-event-tcp-socket-timeout.lua: Likewise.
+    * tests/test-event-user-api.lua: Likewise.
+    * tests/test-event-user-check.lua: Likewise.
+    * tests/test-event-user-engine.lua: Likewise.
+    * tests/test-event-user-filter.lua: Likewise.
+    * tests/test-event.lua: Likewise.
+    * tests/test-libnclua-close.c: Likewise.
+    * tests/test-libnclua-cycle.c: Likewise.
+    * tests/test-libnclua-debug-dump-surface.c: Likewise.
+    * tests/test-libnclua-debug-get-surface.c: Likewise.
+    * tests/test-libnclua-echo.sh: Likewise.
+    * tests/test-libnclua-open-x.c: Likewise.
+    * tests/test-libnclua-open.c: Likewise.
+    * tests/test-libnclua-paint.c: Likewise.
+    * tests/test-libnclua-resize.c: Likewise.
+    * tests/test-libncluaw-at-panic-x.c: Likewise.
+    * tests/test-libncluaw-at-panic.c: Likewise.
+    * tests/test-libncluaw-cycle.c: Likewise.
+    * tests/test-libncluaw-cycle.lua: Likewise.
+    * tests/test-libncluaw-debug-dump-surface.c: Likewise.
+    * tests/test-libncluaw-debug-get-surface.c: Likewise.
+    * tests/test-libncluaw-event-clone-x.c: Likewise.
+    * tests/test-libncluaw-event-clone.c: Likewise.
+    * tests/test-libncluaw-event-free-x.c: Likewise.
+    * tests/test-libncluaw-open.c: Likewise.
+    * tests/tests.h: Likewise.
+    * tests/tests.lua: Likewise.
+    * tests/tests0.c: Likewise.
+
+[33mcommit 6bc8e95ad585cf8dee31e0e97ef0fbff5d97c2e4[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Mon Feb 13 11:57:30 2017 -0200
+
+    build: Check for pkg-config in boostrap
+    
+    * bootstrap: Likewise.
+
+[33mcommit e83933788cac2af9216b7c2c2ef3c62016085818[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Thu Jan 19 11:29:23 2017 -0200
+
+    build-aux: Add C++ support to AU_ARG_ENABLE_DEBUG in util.m4
+    
+    * build-aux/util.m4: Likewise.
+
+[33mcommit 5b42f272c78896478d925bae51d5e9977dd4acc4[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Sun Jan 15 15:24:13 2017 -0200
+
+    build: Update util.m4
+    
+    * build-aux/util.m4: Add result message to AU_CHECK_OPTIONAL_PKG.
+    * configure.ac: Updated accordingly.
+
+[33mcommit 1f54e472bda7d42caca79321a98beccd2c4e001e[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Thu Jul 7 15:18:46 2016 -0300
+
+    build: Fix default in AU_ARG_ENABLE
+    
+    * build-aux/util.m4 (AU_ARG_ENABLE): Likewise.
+
+[33mcommit 74e8363d6ab7aa0ec61875486b2d9f33e2c94fec[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Thu Jul 7 13:51:35 2016 -0300
+
+    tests: Fix conversion warning in lua.c
+    
+    * tests/lua.c: Likewise.
+
+[33mcommit 5158dcb9edb14dcd0dccab86a16a3608ff16d501[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Thu Jul 7 13:51:03 2016 -0300
+
+    build: Sort usage output in maint.mk
+    
+    * maint.mk: Likewise.
+
+[33mcommit bf72ec29f145c2479a15f22e22748270f655e247[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Sun Jun 12 16:57:35 2016 -0300
+
+    tests: Add "arg" to custom Lua interpreter
+    
+    * tests/lua.c: Likewise.
+
+[33mcommit 5e345f23ef2a27467465f82e54e4d6ab9484482a[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Wed Jun 8 02:34:14 2016 -0300
+
+    build-aux: Make --enable-warnings more flexible
+    
+    * build-aux/util.m4 (AU_ARG_ENABLE_WARNINGS): Add EXCLUDE-LIST parameter
+    which determines the warnings that should not be enabled.
+    * configure.ac: Updated accordingly.
+
+[33mcommit 745e7b14ef83e429a09539681d6f1f2929857d89[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Wed Jun 8 02:31:46 2016 -0300
+
+    build-aux: Sync remote files
+    
+    * build-aux/git-version-gen: Likewise.
+    * build-aux/gitlog-to-changelog: Likewise.
+    * build-aux/manywarnings.m4: Likewise.
+    * build-aux/perl.m4: Likewise.
+    * build-aux/useless-if-before-free: Likewise.
+    * build-aux/visibility.m4: Likewise.
+    * build-aux/warnings.m4: Likewise.
+
+[33mcommit 1e346e7cc4e32b7bb4967a6c86b7f692d8cf3fcc[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Sun May 29 20:34:17 2016 -0300
+
+    lib: Add luax_setbooleanfield to luax-macros.h
+    
+    * lib/luax-macros.h (luax_setbooleanfield): Likewise.
+
+[33mcommit 3171c9e1cf4ea166f5ffb11ca34c9c2652fee129[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Sat May 7 14:17:35 2016 -0300
+
+    lib: Use strbool in luax-macros.h
+    
+    * lib/luax-macros.h: Likewise.
+
+[33mcommit 688daddaa43c0b85d67dc3411ece05e52498f2c8[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Sat May 7 13:54:45 2016 -0300
+
+    lib: Add strbool to macros.h
+
+[33mcommit 0f9ceea1950e6ce208183e0084087c17b3c73df9[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Thu Apr 28 16:39:36 2016 -0300
+
+    tests: Change copyright of lua.c
+    
+    * tests/lua.c: Likewise.
+    * cfg.mk (SC_COPYRIGHT_EXCLUDE): Add lua.c.
+
+[33mcommit 52765942d1ed59ed1792d8202aa3aea53f6829af[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Thu Apr 14 20:12:56 2016 -0300
+
+    lib: Include Lua headers in luax-macros
+    
+    * lib/luax-macros.h: Likewise.
+
+[33mcommit ece87dcbbba80983d4a2158595e43695594309ce[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Thu Mar 24 17:27:10 2016 -0300
+
+    maint: Update copyright year
+    
+    * Makefile.am: Likewise.
+    * NEWS: Likewise.
+    * README.md: Likewise.
+    * TODO: Likewise.
+    * bootstrap: Likewise.
+    * build-aux/Makefile.am.common: Likewise.
+    * build-aux/Makefile.am.coverage: Likewise.
+    * build-aux/Makefile.am.env: Likewise.
+    * build-aux/Makefile.am.gitlog: Likewise.
+    * build-aux/Makefile.am.link: Likewise.
+    * build-aux/Makefile.am.valgrind: Likewise.
+    * build-aux/syntax-check: Likewise.
+    * build-aux/syntax-check-copyright: Likewise.
+    * build-aux/util.m4: Likewise.
+    * cfg.mk: Likewise.
+    * configure.ac: Likewise.
+    * contrib/debian/copyright: Likewise.
+    * examples/circle.lua: Likewise.
+    * examples/follow.lua: Likewise.
+    * examples/fps.lua: Likewise.
+    * examples/input.lua: Likewise.
+    * examples/www/example-http.lua: Likewise.
+    * examples/www/example-http.ncl: Likewise.
+    * examples/www/example-tcp.lua: Likewise.
+    * examples/www/example-tcp.ncl: Likewise.
+    * examples/www/http.lua: Likewise.
+    * examples/www/http_get.lua: Likewise.
+    * examples/www/tcp.lua: Likewise.
+    * lib/Makefile.am: Likewise.
+    * lib/gstnclua.c: Likewise.
+    * lib/gstx-macros.h: Likewise.
+    * lib/luax-macros.h: Likewise.
+    * lib/macros.h: Likewise.
+    * lib/nclua.c: Likewise.
+    * lib/nclua.h: Likewise.
+    * lib/nclua.rc.in: Likewise.
+    * lib/ncluaconf.h.in: Likewise.
+    * lib/ncluaw.c: Likewise.
+    * lib/ncluaw.h: Likewise.
+    * maint.mk: Likewise.
+    * nclua/Makefile.am: Likewise.
+    * nclua/canvas-color-table.h: Likewise.
+    * nclua/canvas.c: Likewise.
+    * nclua/dir.c: Likewise.
+    * nclua/event/Makefile.am: Likewise.
+    * nclua/event/check.lua: Likewise.
+    * nclua/event/engine.lua: Likewise.
+    * nclua/event/geolocation.lua: Likewise.
+    * nclua/event/http.lua: Likewise.
+    * nclua/event/http_soup.c: Likewise.
+    * nclua/event/init.lua: Likewise.
+    * nclua/event/key.lua: Likewise.
+    * nclua/event/luax-callback.h: Likewise.
+    * nclua/event/ncl.lua: Likewise.
+    * nclua/event/pointer.lua: Likewise.
+    * nclua/event/queue.lua: Likewise.
+    * nclua/event/stopwatch.c: Likewise.
+    * nclua/event/tcp.lua: Likewise.
+    * nclua/event/tcp_socket.c: Likewise.
+    * nclua/event/user.lua: Likewise.
+    * src/Makefile.am: Likewise.
+    * src/nclua-gst.c: Likewise.
+    * src/nclua.c: Likewise.
+    * tests/Makefile.am: Likewise.
+    * tests/libnclua-echo.c: Likewise.
+    * tests/libnclua-echo.lua: Likewise.
+    * tests/lua.c: Likewise.
+    * tests/server.pl: Likewise.
+    * tests/server.sh: Likewise.
+    * tests/test-canvas-_resize.lua: Likewise.
+    * tests/test-canvas-api.lua: Likewise.
+    * tests/test-canvas-attrAntiAlias.lua: Likewise.
+    * tests/test-canvas-attrClip.lua: Likewise.
+    * tests/test-canvas-attrColor.lua: Likewise.
+    * tests/test-canvas-attrCrop.lua: Likewise.
+    * tests/test-canvas-attrFilter.lua: Likewise.
+    * tests/test-canvas-attrFlip.lua: Likewise.
+    * tests/test-canvas-attrFont.lua: Likewise.
+    * tests/test-canvas-attrLineWidth.lua: Likewise.
+    * tests/test-canvas-attrOpacity.lua: Likewise.
+    * tests/test-canvas-attrRotation.lua: Likewise.
+    * tests/test-canvas-attrScale.lua: Likewise.
+    * tests/test-canvas-attrSize.lua: Likewise.
+    * tests/test-canvas-clear.lua: Likewise.
+    * tests/test-canvas-compose.lua: Likewise.
+    * tests/test-canvas-drawEllipse.lua: Likewise.
+    * tests/test-canvas-drawLine.lua: Likewise.
+    * tests/test-canvas-drawPolygon.lua: Likewise.
+    * tests/test-canvas-drawRect.lua: Likewise.
+    * tests/test-canvas-drawRoundRect.lua: Likewise.
+    * tests/test-canvas-drawText.lua: Likewise.
+    * tests/test-canvas-flush.lua: Likewise.
+    * tests/test-canvas-measureText.lua: Likewise.
+    * tests/test-canvas-new.lua: Likewise.
+    * tests/test-canvas-pixel.lua: Likewise.
+    * tests/test-event-engine-api.lua: Likewise.
+    * tests/test-event-engine-cycle.lua: Likewise.
+    * tests/test-event-engine-new.lua: Likewise.
+    * tests/test-event-engine-receive.lua: Likewise.
+    * tests/test-event-engine-reset.lua: Likewise.
+    * tests/test-event-engine-send.lua: Likewise.
+    * tests/test-event-geolocation-api.lua: Likewise.
+    * tests/test-event-geolocation-check.lua: Likewise.
+    * tests/test-event-geolocation-engine.lua: Likewise.
+    * tests/test-event-geolocation-filter.lua: Likewise.
+    * tests/test-event-http-api.lua: Likewise.
+    * tests/test-event-http-check.lua: Likewise.
+    * tests/test-event-http-engine.lua: Likewise.
+    * tests/test-event-http-filter.lua: Likewise.
+    * tests/test-event-http-soup-api.lua: Likewise.
+    * tests/test-event-http-soup-cancel.lua: Likewise.
+    * tests/test-event-http-soup-is-soup.lua: Likewise.
+    * tests/test-event-http-soup-new.lua: Likewise.
+    * tests/test-event-http-soup-request.lua: Likewise.
+    * tests/test-event-init-api.lua: Likewise.
+    * tests/test-event-init-cycle.lua: Likewise.
+    * tests/test-event-init-init.lua: Likewise.
+    * tests/test-event-init-load.lua: Likewise.
+    * tests/test-event-init-post.lua: Likewise.
+    * tests/test-event-init-register.lua: Likewise.
+    * tests/test-event-init-timer.lua: Likewise.
+    * tests/test-event-init-unload.lua: Likewise.
+    * tests/test-event-init-unregister.lua: Likewise.
+    * tests/test-event-init-uptime.lua: Likewise.
+    * tests/test-event-key-api.lua: Likewise.
+    * tests/test-event-key-check.lua: Likewise.
+    * tests/test-event-key-filter.lua: Likewise.
+    * tests/test-event-ncl-api.lua: Likewise.
+    * tests/test-event-ncl-check.lua: Likewise.
+    * tests/test-event-ncl-filter.lua: Likewise.
+    * tests/test-event-pointer-api.lua: Likewise.
+    * tests/test-event-pointer-check.lua: Likewise.
+    * tests/test-event-pointer-filter.lua: Likewise.
+    * tests/test-event-queue-api.lua: Likewise.
+    * tests/test-event-queue-dequeue.lua: Likewise.
+    * tests/test-event-queue-enqueue.lua: Likewise.
+    * tests/test-event-queue-new.lua: Likewise.
+    * tests/test-event-stopwatch-api.lua: Likewise.
+    * tests/test-event-stopwatch-get-time.lua: Likewise.
+    * tests/test-event-stopwatch-new.lua: Likewise.
+    * tests/test-event-tcp-api.lua: Likewise.
+    * tests/test-event-tcp-check.lua: Likewise.
+    * tests/test-event-tcp-engine.lua: Likewise.
+    * tests/test-event-tcp-filter.lua: Likewise.
+    * tests/test-event-tcp-socket-api.lua: Likewise.
+    * tests/test-event-tcp-socket-connect.lua: Likewise.
+    * tests/test-event-tcp-socket-echo.lua: Likewise.
+    * tests/test-event-tcp-socket-is-socket.lua: Likewise.
+    * tests/test-event-tcp-socket-new.lua: Likewise.
+    * tests/test-event-tcp-socket-receive.lua: Likewise.
+    * tests/test-event-tcp-socket-send.lua: Likewise.
+    * tests/test-event-tcp-socket-timeout.lua: Likewise.
+    * tests/test-event-user-api.lua: Likewise.
+    * tests/test-event-user-check.lua: Likewise.
+    * tests/test-event-user-engine.lua: Likewise.
+    * tests/test-event-user-filter.lua: Likewise.
+    * tests/test-event.lua: Likewise.
+    * tests/test-libnclua-close.c: Likewise.
+    * tests/test-libnclua-cycle.c: Likewise.
+    * tests/test-libnclua-debug-dump-surface.c: Likewise.
+    * tests/test-libnclua-debug-get-surface.c: Likewise.
+    * tests/test-libnclua-echo.sh: Likewise.
+    * tests/test-libnclua-open-x.c: Likewise.
+    * tests/test-libnclua-open.c: Likewise.
+    * tests/test-libnclua-paint.c: Likewise.
+    * tests/test-libnclua-resize.c: Likewise.
+    * tests/test-libncluaw-at-panic-x.c: Likewise.
+    * tests/test-libncluaw-at-panic.c: Likewise.
+    * tests/test-libncluaw-cycle.c: Likewise.
+    * tests/test-libncluaw-cycle.lua: Likewise.
+    * tests/test-libncluaw-debug-dump-surface.c: Likewise.
+    * tests/test-libncluaw-debug-get-surface.c: Likewise.
+    * tests/test-libncluaw-event-clone-x.c: Likewise.
+    * tests/test-libncluaw-event-clone.c: Likewise.
+    * tests/test-libncluaw-event-free-x.c: Likewise.
+    * tests/test-libncluaw-open.c: Likewise.
+    * tests/tests.h: Likewise.
+    * tests/tests.lua: Likewise.
+    * tests/tests0.c: Likewise.
+
+[33mcommit c097df32199e4ffe562a8e8cbcfa9d3c98e44675[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Thu Mar 24 17:16:36 2016 -0300
+
+    lib: Minor fix in luax-macros.h
+    
+    lib/luax-macros.h: Test HAVE_CONFIG_H before including config.h.
+
+[33mcommit 6b418f16247a3f8e255012b8f8a93c8e470142bb[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Thu Mar 24 17:15:09 2016 -0300
+
+    lib: Remove redundant stuff from macros.h
+    
+    * lib/macros.h: Do not define EXIT_SUCCESS nor EXIT_ERROR; these are
+    ANSI C.
+
+[33mcommit 40b966bfe0db6350aca0271c6eb69a6afd8d54c4[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Thu Dec 17 15:50:43 2015 -0200
+
+    maint: Add stubs for geolocation event class
+    
+    * nclua/event/geolocation.lua: New file; geolocation event class.
+    * configure.ac: Updated accordingly.
+    * nclua/event/Makefile.am: Likewise.
+    * tests/test-event-geolocation-filter.lua: New test.
+    * tests/test-event-geolocation-engine.lua: New test.
+    * tests/test-event-geolocation-check.lua: New test.
+    * tests/test-event-geolocation-api.lua: New test.
+    * tests/Makefile.am: Updated accordingly.
+    * tests/test-event-http-check.lua: Comment fixes.
+
+[33mcommit 955278bab6b82df07661f18ed11fb9081048fffd[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Wed Nov 18 19:45:39 2015 -0200
+
+    build: Fix bug in maint.mk
+    
+    * maint.mk: Likewise; introduced in last commit.
+
+[33mcommit 39819251b63895a04f0b268e8841658129e64544[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Wed Nov 18 19:20:11 2015 -0200
+
+    build: Fix but in indent target of maint.mk
+    
+    * maint.mk: Indent a file at a time.
+    * lib/gstnclua.c: Syntax cleanup.
+    * lib/luax-macros.h: Likewise.
+    * nclua/canvas.c: Likewise.
+    * src/nclua.c: Likewise.
+    * tests/tests0.c: Likewise.
+
+[33mcommit c856412264bc711046d19406dd7b79183ce5d386[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Sat Nov 14 17:29:48 2015 -0200
+
+    build-aux: Updates AU_PROG_CC_VISIBILITY
+    
+    * build-aux/util.m4 (AU_PROG_CC_VISIBILITY): Defines the conditional
+    HAVE_VISIBILITY.
+
+[33mcommit 2d13154136737e2de3d10d386c137c52b1dadcfd[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Sat Nov 14 17:29:16 2015 -0200
+
+    build-aux: Sync latest gitlog-to-changelog
+    
+    * build-aux/gitlog-to-changelog: Likewise.
+
+[33mcommit 3b308e4505263840bd7ecc0ba4f64e633864efe5[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Wed Nov 11 14:08:00 2015 -0200
+
+    build-aux: Expose VALGRIND_OPTIONS
+    
+    * build-aux/Makefile.am.valgrind: Likewise.
+
+[33mcommit 90e38b6cb1acc74681511dbbc9663b2360965957[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Tue Nov 10 22:13:53 2015 -0200
+
+    lib: Fix bogus visibility declaration
+    
+    lib/Makefile.am (libnclua_la_CFLAGS): Fix typo in reference to
+    CFLAG_VISIBILITY.
+
+[33mcommit e4e1566560f5f7868b1599aa797f18f5933802da[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Tue Nov 10 16:56:01 2015 -0200
+
+    build-aux: Fix bug in util.m4
+    
+    * util.m4 (AU_CHECK_LUA): We're using the wrong parameter when checking
+    the required version number.
+    * configure.ac (AU_CHECK_LUA): Fix typo in argument.
+
+[33mcommit b68c05a89586f46d1d38c6be73976e3ac3b9d04b[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Tue Nov 10 16:37:26 2015 -0200
+
+    build-aux: Add AU_VERSION_BREAK to util.m4
+    
+    * build-aux/util.m4: Likewise.
+    * configure.ac: Updated accordingly.
+
+[33mcommit 1272d550e3fb492df4b89156039e625a47f93eaf[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Fri Nov 6 13:05:14 2015 -0200
+
+    build-aux: Add -t to syntax-check-copyright
+    
+    * build-aux/syntax-check-copyright: Likewise.
+    * cfg.mk: Updated accordingly.
+
+[33mcommit 5aec222ee97f3a0f2bf97908ca1a1508bf899e69[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Tue Oct 27 23:02:47 2015 -0200
+
+    tests: Improve Lua 5.3 compatibility
+    
+    * tests/test-event-tcp-socket-receive.lua: Likewise.
+
+[33mcommit 761bf5219f83dd2e14331b4152ab8b340d5b620f[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Tue Oct 27 23:02:00 2015 -0200
+
+    tests: Fix bug in last commit
+    
+    * tests/tests.lua (rand_number): Don't wrap return value.
+
+[33mcommit 6085f2e84545e31a5236bef2e5e0c751706b1d9a[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Tue Oct 27 22:37:48 2015 -0200
+
+    tests: Improve Lua 5.3 compatibility
+    
+    * tests/tests.lua: Likewise.
+
+[33mcommit 68e39aa220904226462e7bf368938388f001d889[m
+Merge: 488db88 a4b3486
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Tue Jul 7 21:42:10 2015 -0300
+
+    Merge branch 'alanlivio-master'
+
+[33mcommit a4b34861034b35cc8e2e0181e3e9dd97ce4223b2[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Tue Jul 7 21:41:26 2015 -0300
+
+    examples/www: Syntax cleanup
+    
+    * examples/www/example-http.lua: Likewise.
+    * examples/www/example-http.ncl: Likewise.
+    * examples/www/example-tcp.lua: Likewise.
+    * examples/www/example-tcp.ncl: Likewise.
+
+[33mcommit bf046bdea6e2955ff50e11c82ed18f828d134cea[m
+Author: Alan Livio <alan@telemidia.puc-rio.br>
+Date:   Tue Jul 7 14:21:18 2015 -0300
+
+    examples: Create ncl files in www examples with cursor navigation.
+    
+      * examples/www/example-http.ncl: Likewise.
+      * examples/www/example-http.lua: Likewise.
+      * examples/www/example-tcp.ncl: Likewise.
+      * examples/www/example-tcp.lua: Likewise.
+
+[33mcommit 488db886fa94d6518d1eddf3952a711ce47131c6[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Sun Jun 7 01:07:14 2015 -0300
+
+    tests: Fix shebang line of server.pl
+    
+    * tests/server.pl: Likewise.
+
+[33mcommit b7f128241b7ae82701f70ff672b571c3f47598c0[m
+Merge: 2e103a1 b8c25a8
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Sun Jun 7 01:06:19 2015 -0300
+
+    Merge branch 'master' of github.com:gflima/nclua
+
+[33mcommit 2e103a1f372eae3dfb6e6c52a4237b5531df8500[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Sun Jun 7 01:03:37 2015 -0300
+
+    build-aux, tests: Update VERSION format in Perl scripts
+    
+    * build-aux/syntax-check: Likewise.
+    * tests/server.pl: Likewise.
+
+[33mcommit b8c25a89cadb8d6757319ed5c7e3600b47b9c971[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Mon Jun 1 20:17:26 2015 -0300
+
+    build-aux: Fix shebang line in Perl scripts
+    
+    * build-aux/syntax-check: Likewise.
+    * build-aux/syntax-check-copyright: Likewise.
+
+[33mcommit b0770708a8cffda974311d80225c3f6eee8a1596[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Fri May 22 22:25:36 2015 -0300
+
+    build-aux: Syntax cleanup
+    
+    * build-aux/util.m4: Likewise.
+
+[33mcommit f8fb41c382941edc1543fae9991f64b219f34a08[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Fri May 22 15:28:20 2015 -0300
+
+    doc: Update README.md
+    
+    * README.md: Likewise.
+
+[33mcommit d16e20e7e447021704fda6296a8eca3d1bdaf41e[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Fri May 22 15:15:21 2015 -0300
+
+    nclua/event: Add extra unlikely() hints
+    
+    * nclua/event/http_soup.c: Likewise.
+    * nclua/event/tcp_socket.c: Syntax cleanup.
+
+[33mcommit f6f4e693ecb9d3185c7f7c26123633781533ae90[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Fri May 22 15:01:20 2015 -0300
+
+    maint: Syntax cleanup
+    
+    * lib/gstnclua.c: Likewise.
+    * lib/luax-macros.h: Likewise.
+    * lib/macros.h: Likewise.
+    * lib/ncluaw.c: Likewise.
+    * nclua/canvas.c: Likewise.
+    * src/nclua.c: Likewise.
+    * tests/tests0.c: Likewise.
+
+[33mcommit 60a6ca1bde605ead6c2f58d9c433f0f4a3d3af98[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Fri May 22 12:25:20 2015 -0300
+
+    build-aux: Remove -no-undefined from LT_MODULE_LDFLAGS in util.m4
+    
+    * build-aux/util.m4: Likewise; was causing the linker to fail in OS X.
+
+[33mcommit ca9613916f139d92721fa7a3ca1dcfb1f103d641[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Wed May 20 15:47:31 2015 -0300
+
+    nclua, tests: Syntax cleanup
+    
+    * nclua/dir.c: Likewise.
+    * tests/test-canvas-api.lua: Likewise.
+
+[33mcommit db933764bf88f3b9c0f7ba9ff102c6d8e8e1ca17[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Wed May 20 15:43:01 2015 -0300
+
+    nclua: Add dir module
+    
+    * nclua/dir.c: New module; directory listing.
+    * nclua/Makefile.am: Updated accordingly.
+
+[33mcommit ea0ec3f30199ac82a419697dc85113e063bc4ccd[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Wed May 20 15:40:57 2015 -0300
+
+    build: Add support to Lua 5.3; don't link modules against liblua
+    
+    * configure.ac: Define LUA_COMPAT_APIINTCASTS if we're using Lua 5.3;
+    add -export-symbols to LUA_LIBS.
+    * examples/circle.lua: Workaround integer to float conversion problems.
+    * tests/tests.lua: Likewise.
+    * lib/Makefile.am: Don't link modules against liblua.
+    * nclua/event/Makefile.am: Likewise.
+    * src/Makefile.am: Updated accordingly.
+    * tests/Makefile.am: Likewise.
+
+[33mcommit 02d989eaee10d650cd1a299d889730b3d382f569[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Wed May 20 14:48:11 2015 -0300
+
+    build-aux: Fix typo
+    
+    * build-aux/util.m4: Likewise.
+
+[33mcommit ae74b94eaffc82d3f003816ef71ef8a8f71beab3[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Wed May 20 12:32:11 2015 -0300
+
+    nclua/event: Fix some comments
+    
+    * nclua/event/http.lua: Likewise.
+    * nclua/event/http_soup.c: Likewise.
+
+[33mcommit 3c3afc5d45c4aa7bfa5cecb6f0abb93540e8c1f6[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Mon May 18 14:33:22 2015 -0300
+
+    doc: Update TODO
+    
+    * TODO: Likewise.
+
+[33mcommit faa7ced4790ff7fe522f65b0c1722b92225838ee[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Mon May 18 14:06:32 2015 -0300
+
+    build-aux: Force link creation in Makefile.am.link
+    
+    * build-aux/Makefile.am.link (link-so): Remove previous link before
+    creating a new one.
+
+[33mcommit 108b92b16193e2e16812cb8ebc24b6d5120b1286[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Mon May 18 14:02:21 2015 -0300
+
+    nclua/event: Fix Lua stack corruption request_finished
+    
+    * nclua/event/http_soup.c (request_finished): We can't assume that the
+    stack top is kept intact after luaL_pushresultsize() is called.  Thus we
+    have reordered the pushes to avoid corrupting the stack.  (By the way,
+    this was segfaulting on FreeBSD but not on Linux.)
+
+[33mcommit f2530fbc506de9337f4a6bc8b5b4a829bc376f9b[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Mon May 18 13:59:23 2015 -0300
+
+    lib: Fix warnings on clang
+    
+    * lib/gstnclua.c (gst_nclua_navigation_convert_type): Likewise.
+    * lib/ncluaw.c (ncluaw_event_equals): Likewise.
+
+[33mcommit c01ac4129c7cc301c60ee103414b4117c5b48e11[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Thu May 14 20:50:54 2015 -0300
+
+    src: Fix memory leaks in nclua.c
+    
+    * src/nclua.c (main): Likewise.
+
+[33mcommit 95f654f7a5d9bc77aa7088c8a33562dbd6e8a623[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Thu May 14 20:22:31 2015 -0300
+
+    lib: Update the definition of ASSERT_NOT_REACHED in macros.h
+    
+    * lib/macros.h (ASSERT_NOT_REACHED): Likewise.
+
+[33mcommit 374219ea7e258088a2de9003610a841dd45264d7[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Tue May 12 16:28:55 2015 -0300
+
+    tests: Fix reference to tests.FAIL
+    
+    * tests/test-event-http-check.lua: Likewise.
+    * tests/test-event-http-engine.lua: Likewise.
+    * tests/test-event-http-filter.lua: Likewise.
+    * tests/test-event-key-check.lua: Likewise.
+    * tests/test-event-key-filter.lua: Likewise.
+    * tests/test-event-ncl-check.lua: Likewise.
+    * tests/test-event-ncl-filter.lua: Likeiwse.
+    * tests/test-event-pointer-check.lua: Likewise.
+    * tests/test-event-pointer-filter.lua: Likewise.
+    * tests/test-event-tcp-check.lua: Likewise.
+    * tests/test-event-tcp-engine.lua: Likewise.
+    * tests/test-event-tcp-filter.lua: Likewise.
+    * tests/test-event-tcp-socket-echo.lua: Likewise.
+    * tests/test-event-tcp-socket-receive.lua: Likewise.
+    * tests/test-event-tcp-socket-send.lua: Likewise.
+    * tests/test-event-tcp-socket-timeout.lua: Likewise.
+    * tests/test-event-user-check.lua: Likewise.
+    * tests/test-event-user-engine.lua: Likewise.
+    * tests/test-event-user-filter.lua: Likewise.
+    * tests/tests.lua (test.FAIL): Add default error message.
+
+[33mcommit df12f289bba475b813f45e72160b6f458a6b2fe1[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Tue May 12 16:26:58 2015 -0300
+
+    nclua/event: Don't silently discard canceled in http_soup.c
+    
+    * nclua/event/http_soup.c (request_finished): Likewise; post an
+    "Operation was cancelled" error.
+    * tests/test-event-http-soup-cancel.lua: Updated accordingly.
+
+[33mcommit 55a0575f486044e2fc799a7b196e1204a237340c[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Mon May 11 23:59:37 2015 -0300
+
+    nclua/event: Fix comments
+    
+    * nclua/event/http_soup.c: Likewise.
+
+[33mcommit a5a3eb1e78587646cfe46aa147f8a34963f6020b[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Mon May 11 23:53:13 2015 -0300
+
+    doc: Update NEWS
+    
+    * NEWS: Likewise.
+
+[33mcommit 585037f535288cfc71c1dd9be13ad532794d59e7[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Mon May 11 23:43:12 2015 -0300
+
+    nclua/event: Syntax cleanup
+    
+    * nclua/event/http_soup.c: Likewise.
+    * cfg.mk: Update INDENT_TYPES.
+
+[33mcommit ef80ed6df8db479f4b360875165902e3ef9f24e5[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Mon May 11 23:41:50 2015 -0300
+
+    examples, tests: Remove unused declarations
+    
+    * examples/www/http.lua: Likewise.
+    * tests/test-event-http-soup-cancel.lua: Likewise.
+
+[33mcommit fb643ceed1163c34b2a166ea580bb10d2e04b5ad[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Mon May 11 23:33:23 2015 -0300
+
+    nclua/event: Refactor the http event class
+    
+    The http event class syntax now supports partial (incomplete) responses
+    and request cancellation.
+    
+    * nclua/event/http_soup.c: Updated to use the SoupRequest API.
+    (l_soup_request): New semantics; now the callback function may be called
+    multiple times.
+    (l_soup_cancel): New function; cancel a pending request.
+    * tests/test-event-http-soup-api.lua: Updated accordingly.
+    * tests/test-event-http-soup-new.lua: Likewise.
+    * tests/test-event-http-soup-request.lua: Likewise.
+    * tests/test-event-http-soup-cancel.lua: New test; check request
+    * tests/Makefile.am: Add the above test.
+    cancellation.
+    * nclua/event/http.lua: New event syntax; updated to use the new
+    http_soup API.
+    * tests/test-event-http-check.lua: Updated accordignly.
+    * tests/test-event-http-engine.lua: Likewise.
+    * tests/test-event-http-filter.lua: Likewise.
+    * examples/www/http.lua: Likewise.
+
+[33mcommit 10e3f6ae6fab5be0aea29fb0b7349660e8e54f05[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Mon May 11 23:32:31 2015 -0300
+
+    nclua/event: Syntax cleanup
+    
+    * nclua/event/luax-callback.h: Likewise.
+
+[33mcommit 05d0a8a85243092d1e7165ae436e0d20a8a22aa0[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Mon May 11 23:29:35 2015 -0300
+
+    nclua/event: Alter the semantics of unref function in luax-callback.h
+    
+    * nclua/event/luax-callback.h (luax_callback_data_unref): Don't push the
+    associated object onto stack; just unref the given callback data.
+    (luax_callback_data_push): New function; push the associated object onto
+    stack.
+    (luax_callback_data_push_and_unref): Push the associated object onto
+    stack and unref the given callback data.
+    * nclua/event/tcp_socket.c: Updated accordingly.
+
+[33mcommit 0ac676da680395e1a6ad7de13db3e4e2bf6988b1[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Mon May 11 23:22:16 2015 -0300
+
+    nclua/event: Add check.boolean to check.lua
+    
+    * nclua/event/check.lua (check.boolean): New function; checks for
+    boolean values.
+
+[33mcommit 9473fc9613b6c3c3b9e9c615ebea99b5660eefaf[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Wed Apr 29 18:52:44 2015 -0300
+
+    build-aux: Add Makefile.am.valgrind
+    
+    * build-aux/Makefile.am.valgrind: New file; generate Valgrind
+    suppresions.
+    * tests/Makefile.am: Updated accordingly.
+    * cfg.mk: Likewise.
+    * .gitignore: Likewise.
+
+[33mcommit cb3caca03382af8dab46a80010a5f37d4fa3ddd3[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Wed Apr 29 18:31:45 2015 -0300
+
+    build-aux: Add Makefile.am.env
+    
+    * build-aux/Makefile.am.env: New file; generate scripts to setup the
+    tests environment.
+    * tests/Makefile.am: Updated accordingly.
+    * .gitignore: Likewise.
+
+[33mcommit e8a9e0bae9840ba8a969c77bb2f8c51904ac503d[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Wed Apr 29 17:26:47 2015 -0300
+
+    build: Fix mix escape in maint.mk
+    
+    * maint.mk (sc-useless-if-before-free): Likewise.
+
+[33mcommit 1ee9a042bdef3b291d3fce6fd53b921f60015ca9[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Wed Apr 29 17:19:14 2015 -0300
+
+    build: Don't delete self on clean-remote in maint.mk
+    
+    * maint.mk: Likewise.
+
+[33mcommit e8162bb25d096cee525bcf67d09e170e186cc990[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Wed Apr 29 17:15:10 2015 -0300
+
+    build: Fix bug in fetch-remote of maint.mk
+    
+    * maint.mk (fetch-remote): Don't delete maint.mk if it is in
+    REMOTE_SOURCES.
+
+[33mcommit 2f28fc425b3df5c3acf2bf6bbada1e2bc6abb9d9[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Wed Apr 29 16:23:39 2015 -0300
+
+    build: Make maint.mk project agnostic
+    
+    * maint.mk: Likewise; major refactoring.
+    * cfg.mk: New file; local maint.mk configuration.
+    * .gitignore: Updated accordingly.
+
+[33mcommit 6a9ec59d2d565656aa5834918a119e4168324753[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Wed Apr 29 15:21:48 2015 -0300
+
+    build-aux: Syntax cleanup
+    
+    * build-aux/Makefile.am.coverage: Likewise.
+
+[33mcommit bc3a1ab87d24c8b258e03bdeb1a843d88eb2ae71[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Wed Apr 29 15:19:42 2015 -0300
+
+    build-aux: Add AU_GITLOG_TO_CHANGELOG macro to util.m4
+    
+    * build-aux/util.m4: New macro; generate ChangeLog from git log.
+    * configure.ac: Updated to use the above macro.
+    * build-aux/Makefile.am.gitlog: New file; make ChangeLog on dist-hook.
+    * Makefile.am: Updated to use the target exported by the above file.
+    * build-aux/gitlog-to-changelog: Mode updated.
+
+[33mcommit 94429c6a17d34d1a8cf38ead781021ef1445e512[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Wed Apr 29 14:57:18 2015 -0300
+
+    build-aux: Merge latest gitlog-to-changelog
+    
+    * build-aux/gitlog-to-changelog: Likewise.
+
+[33mcommit ad6dd67b5765b5300ee01556703725166fee183c[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Wed Apr 29 14:12:20 2015 -0300
+
+    build-aux: Merge latest manywarnings.m4
+    
+    * build-aux/manywarnings.m4: Likewise.
+
+[33mcommit df6051abdb90e00db25e96141dd746f165e1cdd9[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Wed Apr 29 13:42:28 2015 -0300
+
+    doc: Syntax cleanup
+    
+    * NEWS: Likewise.
+
+[33mcommit 26b652ea62c39c0ee4d6a3bee45f9b28596baa8a[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Wed Apr 29 13:41:54 2015 -0300
+
+    build-aux: Add missing AC_REQUIRE_AUX_FILE to AU_GIT_VERSION_GEN
+    
+    * build-aux/util.m4: Likewise; require git-version-gen script.
+
+[33mcommit 8a1d30072c734afe62594cf36ee0576d9579427a[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Mon Apr 27 17:29:08 2015 -0300
+
+    lib: Syntax cleanup
+    
+    * lib/gstnclua.c: Likewise.
+
+[33mcommit 7c41448f542a15f595fd6fba298b40db9517fc69[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Mon Apr 27 17:28:14 2015 -0300
+
+    lib: Syntax cleanup
+    
+    * lib/gstnclua.c: Likewise.
+
+[33mcommit a4598083ba5e7b1771fc2926eacaa09ab9a7ffe7[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Mon Apr 27 17:26:57 2015 -0300
+
+    build-aux: Add makefile and shell script checks to syntax-check
+    
+    * build-aux/syntax-check: Likewise.
+    * maint.mk: Updated to use the new checks.
+    * Makefile.am: Sytnax cleanup due to the above checks.
+    * build-aux/Makefile.am.common: Likewise.
+    * build-aux/Makefile.am.coverage: Likewise.
+    * lib/Makefile.am: Likewise.
+    * nclua/Makefile.am: Likewise.
+    * nclua/event/Makefile.am: Likewise.
+    * src/Makefile.am: Likewise.
+    * tests/Makefile.am: Likewise.
+
+[33mcommit 0cb0596815b802ae5758fe8590f35c51408d6746[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Mon Apr 27 16:31:52 2015 -0300
+
+    build-aux: Add LT_MODULE_LDFLAGS to util.m4
+    
+    * build-aux/util.m4 (LT_MODULE_LDFLAGS): New macro; LDFLAGS for library
+    modules.
+    * configure.ac: Updated to expand LT_MODULE_LDFLAGS.
+    * lib/Makefile.am: Updated accordingly; syntax cleanup.
+    * nclua/Makefile.am: Likewise.
+    * nclua/event/Makefile.am: Likewise.
+    * tests/Makefile.am: Likewise.
+
+[33mcommit a6226de647254da0ab20943ae858a59bccaf242d[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Fri Apr 24 18:56:52 2015 -0300
+
+    build-aux: Fix bogus variables in AU_CHECK_LUA
+    
+    * build-aux/util.m4: Likewise.
+
+[33mcommit ec95ff5f42fbabf48c5b55ed20cf933dec3c4934[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Fri Apr 24 17:13:11 2015 -0300
+
+    lib: Add ATTR_PURE to gst_nclua_navigation_convert_type
+    
+    * lib/gstnclua.c: Likewise.
+
+[33mcommit 60dc450fad0afb125539e95cfeec184aa81e92ac[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Fri Apr 24 17:09:28 2015 -0300
+
+    build: Move common checks from configure to util.m4
+    
+    * build-aux/util.m4: New file; utility macros for Autoconf.
+    * configure.ac: Updated to use util.m4 macros.
+    * lib/Makefile.am: Updated accordingly.
+    * NEWS: Likewise.
+    * TODO: Likewise.
+    * .gitignore: Likewise.
+    * lib/ncluaw.c: Likewise.
+    * maint.mk: Likewise.
+    * nclua/Makefile.am: Likewise.
+    * nclua/canvas.c: Likewise.
+    * nclua/event/Makefile.am: Likewise.
+    * src/Makefile.am: Likewise.
+    * tests/Makefile.am: Likewise.
+    * tests/test-libnclua-open.c: Likewise.
+    * build-aux/Makefile.am.common: Syntax cleanup.
+    * build-aux/Makefile.am.coverage: Likewise.
+    * build-aux/Makefile.am.link: Likewise.
+    * lib/nclua.pc.in: Add 'generated by configure' notice.
+    * lib/ncluaconf.h.in: Likewise.
+
+[33mcommit 652266589e512c4b0f8ac67bcde7932e465983eb[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Thu Apr 16 18:15:55 2015 -0300
+
+    lib: Add navigation property to gstnclua
+    
+    * lib/gstnclua.c: Likewise.
+
+[33mcommit 258ad9b1073d9b48afaf5104ffefcbfc7092289b[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Thu Apr 16 17:30:34 2015 -0300
+
+    src: Dump sync and async messages in nclua-gst
+    
+    * src/nclua-gst.c: Likewise.
+
+[33mcommit ffc4936c8a3e0a8faf961cfab1f8f2e7ca61176b[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Thu Apr 16 17:21:02 2015 -0300
+
+    lib: Add qos property to gstnclua; tune fps adjustment
+    
+    * lib/gstnclua.c: Likewise.
+
+[33mcommit aae7886c1d6fc5cfdead7b7ab5bc697d3ef286cd[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Wed Apr 15 18:23:35 2015 -0300
+
+    examples: Create initial circles at frame 1 (not 0)
+    
+    * examples/circle.lua: Likewise.
+
+[33mcommit 8fe240db3d1ab0bada098c57ef2fb92d3ada6cd5[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Wed Apr 15 18:22:33 2015 -0300
+
+    lib: Refactor support to dynamic FPS in gstnclua
+    
+    * lib/gstnclua.c: Likewise.
+
+[33mcommit d725dc95aa87905974b42dee7c749c4eb6e7b706[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Tue Apr 7 08:44:36 2015 -0300
+
+    lib: Fix comments
+    
+    * lib/gstnclua.c: Likewise.
+
+[33mcommit 496526d2322687858806dfe55b828e2cb0e5fe67[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Tue Apr 7 08:35:41 2015 -0300
+
+    tests: Generate env.csh from env.sh
+    
+    * tests/Makefile.am: Likewise.
+    * .gitignore: Updated accordingly.
+
+[33mcommit 7ea9d13fc29c60b3a90b417befdf2d334a4c4bbe[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Tue Apr 7 08:12:34 2015 -0300
+
+    tests/ref-cairo-1-12: New subdir; reference pictures for Cairo 1.12
+    
+    * tests/ref-cairo-1-12/test-canvas-compose-6-ref.png: New reference.
+    * tests/ref-cairo-1-12/test-canvas-compose-7-ref.png: New reference.
+
+[33mcommit 46a00bed2573f7d03583ce132e6e36b73ff0dabd[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Mon Apr 6 18:19:08 2015 -0300
+
+    build: Update list of indented types
+    
+    * maint.mk: Likewise; add gstx-macros.h to SC_COPYRIGHT_EXCLUDE_C.
+
+[33mcommit e9ac1e06906b69cb02bc625bb857a00076c73425[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Mon Apr 6 18:18:44 2015 -0300
+
+    lib, tests: Syntax cleanup
+    
+    * lib/gstnclua.c: Likewise.
+    * lib/gstx-macros.h: Likewise.
+    * tests/tests.h: Likewise.
+
+[33mcommit 17c0093239e2c70341641d1ab358bf64cd029f0c[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Mon Apr 6 18:09:51 2015 -0300
+
+    doc: Update NEWS
+    
+    * NEWS: Likewise.
+
+[33mcommit a702b3765e5cb720fd9a275205ddb51af6e99fff[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Mon Apr 6 18:07:50 2015 -0300
+
+    src: Add standalone interpreter based on GStreamer
+    
+    * src/nclua-gst.c: New file; standalone interpreter using the GStreamer
+    plugin.
+    * src/Makefile.am: Updated accordingly.
+    * .gitignore: Likewise.
+
+[33mcommit f0a39d053b506b401cbc7c32e20aa63f95223acd[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Mon Apr 6 18:06:02 2015 -0300
+
+    lib: Move GStreamer PRAGMA_DIAG stuff to gstx-macros.h
+    
+    * lib/gstx-macros.h: New header; auxiliary GStreamer macros.
+    * lib/gstnclua.c: Updated accordingly.
+    * lib/Makefile.am: Likewise.
+
+[33mcommit a0fa8ab90a6e135b654e17fbd01d8d29e13b8931[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Mon Apr 6 17:27:49 2015 -0300
+
+    lib: Syntax cleanup
+    
+    * lib/gstnclua.c (gst_nclua_enqueue_event): Renamed from
+    gst_nclua_push_event.
+    (gst_nclua_dequeue_event): Renamed from gst_nclua_pop_event.
+
+[33mcommit 562de7e9d18b5ca1a3a1e535f972a463472f3dc9[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Mon Apr 6 15:33:28 2015 -0300
+
+    lib: Add fps property to gstnclua
+    
+    * lib/gstnclua.c: Likewise; refactor property access functions.
+
+[33mcommit f875955c6e9fdbc93ea0793e6fcac7f6e6273be4[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Thu Apr 2 18:35:50 2015 -0300
+
+    lib: Add reset parameter to gst_nclua_get_format
+    
+    * lib/gstnclua.c: Likewise.
+
+[33mcommit 8b990dfcf393246293fef895670bf48a1b9a4496[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Thu Apr 2 18:26:06 2015 -0300
+
+    lib: Add property access functions to gstnclua
+    
+    * lib/gstnclua.c: Likewise.
+
+[33mcommit d377899fe203946491ba466485a7c149e69959a5[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Thu Apr 2 17:43:22 2015 -0300
+
+    lib: Refactor gstnclua
+    
+    * lib/gstnclua.c: Major refactoring.
+
+[33mcommit 2012adb9fe7ff944d0f39a1b327baa56a9d16369[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Thu Apr 2 11:14:02 2015 -0300
+
+    examples: Fix access to tick event in fps.lua
+    
+    * examples/fps.lua: Likewise; rename e.dt to e.diff, the new name.
+
+[33mcommit 04c95470f5ecf45bcba261bb56bdaa94bf6d3611[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Thu Apr 2 11:13:11 2015 -0300
+
+    tests: Add GStreamer variables to AM_TESTS_ENVIRONMENT
+    
+    * tests/Makefile.am (GST_DEBUG): New variable; enable debug messages.
+    (GST_PLUGIN_PATH): New variable; setup plugin path.
+
+[33mcommit 73ffdfc67da66ca01f31616aa50a4f07a2a47d79[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Thu Apr 2 11:12:36 2015 -0300
+
+    tests: Update tests.h due to last changes in macros.h
+    
+    * tests/tests.h: Likewise.
+
+[33mcommit 179ad80a2e76f9e4ed1368d9dbf6705b7a8388e3[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Thu Apr 2 11:11:48 2015 -0300
+
+    build: Incorporate misc stuff into nclua
+    
+    * maint.mk: Likewise.
+
+[33mcommit 160ee5cddc5cb206aff53262ae341b1a76c577c6[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Thu Apr 2 11:07:37 2015 -0300
+
+    lib: Abbreviate some macros in macros.h
+    
+    * lib/macros.h: Likewise.
+
+[33mcommit 00414f758e01bd5e1364d958e1a6a671d1d328e7[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Tue Mar 31 16:01:58 2015 -0300
+
+    lib: Suppress -Wsign-conversion when including GStreamer headers
+    
+    * lib/gstnclua.c: Likewise.
+
+[33mcommit e8ec6037c278b07ea30da7fd17c95d7386168547[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Tue Mar 31 16:01:30 2015 -0300
+
+    build: Add gcc-extra-warnings target to maint.mk
+    
+    * maint.mk (gcc-extra-warnings): New target; list extra GCC warnings.
+
+[33mcommit 03feb0466d1e72ed3c83904f1efff9c00dc078a1[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Tue Mar 31 16:00:49 2015 -0300
+
+    tests: Disable -Woverlength-strings when compiling tests
+    
+    * tests/tests.h: Likewise.
+    * tests/test-libncluaw-debug-dump-surface.c: Syntax cleanup.
+
+[33mcommit c3284f26a64b7723f70cd6214e585f6f26172919[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Tue Mar 31 15:20:20 2015 -0300
+
+    lib: Ignore -Wcast-align when including GStreamer headers
+    
+    * lib/gstnclua.c: Likewise.
+
+[33mcommit 2c7c008dc5e625b049941a691c796cbb5b7bd4e7[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Tue Mar 31 15:12:37 2015 -0300
+
+    build: Cleanup automake initialization
+    
+    * configure.ac: Likewise.
+    * lib/gstnclua.c: Remove useless define statement.
+
+[33mcommit 8dcf0f60917084d034acb53d25280788bc42fbc4[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Tue Mar 31 15:11:40 2015 -0300
+
+    nclua, tests: Fix some -Wc++-compat warnings
+    
+    * nclua/event/luax-callback.h: Likewise.
+    * tests/test-libncluaw-at-panic-x.c: Likewise.
+    * tests/test-libncluaw-at-panic.c: Likewise.
+
+[33mcommit 3bb45214f7281a82120c56bc9def1270ee2ed741[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Tue Mar 31 14:57:45 2015 -0300
+
+    build: Add -Wc++-compat to the list of enabled warnings
+    
+    * configure.ac: Likewise.
+    * src/nclua.c: Updated accordingly.
+
+[33mcommit f266180f11a2ed6d705d9e0e59525497c8354e44[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Tue Mar 31 14:57:14 2015 -0300
+
+    lib: Cleanup pragmas in gstnclua.c
+    
+    * lib/gstnclua.c: Use the new wrappers defined in macros.h.
+
+[33mcommit f81501f2f8777ab7956583ce7bf66d4ca0046c52[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Tue Mar 31 14:56:43 2015 -0300
+
+    lib: Merge latest macros.h
+    
+    * lib/macros.h: Likewise.
+
+[33mcommit c95655a4d75d4815b957606f5363d67083de13bd[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Mon Mar 30 18:55:02 2015 -0300
+
+    lib: Add NCLua GStreamer plugin
+    
+    * lib/gstnclua.c: New file; GStreamer plugin for NCLua.
+    * lib/Makefile.am: Updated accordingly.
+    * configure.ac: Likewise; search for GStreamer-1.0.
+    * NEWS: Likewise.
+    * maint.mk: Update perl_after_indent_type_list.
+
+[33mcommit 9f99cef578fbfc45d4bc31153457138ca27a55cb[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Mon Mar 30 17:02:45 2015 -0300
+
+    src: Send tick event on every cycle
+    
+    * src/nclua.c: Likewise.
+    * examples/circle.lua: Updated to use the tick event.
+    * examples/fps.lua: Likewise.
+
+[33mcommit f72efb6c0eb84209a7c1fd2e378f171a22c5ad13[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Mon Mar 30 16:40:13 2015 -0300
+
+    lib: Merge lastest luax-macros.h
+    
+    * lib/luax-macros.h: Likewise.
+
+[33mcommit 1b6274ecf643bdd492211c92ff837267a279176a[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Mon Mar 30 10:17:12 2015 -0300
+
+    examples: Fix bug in circle.lua introduced by previous commit
+    
+    * examples/circle.lua: Swap the keys to increase and decrease the number
+    of circles.
+
+[33mcommit 8fd989b5622bfe3f714281df1304ab354ce81fc2[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Mon Mar 30 10:16:41 2015 -0300
+
+    maint: Merge latest version of remote files
+    
+    * build-aux/gitlog-to-changelog: Likewise.
+    * lib/luax-macros.h: Likewise.
+    * lib/macros.h: Likewise.
+
+[33mcommit d741478eeb1e107ab0d1ef77fa4b198d46dcba21[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Fri Mar 27 16:58:23 2015 -0300
+
+    src: Fix comment
+    
+    * src/nclua.c: Likewise.
+
+[33mcommit 86ca7f1339a076fe62684b48107a56987b8c6f95[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Fri Mar 27 16:06:39 2015 -0300
+
+    examples: Update circle.lua to accept extra keys
+    
+    * examples/circle.lua: Likewise.
+
+[33mcommit d9b8141fc7edcfd041bf3ba08e7b35964ed15eec[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Thu Mar 26 14:28:31 2015 -0300
+
+    doc: Update NEWS
+    
+    * NEWS: Likewise.
+
+[33mcommit 75806c491e1db9ae40ab386acf5b09b025944e22[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Thu Mar 26 14:24:51 2015 -0300
+
+    src: Syntax cleanup
+    
+    * src/nclua.c: Likewise.
+
+[33mcommit 4fbadb3d482e959f8208e7bcd48d6d10e95ebe00[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Thu Mar 26 14:23:24 2015 -0300
+
+    examples: Add fps.lua
+    
+    * examples/fps.lua: New example; print FPS (as seen by script).
+
+[33mcommit 58c293d6a348733c4a3f7463ec17e02cb45dedef[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Thu Mar 26 14:21:51 2015 -0300
+
+    src: Fix window resize; add --fullscreen
+    
+    * src/nclua.c (resize_callback): Return FALSE so that draw_callback() is
+    called with the correct geometry.
+    (keyboard_callback): Make F11 toggle full-screen mode.
+    (main): Add option --fullscreen, to toggle full-screen mode on.
+
+[33mcommit 168cff4950a78a48bbefdf0f23f3f3dff9f23d16[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Thu Mar 26 13:30:58 2015 -0300
+
+    lib: Fix bug in last commit
+    
+    * lib/nclua.c (nclua_close): Likewise.
+
+[33mcommit ec057be31dcc29f48ce745a3b3ccdcc587712ca2[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Thu Mar 26 13:28:54 2015 -0300
+
+    lib: Do nothing if parameter is NULL in nclua_close and ncluaw_close
+    
+    * lib/nclua.c (nclua_close): Likewise.
+    * lib/ncluaw.c (nclua_close): Likewise.
+
+[33mcommit 3050640ae6d565bc3df568b2c75d52929fe22614[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Thu Mar 26 13:20:24 2015 -0300
+
+    nclua, src: Add LIBM to LDFLAGS
+    
+    * nclua/Makefile.am (AM_LDFLAGS): Likewise.
+    * src/Makefile.am (AM_LDFLAGS): Likewise.
+
+[33mcommit 109bc6eb3899ef154fe1ae588df1b34db39986a5[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Thu Mar 26 13:18:38 2015 -0300
+
+    nclua/event: Fix bug event.register
+    
+    * nclua/event/init.lua (event.register): Clone filter table parameter.
+
+[33mcommit f69a66e4b90320db8c73acb69f9d0636a1bd72a3[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Thu Mar 26 13:17:49 2015 -0300
+
+    maint: Update indent target
+    
+    * maint.mk (perl_after_indent_type_list): Add GdkEventConfigure.
+
+[33mcommit b7b08e906074b3b9d4c69eb9e01dd63de0ff6aee[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Wed Mar 25 19:29:01 2015 -0300
+
+    examples: Cleanup resize handler
+    
+    * examples/circle.lua: Likewise.
+
+[33mcommit 1254f0c912b9706f03212d58fa45211a52dc5db9[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Tue Mar 24 15:29:43 2015 -0300
+
+    doc: Update NEWS
+    
+    * NEWS: Likewise.
+
+[33mcommit 31c7fb5d076c93aa2b2f7832473f2c492652949e[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Tue Mar 24 15:06:53 2015 -0300
+
+    doc: Update TODO
+    
+    * TODO: Likewise.
+
+[33mcommit 8b90cd38dfb25278d6095f958e7b23773f34d614[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Tue Mar 24 15:06:04 2015 -0300
+
+    examples: Update examples to deal with window size changes
+    
+    * examples/circle.lua: Likewise.
+    * examples/follow.lua: Likewise.
+    * examples/input.lua: Likewise.
+    * examples/www/example-http.lua: Likewise.
+    * examples/www/example-tcp.lua: Likewise.
+
+[33mcommit 0cd029c4df23bc8826b54cfaf6d8b15fd8feccc3[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Tue Mar 24 15:03:49 2015 -0300
+
+    src: Add --scale option to nclua; resize canvas when window is resized
+    
+    * src/nclua.c: Likewise.
+
+[33mcommit ead92654ae7624b225af3c61fff5d5bcc2a048e5[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Tue Mar 24 15:00:55 2015 -0300
+
+    nclua: Don't scale canvas on _resize()
+    
+    * src/nclua.c (_l_canvas_resize): Likewise.  Also, we now flush the
+    canvas before copying and after updating its contents.
+    * tests/ref-cairo-any/test-canvas-_resize-2-ref.png: Updated
+    accordingly.
+    * tests/ref-cairo-any/test-canvas-_resize-3-ref.png: Likewise.
+
+[33mcommit 0adf0b7a6778538ce1e2e6a20fc94d15852f0057[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Tue Mar 24 11:26:35 2015 -0300
+
+    nclua: Make canvas._resize update clip if it's set to the whole canvas
+    
+    * nclua/canvas.c (_l_canvas_resize): Likewise.
+    * tests/test-canvas-_resize.lua: Updated accordingly.
+
+[33mcommit c8e302c4aac81f0bd597a396fdf791199b2d1de5[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Mon Mar 23 19:11:00 2015 -0300
+
+    doc: Fix typo in README.md
+    
+    * README.md: Likewise.
+
+[33mcommit 1ce10b67e9f6cde6507bc4ab0b8ffe874aff9c6f[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Mon Mar 23 19:10:27 2015 -0300
+
+    doc: Update README.md
+    
+    * README.md: Likewise.
+
+[33mcommit b6c0ee6482805350f38a63ed53a9ca568e500070[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Mon Mar 23 19:07:27 2015 -0300
+
+    build: Update libnclua interface version to 101
+    
+    * configure.ac: Likewise; due to the new interface, nclua_resize.
+
+[33mcommit 828ead1ff0fa1728cebad9c2ff2b4808e5c2f9d0[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Mon Mar 23 18:55:52 2015 -0300
+
+    lib: Add nclua_resize and ncluaw_resize to libnclua
+    
+    * lib/nclua.h (nclua_resize): New interface; resize the main canvas.
+    * lib/nclua.c (nclua_resize): New function.
+    * lib/ncluaw.h (ncluaw_resize): New function; resize the main canvas.
+    * lib/ncluaw.c (ncluaw_resize): New function.
+    * tests/test-libnclua-resize.c: New test script; checks nclua_resize.
+    * tests/Makefile.am: Updated accordingly.
+    * NEWS: Likewise.
+    * .gitignore: Likewise.
+
+[33mcommit 320552bbc83732ce1eb21c293e4d2badbe88fea8[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Mon Mar 23 18:19:31 2015 -0300
+
+    nclua: Syntax cleanup
+    
+    * nclua/canvas.c: Likewise.
+
+[33mcommit 99f584617ece444d90ed2e910b9419ba7014b66b[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Mon Mar 23 18:03:35 2015 -0300
+
+    nclua: Add canvas._resize
+    
+    * nclua/canvas.c (_l_canvas_resize): New internal function; resizes the
+    surface (and back surface) of a given canvas.
+    * tests/test-canvas-_resize.lua: New test; checks the above function.
+    * tests/ref-cairo-any/test-canvas-_resize-1-ref.png: New ref image.
+    * tests/ref-cairo-any/test-canvas-_resize-2-ref.png: New ref image.
+    * tests/ref-cairo-any/test-canvas-_resize-3-ref.png: New ref image.
+    * tests/test-canvas-api.lua: Updated accordingly.
+    * tests/Makefile.am: Likewise.
+    * NEWS: Likewise.
+
+[33mcommit 7fc178e277d2c32a8b50dcb1510fdb5fa14e7b18[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Mon Mar 23 17:56:12 2015 -0300
+
+    examples: Add some extra assertions to circle.lua
+    
+    * examples/circle.lua: Likewise.
+
+[33mcommit 529c9496ed75247c062748b323328e62f47e56c3[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Thu Mar 19 13:29:11 2015 -0300
+
+    src: Fix error about non-constant initializer in clang
+    
+    * src/nclua.c (options): Likewise.
+
+[33mcommit e9ece5cc2c3b136bcad84aadd9d77fd48811795d[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Wed Mar 18 14:45:53 2015 -0300
+
+    nclua: Fix comment
+    
+    * nclua/canvas.c: Likewise.
+
+[33mcommit d8fd5b7504e36788d3ce9742a1bc5125934313d7[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Wed Mar 18 14:42:53 2015 -0300
+
+    nclua: Remove misleading compiler hint
+    
+    * nclua/canvas.c (l_canvas_attrFilter): Likewise.
+
+[33mcommit 27faf2ff8b60f30671518b1df7220c25e9f14e14[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Wed Mar 18 14:40:29 2015 -0300
+
+    nclua: Fix comment
+    
+    * nclua/canvas.c (cairox_do_fill_or_frame): Likewise.
+
+[33mcommit 526a4c18d43d981f401eafe172da9a7dfa6a9b2a[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Tue Mar 17 19:25:04 2015 -0300
+
+    nclua/event: Fix typo in comment
+    
+    * nclua/event/http.lua: Likewise.
+
+[33mcommit ac67586c28b863be75508a85a5adb1b72a208768[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Tue Mar 17 17:38:24 2015 -0300
+
+    build: Remove version checks
+    
+    * configure.ac: So that we can bootstrap even without a known version
+    string, i.e., when we're not in Git and .tarball-version does not exist.
+    In this case, the version string is set to '0.0.0'.
+
+[33mcommit e68b071f33ebfd159f7be4b0f0d1636a754d8fec[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Tue Mar 17 17:28:21 2015 -0300
+
+    src: Add extra assertions
+    
+    * src/nclua.c: Likewise.
+
+[33mcommit 2fc27b70a6ed95e942cad84e36aa29639101f285[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Tue Mar 17 17:16:37 2015 -0300
+
+    nclua: Fix comment
+    
+    * nclua/canvas.c (canvas_get_extends): Likewise.
+
+[33mcommit a365bb562fea424cab9563cc05442f844043b304[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Tue Mar 17 17:11:44 2015 -0300
+
+    nclua: Syntax cleanup
+    
+    * nclua/canvas.c: Likewise.
+
+[33mcommit 72748696b0641de61ce0fb72d1cf60c779d0bf49[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Tue Mar 17 16:08:15 2015 -0300
+
+    doc: Update README.md
+    
+    * README.md: Likewise.
+
+[33mcommit 547525d7900793c87f04bc8d7754a517b2b9900e[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Tue Mar 17 16:00:15 2015 -0300
+
+    tests: Update suppfile.m4
+    
+    * tests/suppfile.m4: New suppressions added.
+
+[33mcommit 4ebffd4c236a20bd7e5b55b9088ae17d369d6449[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Tue Mar 17 15:59:38 2015 -0300
+
+    tests: Check if canvas.compose honors the filter attribute
+    
+    * tests/test-canvas-compose.lua: Likewise.
+    * tests/ref-cairo-any/test-canvas-compose-6-ref.png:
+    Updated accordingly.
+
+[33mcommit 02f841fbb654be22bd042f3b6a3ba1a91f71a783[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Tue Mar 17 15:04:11 2015 -0300
+
+    nclua: Syntax cleanup
+    
+    * nclua/canvas.c: Likewise.
+
+[33mcommit d63cf671acfacaf384e9a8e5e2ede5f597c461a1[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Tue Mar 17 14:54:50 2015 -0300
+
+    doc: Update NEWS
+    
+    * NEWS: Likewise.
+
+[33mcommit 0ee2d37249a3661fd4afe5484aa81a49ba04c001[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Tue Mar 17 14:51:36 2015 -0300
+
+    tests: Add checks to canvas.attrFilter
+    
+    * tests/test-canvas-attrFilter.lua: New file.
+    * tests/Makefile.am: Updated accordingly.
+    * tests/test-canvas-api.lua: Check for canvas.attrFilter.
+
+[33mcommit 04dafd7b5cfc1c875e08f4c6659c51c0cfd8bb51[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Tue Mar 17 14:41:56 2015 -0300
+
+    nclua: Speed up canvas.compose
+    
+    * nclua/canvas.c (l_canvas_compose): Use a temporary "cropped" source
+    surface, instead of cairo_push_group, to speed up things.
+    (l_canvas_attrSize): Updated to take into account the crop attribute
+    when computing SW and SH---via the new function, canvas_get_extends.
+    * tests/test-canvas-compose.lua: Make checks stricter.
+    * tests/ref-cairo-any/test-canvas-compose-5-ref.png: Updated
+    accordingly.
+    * tests/ref-cairo-any/test-canvas-compose-6-ref.png: Likewise.
+    * tests/ref-cairo-any/test-canvas-compose-7-ref.png: Likewise.
+
+[33mcommit 976b51900be5457782a9aa05b93762a6d32b3742[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Tue Mar 17 14:35:55 2015 -0300
+
+    build: Fix messages in configure.ac
+    
+    * configure.ac: Avoid duplicated messages.
+
+[33mcommit f8a484d74ff11d59c77ffd4ead912b7a844e6b3c[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Mon Mar 16 18:56:02 2015 -0300
+
+    nclua: Add canvas.attrFilter; optimize canvas.compose
+    
+    * nclua/canvas.c (l_canvas_attrFilter): New function; set filter used in
+    composition operations.
+    (l_canvas_compose): Remove unnecessary allocations.
+
+[33mcommit 9731408b837fdde52463cb12be18bf60c9f5d281[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Mon Mar 16 14:34:26 2015 -0300
+
+    nclua: Syntax cleanup
+    
+    * nclua/canvas.c: Likewise.
+
+[33mcommit 9a0cb3082af2e396528f9fbc78488601d6c62145[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Mon Mar 16 14:26:29 2015 -0300
+
+    doc: Update NEWS
+    
+    * NEWS: Likewise.
+
+[33mcommit a93eaca0ac4291c03b43b7595eb4a821e770e209[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Mon Mar 16 14:23:08 2015 -0300
+
+    nclua: Fix source scaling when offset and size are given to compose
+    
+    * nclua/canvas.c (l_canvas_compose): Scale and translate the source
+    pattern, not the destination cairo context.
+    * tests/test-canvas-compose.lua: Updated accordingly.
+    * tests/ref-cairo-any/test-canvas-compose-6-ref.png: Likewise.
+    * tests/ref-cairo-any/test-canvas-compose-7-ref.png: Likewise.
+
+[33mcommit 5f90d1835b8da209d37956a23821f3b6feed8b9c[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Mon Mar 16 13:48:00 2015 -0300
+
+    src: Fix usage message
+    
+    * src/nclua.c (OPTION_LINE): Likewise.
+
+[33mcommit ebd51f1b61cac312b4ec5c76490f841352329637[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Thu Mar 12 19:50:00 2015 -0300
+
+    doc: Update NEWS
+    
+    * NEWS: Likewise.
+
+[33mcommit c65085b601147f90105d9cd113be4bc46c9b4045[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Thu Mar 12 19:48:05 2015 -0300
+
+    examples/www: Remove unused declarations from http_get
+    
+    * examples/www/http_get.lua: Likewise.
+
+[33mcommit fc6201917ee298abc4d53bfa94a929271a7f78e8[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Thu Mar 12 19:47:41 2015 -0300
+
+    build: Update indent target in maint.mk
+    
+    * maint.mk (perl_after_indent_type_list): Add gchar and GError.
+
+[33mcommit bd77dc18c9f67d02df300922ac7e1eb70dffa0f8[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Thu Mar 12 19:46:59 2015 -0300
+
+    src: Add command-line option support nclua interpreter
+    
+    * src/nclua.c: Likewise.
+    * TODO: Updated accordingly.
+
+[33mcommit 088f9c6c755480658e9548620b327d066ad671cf[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Thu Mar 12 19:33:42 2015 -0300
+
+    build: Update project URL
+    
+    * configure.ac: Likewise.
+
+[33mcommit 2791850ab2bd2e7ba7b46a663456280236c95f41[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Thu Mar 12 17:54:59 2015 -0300
+
+    examples/www: Add http_get.lua
+    
+    * examples/www/http_get.lua: New example library.
+
+[33mcommit 04d326bf2f0a21e5351e65a982f79ecb83a3a0c7[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Thu Mar 12 17:53:09 2015 -0300
+
+    nclua/event: Fix panic in receive callback
+    
+    * nclua/event/tcp.lua (receive_finished): Check if socket is connect
+    before attempting to operate over it.
+
+[33mcommit 0e42da538aaa7c6d70c8f540732f1fd7b2bb77fd[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Thu Feb 26 13:31:18 2015 -0300
+
+    examples/www: Add timeout parameter to tcp.connect in tcp.lua
+    
+    * examples/www/tcp.lua (tcp.connect): Likewise.
+
+[33mcommit 11ca2acd175f3d39fcbb55e18ce452dfe9292a1a[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Wed Feb 25 12:05:55 2015 -0300
+
+    examples/www: Fix typo in http.lua
+    
+    * examples/www/http.lua (request_finished): Likewise.
+
+[33mcommit 9387f4dadd381af7b623cd67dc3919ad63c7efbf[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Sun Feb 22 20:15:40 2015 -0300
+
+    doc: Syntax cleanup
+    
+    * README.md: Likewise.
+
+[33mcommit a7a66b7519ad676c3cfcbe8a60d8416a85fb8ac6[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Sun Feb 22 20:12:50 2015 -0300
+
+    lib: Fix comment
+    
+    * lib/ncluaw.c (ncluaw_open): Likewise.
+
+[33mcommit 8ac63e74f2626657acda271d802a444f07de8763[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Sun Feb 22 20:05:42 2015 -0300
+
+    doc: Fix typo in NEWS
+    
+    * NEWS: Likewise.
+
+[33mcommit c185522818b11e496f3ad730ed6f2284cd4b30c6[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Sun Feb 22 19:05:18 2015 -0300
+
+    tests: Add ref-cairo-1-14 to EXTRA_DIST
+    
+    * tests/Makefile.am: Likewise.
+
+[33mcommit 9f30efd7a2f4146aefaa21514d045926f361fcc8[m
+Merge: e107262 aa06e30
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Sun Feb 22 18:49:08 2015 -0300
+
+    Merge branch 'master' of github.com:gflima/nclua
+
+[33mcommit e107262486ebf41f66e74e52977ec43cb2f43265[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Sun Feb 22 18:48:43 2015 -0300
+
+    doc: Update NEWS
+    
+    * NEWS: Likewise.
+
+[33mcommit aa06e30c6c6a0c7f039dfa2082524a99a731f919[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Sat Feb 21 22:39:42 2015 -0200
+
+    maint: Make checks for AC_DEFINEd macros stricter
+    
+    * lib/ncluaw.c: Likewise.
+    * nclua/canvas.c: Likewise.
+    * tests/test-libnclua-open.c: Likewise.
+
+[33mcommit c2711350e5c3a8d89758d7df44cb2572794db38d[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Sat Feb 21 22:34:24 2015 -0200
+
+    lib: Merge latest luax-macros.h
+    
+    * lib/luax-macros.h: Likewise.
+
+[33mcommit 23bbf4f177b7e39073a7c82a94f08790c992b256[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Sat Feb 21 18:25:05 2015 -0200
+
+    build: Suppress -Woverlength-strings; some tests use big literals
+    
+    * configure.ac (nw): Add -Woverlength-strings.
+
+[33mcommit 8fe5242a81e321d7487c46c269e4b74ed8abcee7[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Sat Feb 21 18:24:23 2015 -0200
+
+    tests: Fix -Winline in tests.h
+    
+    * tests/tests.h (TRACE_SEP): Remove inline modifier.
+
+[33mcommit 88144042b314695d1ca516eb60a30ffaf54e08f3[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Sat Feb 21 18:19:48 2015 -0200
+
+    src: Fix -Wclobbered in main
+    
+    * src/nclua.c (main): Make status volatile.
+
+[33mcommit 4c8a2bcf99fae8bc03c2d174e423649d5c03a3a9[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Sat Feb 21 18:11:28 2015 -0200
+
+    doc: Update NEWS and TODO
+    
+    * NEWS: Likewise.
+    * TODO: Likewise.
+
+[33mcommit 0e386411a1983d3e5e143f05f7f04bc511315e3a[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Sat Feb 21 18:07:25 2015 -0200
+
+    doc: Update TODO
+    
+    * TODO: Likewise.
+
+[33mcommit 2d0a518849b9b109b712bfff25f7a9e7b62d442d[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Sat Feb 21 17:33:55 2015 -0200
+
+    build: Fix bad quoting in MINGW_ROOT definition
+    
+    * configure.ac: Likewise.
+
+[33mcommit 336068c9d0f64f8e213d6db5ae4a191d9a52d8c3[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Sat Feb 21 15:38:08 2015 -0200
+
+    build: Find out MinGW root dir and store it in MINGW_ROOT
+    
+    * configure.ac: Likewise.
+    * tests/Makefile.am (WINROOT): Updated to use MINGW_ROOT.
+
+[33mcommit 757f1c659c6ea9b505a133d0246f5a0f6f391336[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Sat Feb 21 15:03:57 2015 -0200
+
+    build: Fix README rule in top-level Makefile.am
+    
+    * Makefile.am: Likewise.
+
+[33mcommit cb9508b75db54e2bc5f87f4da4d6a310d0006434[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Sat Feb 21 15:03:44 2015 -0200
+
+    doc: Update TODO
+    
+    * TODO: Likewise.
+
+[33mcommit 7775d57c3857f977264c7dead365abd2eb851b24[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Sat Feb 21 15:03:24 2015 -0200
+
+    doc: Update NEWS
+    
+    * NEWS: Likewise.
+
+[33mcommit f8043f795e8c967f104a8cd3caf1f88ce738decc[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Sat Feb 21 14:40:09 2015 -0200
+
+    contrib/debian: Update changelog
+    
+    * contrib/debian/changelog: Likewise.
+
+[33mcommit dbc2f43bd6feb8bb24f8f94ee7611479a7495c84[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Sat Feb 21 14:37:10 2015 -0200
+
+    doc: Update NEWS
+    
+    * NEWS: Likewise.
+
+[33mcommit c56334d514d9a96b90bce41658840aca77289805[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Sat Feb 21 14:30:01 2015 -0200
+
+    doc: Update TODO
+    
+    * TODO: Likewise.
+
+[33mcommit e855c897c260f1fab2c4e5111a2297f7be649441[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Sat Feb 21 14:23:49 2015 -0200
+
+    build: Cleanup core dumps on clean target
+    
+    * build-aux/Makefile.am.common: Likewise.
+    (DISTCLEANFILES): Add common definition.
+    * lib/Makefile.am: Updated accordingly.
+    * Makefile.am: Likewise.
+
+[33mcommit 26551bd4375533b68cae8bf9c697e56c6c563a1d[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Sat Feb 21 14:06:55 2015 -0200
+
+    tests: Fix env.sh rule in Makefile.am
+    
+    * tests/Makefile.am: Replace srcdir by buildir.
+
+[33mcommit 7348a56585347af1fd9dc6ba93ca5f149e4ed484[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Sat Feb 21 14:04:52 2015 -0200
+
+    tests: Fix cairo reference lookup paths
+    
+    * tests/tests.lua (tests.canvas.check_ref): Likewise.
+    (tests.canvas.dump_ref): Likewise.
+    (tests.basename): New function.
+    (tests.dirname): New function.
+
+[33mcommit 2373f83e9fdd6720b094a98078ba5bd570f16dad[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Sat Feb 21 14:04:30 2015 -0200
+
+    build: Add README.md to EXTRA_DIST
+    
+    * Makefile.am: Likewise.
+
+[33mcommit 4f9642b993a084843146f4b4f2169592c582eb83[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Sat Feb 21 13:07:28 2015 -0200
+
+    tests: Fix URL in test-event-http-soup-request.lua
+    
+    * tests/test-event-http-soup-request.lua: Likewise.
+
+[33mcommit 5c1a21e2b2431c294b717c2a3b4a6a231add9aef[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Sat Feb 21 12:56:41 2015 -0200
+
+    tests/ref-cairo-any: Update test-canvas-drawText-3-ref.png
+    
+    * tests/ref-cairo-any/test-canvas-drawText-3-ref.png: Likewise.
+
+[33mcommit 72b1eed89538e40eb9f8f3d7c0bf49b1478347af[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Sat Feb 21 10:38:23 2015 -0200
+
+    maint: Syntax cleanup
+    
+    * nclua/event/http_soup.c: Likewise.
+    * nclua/event/tcp_socket.c: Likewise.
+    * src/nclua.c: Likewise.
+    * maint.mk (perl_after_indent_type_list): Add GdkEventButton and
+    GdkEventMotion.
+
+[33mcommit 2244a14e733d18e1bc7f4c27c218e9d86423918e[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Fri Feb 20 19:43:02 2015 -0200
+
+    tests: Update suppfile
+    
+    * tests/suppfile.m4: Likewise.
+
+[33mcommit 605ae2e4cd495a1679ff2e6146dae32cec635eeb[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Fri Feb 20 18:44:26 2015 -0200
+
+    tests: Make sure that the name returned by tests.tmpname is valid
+    
+    * tests/tests.lua: Likewise.
+
+[33mcommit 0a9910c7584bfd3a5517b0b09dab4e3f840c9957[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Fri Feb 20 18:43:05 2015 -0200
+
+    tests: Make test-libnclua-open.c check if TCP or HTTP are available
+    
+    * tests/test-libnclua-open.c: Likewise.
+
+[33mcommit 16df9f5d888b22f019c3d3eae77093a6bb219c8c[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Fri Feb 20 18:34:36 2015 -0200
+
+    tests: Add tests.tmpname to tests.lua
+    
+    * tests/tests.lua (tests.tmpname): New function; os.tmpname wrapper.
+    * tests/test-canvas-attrSize.lua: Updated to use the above function.
+    * tests/test-event-http-engine.lua: Likewise.
+    * tests/test-event-tcp-socket-send.lua: Likewise.
+
+[33mcommit 88e9e55a92044e5e9bf410d3247b1c952ff1db86[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Fri Feb 20 18:18:19 2015 -0200
+
+    tests: Update Makefile.am due to last two commits
+    
+    * tests/Makefile.am (EXTRA_DIST): Likewise.
+
+[33mcommit 148e2272b79e71c5de6ad9fcc4ac026222e00c20[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Fri Feb 20 18:10:19 2015 -0200
+
+    tests: Add reference pictures for cairo 1.14; update tests accordingly
+    
+    * tests/ref-cairo-1-14/test-canvas-drawEllipse-2-ref.png: New reference.
+    * tests/ref-cairo-1-14/test-canvas-drawEllipse-3-ref.png: New reference.
+    * tests/ref-cairo-1-14/test-canvas-drawEllipse-4-ref.png: New reference.
+    * tests/ref-cairo-1-14/test-canvas-drawLine-2-ref.png: New reference.
+    * tests/ref-cairo-1-14/test-canvas-drawLine-3-ref.png: New reference.
+    * tests/ref-cairo-1-14/test-canvas-drawLine-4-ref.png: New reference.
+    * tests/ref-cairo-1-14/test-canvas-drawPolygon-2-ref.png: New reference.
+    * tests/ref-cairo-1-14/test-canvas-drawPolygon-3-ref.png: New reference.
+    * tests/ref-cairo-1-14/test-canvas-drawPolygon-4-ref.png: New reference.
+    * tests/ref-cairo-1-14/test-canvas-drawRoundRect-2-ref.png: New
+    reference.
+    * tests/ref-cairo-1-14/test-canvas-drawRoundRect-3-ref.png: New
+    reference.
+    * tests/ref-cairo-1-14/test-canvas-drawRoundRect-4-ref.png: New
+    reference.
+    * tests/ref-cairo-1-14/test-canvas-drawRoundRect-6-ref.png: New
+    reference.
+    * tests/ref-cairo-1-14/test-canvas-drawText-2-ref.png: New reference.
+    * tests/ref-cairo-1-14/test-canvas-drawText-3-ref.png: New reference.
+    * tests/ref-cairo-1-14/test-canvas-drawText-4-ref.png: New reference.
+    * tests/ref-cairo-1-14/test-canvas-drawText-5-ref.png: New reference.
+    * tests/ref-cairo-1-14/test-canvas-drawText-7-ref.png: New reference.
+    * tests/test-canvas-attrAntiAlias.lua: Likewise.
+    * tests/test-canvas-compose.lua: Likewise.
+    * tests/test-canvas-drawEllipse.lua: Likewise.
+    * tests/test-canvas-drawLine.lua: Likewise.
+    * tests/test-canvas-drawPolygon.lua: Likewise.
+    * tests/test-canvas-drawRoundRect.lua: Likewise.
+    * tests/test-canvas-drawText.lua: Likewise.
+    * tests/test-canvas-pixel.lua: Likewise.
+
+[33mcommit 71b940d60bd71ff3c01c0f34ccc871e42a40b95b[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Fri Feb 20 18:00:42 2015 -0200
+
+    tests: Add support to different reference pictures per cairo version
+    
+    * tests/tests.lua (check_ref): Updated to look for the requested
+    reference picture in ref-cairo-X.Y subdir before falling back to
+    ref-cairo-any subdir.
+    (dump_ref): Updated to dump the a new reference picture into
+    ref-cairo-X.Y subdir.
+    (cairo_get_version): New function; maps tests0.cairo_get_version.
+    (cairo_check_version): New function; maps tests0.cairo_check_version.
+    (dir_exists): New function; maps tests0.dir_exists.
+    (file_exists): New function; maps tests0.file_exists.
+    * tests/tests0.c (cairo_check_version): Renamed from 'cairo_version'.
+    (cairo_get_version): New function; returns cairo version numbers.
+    (dir_exists): New function; returns true if the given
+    path is a directory.
+    (file_exists): New function; return true if the given file is a regular
+    file.
+    * tests/ref-cairo-any/test-canvas-clear-1-ref.png: Renamed from
+    'test-canvas-clear-1-ref.png'.
+    * tests/ref-cairo-any/test-canvas-clear-2-ref.png: Renamed from
+    'tests/test-canvas-clear-2-ref.png'.
+    * tests/ref-cairo-any/test-canvas-clear-3-ref.png: Renamed from
+    'tests/test-canvas-clear-3-ref.png'.
+    * tests/ref-cairo-any/test-canvas-clear-4-ref.png: Renamed from
+    'tests/test-canvas-clear-4-ref.png'.
+    * tests/ref-cairo-any/test-canvas-clear-5-ref.png: Renamed from
+    'tests/test-canvas-clear-5-ref.png'.
+    * tests/ref-cairo-any/test-canvas-clear-6-ref.png: Renamed from
+    'tests/test-canvas-clear-6-ref.png'.
+    * tests/ref-cairo-any/test-canvas-compose-1-ref.png: Renamed from
+    'tests/test-canvas-compose-1-ref.png'.
+    * tests/ref-cairo-any/test-canvas-compose-2-ref.png: Renamed from
+    'tests/test-canvas-compose-2-ref.png'.
+    * tests/ref-cairo-any/test-canvas-compose-3-ref.png: Renamed from
+    'tests/test-canvas-compose-3-ref.png'.
+    * tests/ref-cairo-any/test-canvas-compose-4-ref.png: Renamed from
+    'tests/test-canvas-compose-4-ref.png'.
+    * tests/ref-cairo-any/test-canvas-compose-5-ref.png: Renamed from
+    'tests/test-canvas-compose-5-ref.png'.
+    * tests/ref-cairo-any/test-canvas-compose-6-ref.png: Renamed from
+    'tests/test-canvas-compose-6-ref.png'.
+    * tests/ref-cairo-any/test-canvas-compose-7-ref.png: Renamed from
+    'tests/test-canvas-compose-7-ref.png'.
+    * tests/ref-cairo-any/test-canvas-drawEllipse-1-ref.png: Renamed from
+    'tests/test-canvas-drawEllipse-1-ref.png'.
+    * tests/ref-cairo-any/test-canvas-drawEllipse-2-ref.png: Renamed from
+    'tests/test-canvas-drawEllipse-2-ref.png'.
+    * tests/ref-cairo-any/test-canvas-drawEllipse-3-ref.png: Renamed from
+    'tests/test-canvas-drawEllipse-3-ref.png'.
+    * tests/ref-cairo-any/test-canvas-drawEllipse-4-ref.png: Renamed from
+    'tests/test-canvas-drawEllipse-4-ref.png'.
+    * tests/ref-cairo-any/test-canvas-drawEllipse-5-ref.png: Renamed from
+    'tests/test-canvas-drawEllipse-5-ref.png'.
+    * tests/ref-cairo-any/test-canvas-drawEllipse-6-ref.png: Renamed from
+    'tests/test-canvas-drawEllipse-6-ref.png'.
+    * tests/ref-cairo-any/test-canvas-drawEllipse-7-ref.png: Renamed from
+    'tests/test-canvas-drawEllipse-7-ref.png'.
+    * tests/ref-cairo-any/test-canvas-drawLine-1-ref.png: Renamed from
+    'tests/test-canvas-drawLine-1-ref.png'.
+    * tests/ref-cairo-any/test-canvas-drawLine-2-ref.png: Renamed from
+    'tests/test-canvas-drawLine-2-ref.png'.
+    * tests/ref-cairo-any/test-canvas-drawLine-3-ref.png: Renamed from
+    'tests/test-canvas-drawLine-3-ref.png'.
+    * tests/ref-cairo-any/test-canvas-drawLine-4-ref.png: Renamed from
+    'tests/test-canvas-drawLine-4-ref.png'.
+    * tests/ref-cairo-any/test-canvas-drawLine-5-ref.png: Renamed from
+    'tests/test-canvas-drawLine-5-ref.png'.
+    * tests/ref-cairo-any/test-canvas-drawLine-6-ref.png: Renamed from
+    'tests/test-canvas-drawLine-6-ref.png'.
+    * tests/ref-cairo-any/test-canvas-drawPolygon-1-ref.png: Renamed from
+    'tests/test-canvas-drawPolygon-1-ref.png'.
+    * tests/ref-cairo-any/test-canvas-drawPolygon-2-ref.png: Renamed from
+    'tests/test-canvas-drawPolygon-2-ref.png'.
+    * tests/ref-cairo-any/test-canvas-drawPolygon-3-ref.png: Renamed from
+    'tests/test-canvas-drawPolygon-3-ref.png'.
+    * tests/ref-cairo-any/test-canvas-drawPolygon-4-ref.png: Renamed from
+    'tests/test-canvas-drawPolygon-4-ref.png'.
+    * tests/ref-cairo-any/test-canvas-drawPolygon-5-ref.png: Renamed from
+    'tests/test-canvas-drawPolygon-5-ref.png'.
+    * tests/ref-cairo-any/test-canvas-drawPolygon-6-ref.png: Renamed from
+    'tests/test-canvas-drawPolygon-6-ref.png'.
+    * tests/ref-cairo-any/test-canvas-drawRect-1-ref.png: Renamed from
+    'tests/test-canvas-drawRect-1-ref.png'.
+    * tests/ref-cairo-any/test-canvas-drawRect-2-ref.png: Renamed from
+    'tests/test-canvas-drawRect-2-ref.png'.
+    * tests/ref-cairo-any/test-canvas-drawRect-3-ref.png: Renamed from
+    'tests/test-canvas-drawRect-3-ref.png'.
+    * tests/ref-cairo-any/test-canvas-drawRect-4-ref.png: Renamed from
+    'tests/test-canvas-drawRect-4-ref.png'.
+    * tests/ref-cairo-any/test-canvas-drawRect-5-ref.png: Renamed from
+    'tests/test-canvas-drawRect-5-ref.png'.
+    * tests/ref-cairo-any/test-canvas-drawRect-6-ref.png: Renamed from
+    'tests/test-canvas-drawRect-6-ref.png'.
+    * tests/ref-cairo-any/test-canvas-drawRoundRect-1-ref.png: Renamed from
+    'tests/test-canvas-drawRoundRect-1-ref.png'.
+    * tests/ref-cairo-any/test-canvas-drawRoundRect-2-ref.png: Renamed from
+    'tests/test-canvas-drawRoundRect-2-ref.png'.
+    * tests/ref-cairo-any/test-canvas-drawRoundRect-3-ref.png: Renamed from
+    'tests/test-canvas-drawRoundRect-3-ref.png'.
+    * tests/ref-cairo-any/test-canvas-drawRoundRect-4-ref.png: Renamed from
+    'tests/test-canvas-drawRoundRect-4-ref.png'.
+    * tests/ref-cairo-any/test-canvas-drawRoundRect-5-ref.png: Renamed from
+    'tests/test-canvas-drawRoundRect-5-ref.png'.
+    * tests/ref-cairo-any/test-canvas-drawRoundRect-6-ref.png: Renamed from
+    'tests/test-canvas-drawRoundRect-6-ref.png'.
+    * tests/ref-cairo-any/test-canvas-drawText-1-ref.png: Renamed from
+    'tests/test-canvas-drawText-1-ref.png'.
+    * tests/ref-cairo-any/test-canvas-drawText-2-ref.png: Renamed from
+    'tests/test-canvas-drawText-2-ref.png'.
+    * tests/ref-cairo-any/test-canvas-drawText-3-ref.png: Renamed from
+    'tests/test-canvas-drawText-3-ref.png'.
+    * tests/ref-cairo-any/test-canvas-drawText-4-ref.png: Renamed from
+    'tests/test-canvas-drawText-4-ref.png'.
+    * tests/ref-cairo-any/test-canvas-drawText-5-ref.png: Renamed from
+    'tests/test-canvas-drawText-5-ref.png'.
+    * tests/ref-cairo-any/test-canvas-drawText-6-ref.png: Renamed from
+    'tests/test-canvas-drawText-6-ref.png'.
+    * tests/ref-cairo-any/test-canvas-drawText-7-ref.png: Renamed from
+    'tests/test-canvas-drawText-7-ref.png'.
+    * tests/ref-cairo-any/test-canvas-flush-1-ref.png: Renamed from
+    'tests/test-canvas-flush-1-ref.png'.
+    * tests/ref-cairo-any/test-canvas-flush-2-ref.png: Renamed from
+    'tests/test-canvas-flush-2-ref.png'.
+    * tests/ref-cairo-any/test-canvas-flush-3-ref.png: Renamed from
+    'tests/test-canvas-flush-3-ref.png'.
+    * tests/ref-cairo-any/test-canvas-flush-4-ref.png: Renamed from
+    'tests/test-canvas-flush-4-ref.png'.
+    * tests/ref-cairo-any/test-canvas-new-1-ref.png: Renamed from
+    'tests/test-canvas-new-1-ref.png'.
+    * tests/ref-cairo-any/test-canvas-pixel-1-ref.png: Renamed from
+    'tests/test-canvas-pixel-1-ref.png'.
+
+[33mcommit dbd011c921234169c1b9f725e0b4979e22428bfc[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Fri Feb 20 16:09:37 2015 -0200
+
+    tests: Fix time measurement bug in test-event-init-timer.lua
+    
+    * tests/test-event-init-timer.lua: Likewise.
+
+[33mcommit dc979910c789b1922bba9c771d99c1b3b19bc51a[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Fri Feb 20 16:02:23 2015 -0200
+
+    tests: Make tests stricter
+    
+    * tests/test-event-init-timer.lua: Likewise.
+
+[33mcommit 976963b340d5f1ee53bbbb61e8007d8be3d7dca6[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Fri Feb 20 16:00:57 2015 -0200
+
+    tests: Fix bug in tests.lua
+    
+    * tests/tests.lua (dump): Make sure n is non-nil.
+
+[33mcommit 72af81ed13a0e4aaff57316176aa9c48e2eec3d7[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Fri Feb 20 11:47:36 2015 -0200
+
+    tests: Use optrequire to load http_soup and tcp_socket in tests.lua
+    
+    * tests/tests.lua (optrequire): New function; fail-safe require.
+
+[33mcommit 34cd49b3accc1de0051adecf1f9d8d3e371adea7[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Fri Feb 20 11:46:40 2015 -0200
+
+    build: Fix warning Makefile.am
+    
+    * Makefile.am (perl_strip_md): Likewise.
+
+[33mcommit 4d5370cd27c504b058c3a385443212bcdfd28b15[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Sun Feb 15 20:35:31 2015 -0200
+
+    doc: Fix typo in README.md
+    
+    * README.md: Likewise.
+
+[33mcommit b1df1e82324ff4f60079f6e3a6a47f7cfcc422e6[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Sun Feb 15 20:34:31 2015 -0200
+
+    doc: Update README.md
+    
+    * README.md: Likewise.
+
+[33mcommit 0cc6f7064cdb19d3c1777142a40b52239791ebff[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Sun Feb 15 20:30:56 2015 -0200
+
+    build: Remove -Wswitch-enum from warning list on GCC
+    
+    * configure.ac: Likewise.
+
+[33mcommit 2edb51c6c0aaf1df3370a5729b75cf5ed069896a[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Sun Feb 15 17:24:47 2015 -0200
+
+    build: Fix bug in code that generates README
+    
+    * Makefile.am (README): Likewise.
+
+[33mcommit 495854a8f16755577d4e134c4c5849025a580766[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Sun Feb 15 17:09:38 2015 -0200
+
+    doc: Update README.md
+
+[33mcommit c32b082d04888079a9e95df260c480aad04c4033[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Sun Feb 15 17:02:27 2015 -0200
+
+    doc: Fix typo
+    
+    * README.md: Likewise.
+
+[33mcommit eed1618e4f2b539ddcb7223c7c91660f3d00c508[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Sun Feb 15 17:01:16 2015 -0200
+
+    doc: Update logo tooltip
+    
+    * README.md: Likewise.
+    * Makefile.am (README): Updated accordingly.
+
+[33mcommit 45dae5a266f5a681b5df5cb9e19a00b5100fa1f9[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Sun Feb 15 16:41:29 2015 -0200
+
+    doc: Add space between logo and text in README.md
+    
+    * README.md: Likewise.
+    * Makefile.am (README): Updated accordingly.
+
+[33mcommit ce45dad67677c4c03b497bf28599838eea448536[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Sun Feb 15 16:33:27 2015 -0200
+
+    doc: Add logo to README.md
+    
+    * README.md: Likewise.
+    * Makefile.am (README): Updated accordingly.
+
+[33mcommit 01a13be0d5741092e0996ad22f42abc8aad681d2[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Sat Feb 14 03:28:08 2015 -0200
+
+    examples: Add follow.lua
+    
+    * examples/follow.lua: New example; demonstrates the pointer event
+    class.
+
+[33mcommit ad091897306376aedb03c177062049ac54d03007[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Sat Feb 14 03:24:34 2015 -0200
+
+    src: Add support to pointer events
+    
+    * src/nclua.c: Likewise.
+
+[33mcommit 10cb8d11a986ab8e9098aa508ad0af285300406f[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Sat Feb 14 03:23:59 2015 -0200
+
+    build: Add $(top_builddir)/lib/.libs to env.sh LD_LIBRARY_PATH
+    
+    * tests/Makefile.am: Likewise.
+
+[33mcommit ab36dc1c3be8c01747986245a8b01089c1f1efdc[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Sat Feb 14 03:23:17 2015 -0200
+
+    build: Suppress -Wswitch-enum on clang
+    
+    * configure.ac: Likewise.
+
+[33mcommit cdebc5d09c2bec01ed532414e362450386174c78[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Sat Feb 14 01:40:22 2015 -0200
+
+    build: Syntax cleanup
+    
+    * maint.mk: Likewise.
+
+[33mcommit a32a60f3ef4ebdced408770450312b6bc939b0f6[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Sat Feb 14 01:35:23 2015 -0200
+
+    lib: Merge latest macros.h
+    
+    * lib/macros.h: Likewise.
+
+[33mcommit 7130cad74da93f6d7925cc6ae1ac016da023d860[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Sat Feb 14 01:20:20 2015 -0200
+
+    doc: Fix typo in README.md
+    
+    * README.md: Likewise.
+
+[33mcommit 2fc77eb9703aae2e2a14e57cdf22e698b695e306[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Sat Feb 14 01:14:50 2015 -0200
+
+    maint: Update .gitignore
+    
+    * .gitignore: Ignore the generated README.
+
+[33mcommit 8d06adcc63428af6c31efc3e7fa8fc6ba7c0f396[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Sat Feb 14 01:14:22 2015 -0200
+
+    build: Fix maint.mk dist-win32 target to copy README
+    
+    * maint.mk: Likewise.
+
+[33mcommit 41c06cfc3bc7dedcedfff722c08104c38e36fbbf[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Sat Feb 14 01:12:43 2015 -0200
+
+    build: Generate README from README.md if Perl is available
+    
+    * Makefile.am (README): Likewise.
+    * README.md: Fix typo.
+
+[33mcommit 86861284f11affe3398b931e22c9e6de861bbdc1[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Sat Feb 14 00:59:38 2015 -0200
+
+    doc: Update README.md
+    
+    * README.md: Likewise.
+
+[33mcommit 68faf27e25065a8bd94e92b1aa70054a4df2f9a5[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Sat Feb 14 00:54:20 2015 -0200
+
+    doc: Update README.md
+    
+    * README.md: Likewise.
+
+[33mcommit 2dd08a2c6f2f9610d93aa810949a2eda0276ac15[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Sat Feb 14 00:51:35 2015 -0200
+
+    doc: Update README.md
+    
+    * README.md: Likewise.
+
+[33mcommit 29180e2b771ce4b203f23c71f06cb5444f3d4a94[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Sat Feb 14 00:48:10 2015 -0200
+
+    doc: Update README.md
+    
+    * README.md: Likewise.
+
+[33mcommit 83b344aae84f36188ac96c1a225838a8bb305764[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Sat Feb 14 00:26:54 2015 -0200
+
+    doc: Update README.md
+    
+    * README.md: Likewise.
+
+[33mcommit d6c90fc88a36ad6ef8041da7336a384641e0eb7d[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Fri Feb 13 23:36:02 2015 -0200
+
+    maint: Add extra assertions
+    
+    * lib/ncluaw.c: Likewise.
+    * nclua/canvas.c: Likewise.
+    * nclua/event/http_soup.c: Likewise.
+    * nclua/event/stopwatch.c: Likewise.
+    * nclua/event/tcp_socket.c: Likewise.
+    * src/nclua.c: Likewise.
+    * tests/lua.c: Likewise.
+    * tests/test-libnclua-open-x.c: Likewise.
+    * tests/test-libnclua-paint.c: Likewise.
+    * tests/tests0.c: Likewise.
+
+[33mcommit 1b91fe5808b8dc836edb8b017935496d56752651[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Fri Feb 13 22:32:23 2015 -0200
+
+    build: Add missing escape in maint.mk
+    
+    * maint.mk: Likewise.
+
+[33mcommit 8c81367732d78bfbda6bfb802a24c5f987e6f7e6[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Fri Feb 13 22:08:47 2015 -0200
+
+    build: Syntax cleanup
+    
+    * maint.mk: Likewise.
+
+[33mcommit ca3468fc50ef4766f4584fce6ce7871c07c33eb2[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Fri Feb 13 20:09:23 2015 -0200
+
+    build: Rename README to README.mk in maint.mk dist-win32
+    
+    * maint.mk (dist-win32): Likewise.
+
+[33mcommit fcd4de1d10a06d331b7ea112c71df2a7e458515f[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Fri Feb 13 20:08:08 2015 -0200
+
+    nclua: Fix bug in height parameter of l_canvas_height
+    
+    * nclua/canvas.c (l_canvas_height): We were using canvas->width instead
+    of canvas->height to initialize height when it was not explicit given.
+
+[33mcommit e391066288974fd4570ecc470a90a6f79d0e6599[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Fri Feb 13 17:54:44 2015 -0200
+
+    tests: Fix env.sh to work on MinGW
+    
+    * tests/Makefile.am (perl_env_sh_expand_variables): Likewise.
+
+[33mcommit 415559f46b5eb2750c9ad3fa6240c00ac413c731[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Fri Feb 13 17:53:14 2015 -0200
+
+    lib: Fix plugin_list in ncluaw.c
+    
+    * lib/ncluaw.c (plugin_list): Add "http" and "tcp" only if they are
+    enabled.
+
+[33mcommit b752db6b4ee0ee817daaa975fcde83597db918d8[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Thu Feb 12 22:37:02 2015 -0200
+
+    build: Cleanup comments in maint.mk
+    
+    * maint.mk: Likewise.
+    (sc-useless-if-before-free): Renamed from
+    sc-avoid-if-before-free.
+
+[33mcommit ff7bc2c61398dd3b5da2dc49bae030542ff88c89[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Thu Feb 12 19:41:50 2015 -0200
+
+    build: Refactor maint.mk
+    
+    * maint.mk: Likewise; now we're using Gmake stuff.
+
+[33mcommit 32009fc76c85e7be11d885f712720420188760e2[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Thu Feb 12 19:41:27 2015 -0200
+
+    maint: Syntax cleanup
+    
+    * lib/ncluaw.c: Likewise.
+    * nclua/canvas-color-table.h: Likewise.
+    * nclua/canvas.c: Likewise.
+
+[33mcommit aef0848d5c71037b44c817d471390decb9004386[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Thu Feb 12 17:42:39 2015 -0200
+
+    tests: Syntax cleanup
+    
+    * tests/Makefile.am: Likewise.
+
+[33mcommit e0b5496040d2de12f9b935a61cf1f11cafd93efa[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Thu Feb 12 16:00:40 2015 -0200
+
+    build: Add more info to configure summary
+    
+    * configure.ac: Likewise.
+
+[33mcommit 353c5f1cb084e854b9b33a918f848211b7efe400[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Thu Feb 12 16:00:14 2015 -0200
+
+    lib: Merge latest macros.h
+    
+    * lib/macros.h: Likewise.
+
+[33mcommit 8dfa88ad83c876fe04ec4ac6987228d5b0609bac[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Wed Feb 11 18:47:03 2015 -0200
+
+    build: Make GIO, SOUP, and GTK optional
+    
+    * configure.ac: Likewise.
+    * nclua/event/Makefile.am: Likewise.
+    * tests/Makefile.am: Likewise.
+
+[33mcommit 10c057853a4070904635317629c6aa1104079642[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Wed Feb 11 18:46:19 2015 -0200
+
+    lib: Merge latest macros.h
+    
+    * lib/macros.h: Likewise.
+    * lib/ncluaw.c: Replace test_and_set by set_if_nonnull.
+    * nclua/canvas.c: Likewise.
+    * nclua/event/http_soup.c: Likewise.
+    * nclua/event/luax-callback.h: Likewise.
+    * nclua/event/tcp_socket.c: Likewise.
+
+[33mcommit aff326fe3ae71b8524c5583f46bf5a34e0c6ee23[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Wed Feb 11 18:45:28 2015 -0200
+
+    src: Fix exit status
+    
+    * src/nclua.c (main): Initialize variable status.
+
+[33mcommit d8b6ef880edbcb4611eee7c352dad56117f980df[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Tue Feb 10 01:10:20 2015 -0200
+
+    build: Fix indent target; improve compatibility with bmake
+    
+    * maint.mk: Likewise.
+
+[33mcommit eab6a9e45381b245fa1e276600c30dd8c1a5b354[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Tue Feb 10 01:07:49 2015 -0200
+
+    examples/www: Remove unused declarations
+    
+    * examples/www/example-http.lua: Likewise.
+    * examples/www/example-tcp.lua: Likewise.
+    * examples/www/tcp.lua: Likewise.
+
+[33mcommit 2a6825ecacd1f8d45d6fb6c8dfaadddc57fd7eb7[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Tue Feb 10 01:06:48 2015 -0200
+
+    maint: Syntax cleanup
+    
+    * examples/luarocks/game.lua: Likewise.
+    * examples/pacman/actor.lua: Likewise.
+    * examples/pacman/actor_ghost.lua: Likewise.
+    * examples/pacman/actor_pacman.lua: Likewise.
+    * examples/pacman/board.lua: Likewise.
+    * examples/pacman/display.lua: Likewise.
+    * examples/pacman/game.lua: Likewise.
+    * examples/pacman/input.lua: Likewise.
+    * examples/pacman/parser.lua: Likewise.
+    * lib/nclua.c: Likewise.
+    * lib/ncluaw.c: Likewise.
+    * nclua/canvas-color-table.h: Likewise.
+    * nclua/canvas.c: Likewise.
+    * nclua/event/http_soup.c: Likewise.
+    * nclua/event/luax-callback.h: Likewise.
+    * src/nclua.c: Likewise.
+    * tests/test-libnclua-open.c: Likewise.
+    * tests/test-libncluaw-at-panic.c: Likewise.
+    * tests/test-libncluaw-debug-dump-surface.c: Likewise.
+
+[33mcommit 6780ae76c1fa8e3c63b5cd2d9af29d5cda6a0f44[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Mon Feb 9 21:38:58 2015 -0200
+
+    doc: Update TODO
+    
+    * TODO: Likewise.
+
+[33mcommit 15704fcede8545ed452d0f04473fa15fdda92500[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Mon Feb 9 21:38:12 2015 -0200
+
+    examples/www: Add http.lua and example-http.lua
+    
+    * examples/www/http.lua: New file; library for blocking HTTP requests.
+    * examples/www/example-http.lua: New example.
+
+[33mcommit 384dab5d3c0c2bfd642b65b3d3bae673ffb2b65c[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Mon Feb 9 21:37:55 2015 -0200
+
+    examples/www: Cleanup example-tcp.lua
+    
+    * examples/www/example-tcp.lua: Likewise.
+
+[33mcommit b024ae844420fd4b6736d5699d8564c8155fd0ea[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Mon Feb 9 21:36:31 2015 -0200
+
+    nclua/event: Fix bug in request_finished callback in http.lua
+    
+    * nclua/event/http.lua: Convert method to lowercase.
+
+[33mcommit 015c08a70bacc37a8735ce4d3fdab48d68bf9117[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Mon Feb 9 21:35:40 2015 -0200
+
+    examples/www: Rename http-raw.lua to example-tcp.lua
+    
+    * examples/www/example-tcp.lua: Likewise; updated to display the results
+    on screen.
+    * examples/www/tcp.lua: Syntax cleanup.
+
+[33mcommit 9cee58eee706a4ba6bbca34d9fcae6e4c9c67458[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Mon Feb 9 16:27:07 2015 -0200
+
+    lib: Add "http" to default plugin list in ncluaw.c
+    
+    * lib/ncluaw.c: Likewise.
+
+[33mcommit e2e86c426be13d072b972938060f341a86c4a20c[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Mon Feb 9 16:26:21 2015 -0200
+
+    tests: Update URI used in HTTPS tests
+    
+    * tests/test-event-http-engine.lua: Likewise.
+    * tests/test-event-http-soup-request.lua: Likewise.
+
+[33mcommit 0f45f3df3c821f6a75e2abb8595ac88270c1b0dd[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Mon Feb 9 16:25:42 2015 -0200
+
+    tests: Make tests stricter
+    
+    * tests/test-libnclua-open.c: Likewise.
+
+[33mcommit ae8af82cf11eac6fab67d79d1f53eb44441350b1[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Mon Feb 9 16:25:17 2015 -0200
+
+    nclua/event: Fix comments in luax-callback.h
+    
+    * nclua/event/luax-callback.h: Likewise.
+
+[33mcommit ebcf8ecab1b2698081ceeb28235005eb5baedb33[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Mon Feb 9 16:21:24 2015 -0200
+
+    doc: Update README.md
+    
+    * README.md: Likewise.
+
+[33mcommit 90ecb1d616be189a3b59754856331e1cd664628a[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Mon Feb 9 16:16:00 2015 -0200
+
+    doc: Update README.md
+    
+    * README.md: Likewise.
+
+[33mcommit 689c96ec336161e957fc7eee64e87addd09ec627[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Mon Feb 9 12:32:42 2015 -0200
+
+    tests: Add new http tests
+    
+    * tests/test-event-http-engine.lua: New test.
+    * tests/test-event-http-filter.lua: New test.
+    * tests/Makefile.am: Updated accordingly.
+    * tests/test-event-http-soup-new.lua: Make it stricter.
+    * tests/test-event-http-soup-request.lua: Likewise.
+    * tests/test-event-http-check.lua: Likewise.
+
+[33mcommit b868b4801d01415955267603b8688ae2e873e65e[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Mon Feb 9 12:31:53 2015 -0200
+
+    nclua/event: Add support to timeout to http event class
+    
+    * nclua/event/http.lua: Likewise.
+    * nclua/event/http_soup.c: Likewise.
+
+[33mcommit 9906f9b2f7a25e16e4490d38a0aca5998a4fa719[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Mon Feb 9 12:30:40 2015 -0200
+
+    nclua/event: Fix timeout check in tcp.lua
+    
+    * nclua/event/tcp.lua (check): Likewise.
+
+[33mcommit 3f9a6c2ea8e37fbf5b21002a26a4a678b4b3f895[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Fri Feb 6 22:01:11 2015 -0200
+
+    nclua/event: Add the http event class
+    
+    * nclua/event/http.lua: New file; implements http event class.
+    * tests/test-event-http-api.lua: New test.
+    * tests/test-event-http-check.lua: New test.
+    * tests/Makefile.am: Updated accordingly.
+
+[33mcommit 7f3af0fcf3696d90c31924c4afd6a9aaeac63652[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Fri Feb 6 22:00:57 2015 -0200
+
+    nclua/event: Fix comments
+    
+    * nclua/event/http_soup.c: Likewise.
+
+[33mcommit 1afa9b113f5c57a0b014e894c45f78832e4e96ec[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Fri Feb 6 22:00:22 2015 -0200
+
+    nclua/event: Fix hardcoded string in tcp.lua
+    
+    * nclua/event/tcp.lua (cycle): Likewise.
+
+[33mcommit 798125fe3b06818b9fa682f263c08e3ce53de0f8[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Fri Feb 6 21:59:58 2015 -0200
+
+    nclua/event: Fix comments
+    
+    * nclua/event/tcp_socket.c: Likewise.
+
+[33mcommit c84fac3e019226644e8db52d58fceac05d09e78f[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Fri Feb 6 20:42:15 2015 -0200
+
+    lib: Merge latest luax-macros.h
+    
+    * lib/luax-macros.h: Likewise.
+
+[33mcommit ee57a4f53b058c4169ff6ad2c275b1384ffd9b3a[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Fri Feb 6 19:13:53 2015 -0200
+
+    nclua/event: Fix number arguments to request callback in http_soup.c
+    
+    * nclua/event/http_soup.c: Likewise.
+    * tests/test-event-http-soup-request.lua: Updated accordingly.
+
+[33mcommit ce2a950a5a64d9eb856fc1cea45b7f1dee170108[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Fri Feb 6 18:34:00 2015 -0200
+
+    maint: Add http_soup
+    
+    * nclua/event/http_soup.c: New file; Lua bindings to Libsoup.
+    * nclua/event/Makefile.am: Updated accordingly.
+    * configure.ac: Likewise.
+    * tests/suppfile.m4: Likewise.
+    * tests/test-event-http-soup-api.lua: New test.
+    * tests/test-event-http-soup-is-soup.lua: New test.
+    * tests/test-event-http-soup-new.lua: New test.
+    * tests/test-event-http-soup-request.lua: New test.
+    * tests/tests.lua (tests.soup.cycle_until): New function.
+
+[33mcommit 7d34a5a8307f2a9c18696b4abdfa1d96a2a2536a[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Fri Feb 6 18:33:12 2015 -0200
+
+    nclua/event: Fix comments
+    
+    * nclua/event/tcp.lua: Likewise.
+
+[33mcommit d2eeb187abaf4a5d77c1ea9a8b062300e67338a6[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Fri Feb 6 15:29:06 2015 -0200
+
+    nclua/event: Move callback data stuff to a separated file
+    
+    * nclua/event/luax-callback.h: New file; macros for passing Lua objects
+    to C callbacks.
+    * nclua/event/tcp_socket.c: Updated accordingly.
+
+[33mcommit c54c374920cb3672594d31401319a54fdda7d854[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Fri Feb 6 09:55:00 2015 -0200
+
+    doc: Rename README to README.md
+    
+    * README.md: Likewise.
+
+[33mcommit c88a344c646ce64da49e030a91fec9dea98a9ce8[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Thu Feb 5 20:25:32 2015 -0200
+
+    nclua: Add extra asserts; fix comments
+    
+    * nclua/event/tcp_socket.c: Likewise.
+
+[33mcommit 1e3c6ce6dfe06bd604624fca90e168fcf8b24b70[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Thu Feb 5 20:24:54 2015 -0200
+
+    nclua/event: Fix error message in tcp.lua
+    
+    * nclua/event/tcp.lua: Likewise.
+
+[33mcommit 185aa15a0f5ed3b8d2ed092db7b77cf1430e77f6[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Thu Feb 5 20:24:11 2015 -0200
+
+    nclua: Add extra asserts
+    
+    * nclua/canvas.c (l_canvas_new): Likewise.
+    * nclua/event/stopwatch.c (l_stopwatch_new): Likewise.
+
+[33mcommit 06719b16692600e97c10476b8674e536adbca5b3[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Thu Feb 5 16:23:24 2015 -0200
+
+    maint: Rename nclua/event/socket.c to nclua/event/tcp_socket.c
+    
+    * nclua/event/tcp_socket.c: Renamed from nclua/event/socket.c.
+    * tests/test-event-tcp-socket-api.lua: Renamed from
+    tests/test-event-socket-api.lua.
+    * tests/test-event-tcp-socket-connect.lua: Renamed from
+    tests/test-event-socket-connect.lua.
+    * tests/test-event-tcp-socket-echo.lua: Renamed from
+    tests/test-event-socket-echo.lua.
+    * tests/test-event-tcp-socket-is-socket.lua: Renamed from
+    tests/test-event-socket-is-socket.lua.
+    * tests/test-event-tcp-socket-new.lua: Renamed from
+    tests/test-event-socket-new.lua.
+    * tests/test-event-tcp-socket-receive.lua: Renamed from
+    tests/test-event-socket-receive.lua.
+    * tests/test-event-tcp-socket-send.lua: Renamed from
+    tests/test-event-socket-send.lua.
+    * tests/test-event-tcp-socket-timeout.lua: Renamed from
+    tests/test-event-socket-timeout.lua.
+    * nclua/event/Makefile.am: Updated accordingly.
+    * nclua/event/tcp.lua: Likewise.
+    * tests/Makefile.am: Likewise.
+    * tests/test-event-init-register.lua: Likewise.
+    * tests/test-event-tcp-check.lua: Likewise.
+    * tests/test-event-tcp-filter.lua: Likewise.
+    * tests/tests.lua: Likewise.
+
+[33mcommit d5ff04ee8b7a56390abf041dde449037c32a0cbd[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Thu Feb 5 15:42:17 2015 -0200
+
+    nclua/event: Don't schedule a receive during a send in tcp.lua
+    
+    * nclua/event/tcp.lua (cycle): Likewise; otherwise we get a "Stream has
+    outstanding operation" error from GIO.
+
+[33mcommit 8a70ec6adb5357043e4955186ca08e22344f506f[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Thu Feb 5 15:00:03 2015 -0200
+
+    nclua/event: Replace custom local registry stuff by luax_mregistry
+    
+    * nclua/event/socket.c: Likewise.
+
+[33mcommit fc45a1771bdd4782a5204c4070ed656fc2f06fe4[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Thu Feb 5 14:59:21 2015 -0200
+
+    examples: Add www subdir
+    
+    * examples/www/tcp.lua: New file; a simple TCP wrapper library.
+    * examples/www/http-raw.lua: New file; new example.  Makes an HTTP
+    request and prints the response on stdout.
+
+[33mcommit 4530715a12d8d3d893523a1d826f6bb5caff7b1a[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Thu Feb 5 14:42:06 2015 -0200
+
+    nclua/event: Fix bug in receive callback in tcp.lua
+    
+    * nclua/event/tcp.lua (receive_finished): Do not disconnect the socket;
+    only schedule a receive if the length of the received data is
+    non-zero.
+    (send_finished): Schedule a receive after sending data.
+
+[33mcommit 234efe96ce4d473262ce4c0efec6a6343de3d2fb[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Wed Feb 4 17:24:54 2015 -0200
+
+    src: Use custom panic function in nclua.c
+    
+    * src/nclua.c: Likewise.
+
+[33mcommit 968227b877ba600b00ac9b65c96828bb5a520d0f[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Wed Feb 4 17:20:30 2015 -0200
+
+    * lib: Fix bug in ncluaw.c
+    
+    * lib/ncluaw.c (ncluaw_panic_wrapper): Make sure that error message is
+    on top of stack before calling the panic function.
+
+[33mcommit b2cbf3fbe14523886a8ab414ecae30a3f73e72b7[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Wed Feb 4 17:19:59 2015 -0200
+
+    lib: Merge latest luax-macros.h
+    
+    * lib/luax-macros.h: Likewise.
+
+[33mcommit 12c9c8cb54029e7a70533c361fd2503288d0522e[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Wed Feb 4 17:17:14 2015 -0200
+
+    nclua/event: Syntax cleanup
+    
+    * nclua/event/init.lua: Likewise.
+
+[33mcommit aeb050c6569af52637483e4c4e1f9fab882d875b[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Wed Feb 4 15:21:32 2015 -0200
+
+    build: Don't fetch git-log-fix in maint.mk
+    
+    * maint.mk (fetch-remote): Remove git-log-fix since it is a
+    project-specific file.
+
+[33mcommit be07f0288e7cfe21496b84aaf8a96fd0aff65bcb[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Wed Feb 4 15:21:09 2015 -0200
+
+    build: Merge latest bootstrap script
+    
+    * bootstrap: Likewise.
+
+[33mcommit 6577f1713816fb897b498ad43fab54772e3ad48f[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Tue Feb 3 14:44:22 2015 -0200
+
+    examples/pacman: Fix service.currentKeyMaster value in main.ncl
+    
+    * examples/pacman/main.ncl: Updated to NCLlua object id.
+
+[33mcommit db956f9e13f6919c39fec11e82c845a0f0c3d5cc[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Sat Jan 31 13:55:51 2015 -0200
+
+    maint: Fix some comments
+    
+    * lib/nclua.c: Likewise.
+    * nclua/canvas.c: Likewise.
+
+[33mcommit 32a97616fc98bb0719585375a045d7ca81c72018[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Wed Jan 21 11:04:41 2015 -0200
+
+    maint: Merge latest macros.h
+    
+    * lib/macros.h: Likewise.
+
+[33mcommit 5336793a1c5ca055d8ee43e75deee45d2fc0217e[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Tue Jan 20 17:05:12 2015 -0200
+
+    lib: Merge latest macros.h
+    
+    * lib/macros.h: Likewise.
+
+[33mcommit 26051c922e884a96a5d98babf76ed12f2b645035[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Wed Jan 7 18:49:17 2015 -0200
+
+    build-aux: Sync external sources
+    
+    * build-aux/git-version-gen: Likewise.
+    * build-aux/gitlog-to-changelog: Likewise.
+    * build-aux/manywarnings.m4: Likewise.
+    * build-aux/perl.m4: Likewise.
+    * build-aux/syntax-check: Likewise.
+    * build-aux/useless-if-before-free: Likewise.
+    * build-aux/valgrind-tests.m4: Likewise.
+    * build-aux/visibility.m4: Likewise.
+    * build-aux/warnings.m4: Likewise.
+
+[33mcommit f8d42f31cca45bb77434bc9c70a9b2fd94a10606[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Wed Jan 7 18:48:20 2015 -0200
+
+    maint: Sync bootstrap
+    
+    * bootstrap: Likewise.
+
+[33mcommit bc01131b50621e29c384613502b01bf825ff1415[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Wed Jan 7 17:21:43 2015 -0200
+
+    maint: Update copyright year
+    
+    * Makefile.am: Likewise.
+    * NEWS: Likewise.
+    * README: Likewise.
+    * build-aux/Makefile.am.common: Likewise.
+    * build-aux/Makefile.am.coverage: Likewise.
+    * build-aux/Makefile.am.link: Likewise.
+    * build-aux/syntax-check: Likewise.
+    * build-aux/syntax-check-copyright: Likewise.
+    * configure.ac: Likewise.
+    * contrib/debian/copyright: Likewise.
+    * examples/circle.lua: Likewise.
+    * examples/input.lua: Likewise.
+    * lib/Makefile.am: Likewise.
+    * lib/luax-macros.h: Likewise.
+    * lib/macros.h: Likewise.
+    * lib/nclua.c: Likewise.
+    * lib/nclua.h: Likewise.
+    * lib/nclua.rc.in: Likewise.
+    * lib/ncluaconf.h.in: Likewise.
+    * lib/ncluaw.c: Likewise.
+    * lib/ncluaw.h: Likewise.
+    * maint.mk: Likewise.
+    * nclua/Makefile.am: Likewise.
+    * nclua/canvas-color-table.h: Likewise.
+    * nclua/canvas.c: Likewise.
+    * nclua/event/Makefile.am: Likewise.
+    * nclua/event/check.lua: Likewise.
+    * nclua/event/engine.lua: Likewise.
+    * nclua/event/init.lua: Likewise.
+    * nclua/event/key.lua: Likewise.
+    * nclua/event/ncl.lua: Likewise.
+    * nclua/event/pointer.lua: Likewise.
+    * nclua/event/queue.lua: Likewise.
+    * nclua/event/socket.c: Likewise.
+    * nclua/event/stopwatch.c: Likewise.
+    * nclua/event/tcp.lua: Likewise.
+    * nclua/event/user.lua: Likewise.
+    * src/Makefile.am: Likewise.
+    * src/nclua.c: Likewise.
+    * tests/Makefile.am: Likewise.
+    * tests/libnclua-echo.c: Likewise.
+    * tests/libnclua-echo.lua: Likewise.
+    * tests/lua.c: Likewise.
+    * tests/server.pl: Likewise.
+    * tests/server.sh: Likewise.
+    * tests/test-canvas-api.lua: Likewise.
+    * tests/test-canvas-attrAntiAlias.lua: Likewise.
+    * tests/test-canvas-attrClip.lua: Likewise.
+    * tests/test-canvas-attrColor.lua: Likewise.
+    * tests/test-canvas-attrCrop.lua: Likewise.
+    * tests/test-canvas-attrFlip.lua: Likewise.
+    * tests/test-canvas-attrFont.lua: Likewise.
+    * tests/test-canvas-attrLineWidth.lua: Likewise.
+    * tests/test-canvas-attrOpacity.lua: Likewise.
+    * tests/test-canvas-attrRotation.lua: Likewise.
+    * tests/test-canvas-attrScale.lua: Likewise.
+    * tests/test-canvas-attrSize.lua: Likewise.
+    * tests/test-canvas-clear.lua: Likewise.
+    * tests/test-canvas-compose.lua: Likewise.
+    * tests/test-canvas-drawEllipse.lua: Likewise.
+    * tests/test-canvas-drawLine.lua: Likewise.
+    * tests/test-canvas-drawPolygon.lua: Likewise.
+    * tests/test-canvas-drawRect.lua: Likewise.
+    * tests/test-canvas-drawRoundRect.lua: Likewise.
+    * tests/test-canvas-drawText.lua: Likewise.
+    * tests/test-canvas-flush.lua: Likewise.
+    * tests/test-canvas-measureText.lua: Likewise.
+    * tests/test-canvas-new.lua: Likewise.
+    * tests/test-canvas-pixel.lua: Likewise.
+    * tests/test-event-engine-api.lua: Likewise.
+    * tests/test-event-engine-cycle.lua: Likewise.
+    * tests/test-event-engine-new.lua: Likewise.
+    * tests/test-event-engine-receive.lua: Likewise.
+    * tests/test-event-engine-reset.lua: Likewise.
+    * tests/test-event-engine-send.lua: Likewise.
+    * tests/test-event-init-api.lua: Likewise.
+    * tests/test-event-init-cycle.lua: Likewise.
+    * tests/test-event-init-init.lua: Likewise.
+    * tests/test-event-init-load.lua: Likewise.
+    * tests/test-event-init-post.lua: Likewise.
+    * tests/test-event-init-register.lua: Likewise.
+    * tests/test-event-init-timer.lua: Likewise.
+    * tests/test-event-init-unload.lua: Likewise.
+    * tests/test-event-init-unregister.lua: Likewise.
+    * tests/test-event-init-uptime.lua: Likewise.
+    * tests/test-event-key-api.lua: Likewise.
+    * tests/test-event-key-check.lua: Likewise.
+    * tests/test-event-key-filter.lua: Likewise.
+    * tests/test-event-ncl-api.lua: Likewise.
+    * tests/test-event-ncl-check.lua: Likewise.
+    * tests/test-event-ncl-filter.lua: Likewise.
+    * tests/test-event-pointer-api.lua: Likewise.
+    * tests/test-event-pointer-check.lua: Likewise.
+    * tests/test-event-pointer-filter.lua: Likewise.
+    * tests/test-event-queue-api.lua: Likewise.
+    * tests/test-event-queue-dequeue.lua: Likewise.
+    * tests/test-event-queue-enqueue.lua: Likewise.
+    * tests/test-event-queue-new.lua: Likewise.
+    * tests/test-event-socket-api.lua: Likewise.
+    * tests/test-event-socket-connect.lua: Likewise.
+    * tests/test-event-socket-echo.lua: Likewise.
+    * tests/test-event-socket-is-socket.lua: Likewise.
+    * tests/test-event-socket-new.lua: Likewise.
+    * tests/test-event-socket-receive.lua: Likewise.
+    * tests/test-event-socket-send.lua: Likewise.
+    * tests/test-event-socket-timeout.lua: Likewise.
+    * tests/test-event-stopwatch-api.lua: Likewise.
+    * tests/test-event-stopwatch-get-time.lua: Likewise.
+    * tests/test-event-stopwatch-new.lua: Likewise.
+    * tests/test-event-tcp-api.lua: Likewise.
+    * tests/test-event-tcp-check.lua: Likewise.
+    * tests/test-event-tcp-engine.lua: Likewise.
+    * tests/test-event-tcp-filter.lua: Likewise.
+    * tests/test-event-user-api.lua: Likewise.
+    * tests/test-event-user-check.lua: Likewise.
+    * tests/test-event-user-engine.lua: Likewise.
+    * tests/test-event-user-filter.lua: Likewise.
+    * tests/test-event.lua: Likewise.
+    * tests/test-libnclua-close.c: Likewise.
+    * tests/test-libnclua-cycle.c: Likewise.
+    * tests/test-libnclua-debug-dump-surface.c: Likewise.
+    * tests/test-libnclua-debug-get-surface.c: Likewise.
+    * tests/test-libnclua-echo.sh: Likewise.
+    * tests/test-libnclua-open-x.c: Likewise.
+    * tests/test-libnclua-open.c: Likewise.
+    * tests/test-libnclua-paint.c: Likewise.
+    * tests/test-libncluaw-at-panic-x.c: Likewise.
+    * tests/test-libncluaw-at-panic.c: Likewise.
+    * tests/test-libncluaw-cycle.c: Likewise.
+    * tests/test-libncluaw-cycle.lua: Likewise.
+    * tests/test-libncluaw-debug-dump-surface.c: Likewise.
+    * tests/test-libncluaw-debug-get-surface.c: Likewise.
+    * tests/test-libncluaw-event-clone-x.c: Likewise.
+    * tests/test-libncluaw-event-clone.c: Likewise.
+    * tests/test-libncluaw-event-free-x.c: Likewise.
+    * tests/test-libncluaw-open.c: Likewise.
+    * tests/tests.h: Likewise.
+    * tests/tests.lua: Likewise.
+    * tests/tests0.c: Likewise.
+
+[33mcommit 4efe4f0f462878481708c5ecc54377308cbc1f19[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Wed Jan 7 17:12:14 2015 -0200
+
+    tests: Add license header to server.sh
+    
+    * tests/server.sh: Likewise.
+
+[33mcommit b1df2e93148ef6abf395e13ee2c66d1f8d278c09[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Wed Jan 7 17:11:41 2015 -0200
+
+    build: Fix sc-copyright ignores in maint.mk
+    
+    * maint.mk (sc-copyright): Likewise.
+
+[33mcommit 9da611fa232bb4367785d8625deb5ac5c7d27a55[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Wed Jan 7 16:58:01 2015 -0200
+
+    doc: Update TODO
+    
+    * TODO: Likewise.
+
+[33mcommit a464b17a272cb22d1ba9b389ab6e6f2ece8ce3d9[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Tue Sep 2 18:18:19 2014 -0300
+
+    tests: Syntax cleanup
+    
+    * tests/tests.h: Likewise.
+
+[33mcommit 0ed139dcbb399d4ffe6c11145d66d7b117f2840c[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Tue Sep 2 16:17:56 2014 -0300
+
+    maint: Rename 'range' to 'clamp' due to last commit
+    
+    * nclua/canvas.c: Likewise.
+    * nclua/event/socket.c: Likewise.
+    * tests/tests0.c: Likewise.
+
+[33mcommit ede276ded78d155e7ac7d0275ffaeea97d14bf32[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Tue Sep 2 16:16:14 2014 -0300
+
+    maint: Sync macros.h to latest version
+    
+    * lib/macros.h: Likewise.
+
+[33mcommit bf72544995e22cfba9075071af8f8a77afc82216[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Tue Sep 2 16:15:44 2014 -0300
+
+    build-aux: Sync manywarnings.m4 to latest Gnulib version
+    
+    * build-aux/manywarnings.m4: Likewise.
+
+[33mcommit 354c1cb8280fde61ecdd10b7f6f06592824e773e[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Wed Aug 20 18:30:43 2014 -0300
+
+    build: Revert previous commit; copy subdirs in dist-hook
+    
+    * Makefile.am (dist-hook): Copy contrib and examples subdirs
+    to $(distdir).
+
+[33mcommit bdcaa6f510aa32eb06d8b82d623b1da4844ab27c[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Wed Aug 20 18:21:38 2014 -0300
+
+    build: Add contrib and examples subdirs to EXTRA_DIST
+    
+    * Makefile.am: Likewise.
+
+[33mcommit 7a3bb189228a3c4c9f6c71f37aacef14cae52db2[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Wed Aug 20 17:48:54 2014 -0300
+
+    maint: Delete old debian subdir
+
+[33mcommit a31efe618764809dfda30eb0d635e6971fa41470[m
+Merge: 202620b 6ea0c54
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Wed Aug 20 17:47:35 2014 -0300
+
+    Merge branch 'master' of ssh://git.telemidia.puc-rio.br/git/nclua
+
+[33mcommit 202620b8eeab3931b20ad099e2e0fa9a244587f8[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Wed Aug 20 17:42:35 2014 -0300
+
+    contrib/debian: Update changelog for 1.2 release
+    
+    * contrib/debian/changelog: Likewise.
+
+[33mcommit f456141766ac31e9b8951bca181e676a392d1a4d[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Wed Aug 20 17:15:12 2014 -0300
+
+    nclua/event: Fix parameter order for NCL filters in event.register
+    
+    * nclua/event/ncl.lua (ncl:filter): Likewise.
+    * tests/test-event-ncl-filter.lua: Updated accordingly.
+    * NEWS: Likewise.
+
+[33mcommit 147d247283ae8c79e33e396acc9ac2201fe4f621[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Fri Jul 11 16:19:32 2014 -0300
+
+    contrib/debian: Update release number in changelog
+    
+    * contrib/debian/changelog: Likewise.
+
+[33mcommit d52aed7b890a6433e477139f3f2c1def75b2312c[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Fri Jul 11 16:15:11 2014 -0300
+
+    build: Add dist-deb to .gitignore
+    
+    * .gitignore: Likewise.
+
+[33mcommit e9bac8564590353e829f14c39dbd524fa978672c[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Fri Jul 11 16:02:06 2014 -0300
+
+    doc: Release v1.1
+    
+    * NEWS: Updated accordingly.
+
+[33mcommit 31a03ce42ce446e88cee1e4e4c62930215e197ab[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Fri Jul 11 16:00:21 2014 -0300
+
+    examples: Add pacman example
+    
+    * examples/pacman/actor.lua: New file.
+    * examples/pacman/actor_ghost.lua: New file.
+    * examples/pacman/actor_pacman.lua: New file.
+    * examples/pacman/board.lua: New file.
+    * examples/pacman/display.lua: New file.
+    * examples/pacman/game.lua: New file.
+    * examples/pacman/input.lua: New file.
+    * examples/pacman/levels/1.txt: New file.
+    * examples/pacman/levels/2.txt: New file.
+    * examples/pacman/levels/3.txt: New file.
+    * examples/pacman/main.ncl: New file.
+    * examples/pacman/media/door.png: New file.
+    * examples/pacman/media/food.png: New file.
+    * examples/pacman/media/freezer.png: New file.
+    * examples/pacman/media/ghost_blue_e.png: New file.
+    * examples/pacman/media/ghost_blue_n.png: New file.
+    * examples/pacman/media/ghost_blue_s.png: New file.
+    * examples/pacman/media/ghost_blue_w.png: New file.
+    * examples/pacman/media/ghost_frozen_e.png: New file.
+    * examples/pacman/media/ghost_frozen_n.png: New file.
+    * examples/pacman/media/ghost_frozen_s.png: New file.
+    * examples/pacman/media/ghost_frozen_w.png: New file.
+    * examples/pacman/media/ghost_green_e.png: New file.
+    * examples/pacman/media/ghost_green_n.png: New file.
+    * examples/pacman/media/ghost_green_s.png: New file.
+    * examples/pacman/media/ghost_green_w.png: New file.
+    * examples/pacman/media/ghost_orange_e.png: New file.
+    * examples/pacman/media/ghost_orange_n.png: New file.
+    * examples/pacman/media/ghost_orange_s.png: New file.
+    * examples/pacman/media/ghost_orange_w.png: New file.
+    * examples/pacman/media/ghost_purple_e.png: New file.
+    * examples/pacman/media/ghost_purple_n.png: New file.
+    * examples/pacman/media/ghost_purple_s.png: New file.
+    * examples/pacman/media/ghost_purple_w.png: New file.
+    * examples/pacman/media/ghost_red_e.png: New file.
+    * examples/pacman/media/ghost_red_n.png: New file.
+    * examples/pacman/media/ghost_red_s.png: New file.
+    * examples/pacman/media/ghost_red_w.png: New file.
+    * examples/pacman/media/pacman.png: New file.
+    * examples/pacman/media/pacman_dead.png: New file.
+    * examples/pacman/media/pacman_e.png: New file.
+    * examples/pacman/media/pacman_n.png: New file.
+    * examples/pacman/media/pacman_s.png: New file.
+    * examples/pacman/media/pacman_w.png: New file.
+    * examples/pacman/media/wall_.png: New file.
+    * examples/pacman/media/wall_b.png: New file.
+    * examples/pacman/media/wall_bl.png: New file.
+    * examples/pacman/media/wall_blr.png: New file.
+    * examples/pacman/media/wall_br.png: New file.
+    * examples/pacman/media/wall_l.png: New file.
+    * examples/pacman/media/wall_lr.png: New file.
+    * examples/pacman/media/wall_r.png: New file.
+    * examples/pacman/media/wall_t.png: New file.
+    * examples/pacman/media/wall_tb.png: New file.
+    * examples/pacman/media/wall_tbl.png: New file.
+    * examples/pacman/media/wall_tblr.png: New file.
+    * examples/pacman/media/wall_tbr.png: New file.
+    * examples/pacman/media/wall_tl.png: New file.
+    * examples/pacman/media/wall_tlr.png: New file.
+    * examples/pacman/media/wall_tr.png: New file.
+    * examples/pacman/parser.lua: New file.
+
+[33mcommit c7235172cecc0791702a6ba92fa5468f3b34e608[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Fri Jul 11 15:33:29 2014 -0300
+
+    build: Mark dist-deb target as PHONY
+    
+    * maint.mk: Likewise.
+
+[33mcommit 220f9f7294fa4175aa64934da4851381cb308bf6[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Fri Jul 11 15:30:05 2014 -0300
+
+    doc: Update README
+    
+    * README: Likewise.
+
+[33mcommit 340c9e853d4e78f69e26e12ab8ddfe371c8990cb[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Fri Jul 11 15:14:20 2014 -0300
+
+    build: Add dist-win32 target to maint.mk
+    
+    * maint.mk (dist-win32): New target; build Win32 package.
+
+[33mcommit f2748ebaae1f1313708271af74fbec801deb31e1[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Fri Jul 11 15:13:46 2014 -0300
+
+    doc: Update URLs in README
+    
+    * README: Likewise.
+
+[33mcommit 80bf0cd058c6ce5805c334024a1b196f937342c9[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Thu Jul 10 17:53:41 2014 -0300
+
+    build: Add contrib subdir with debian packaging stuff
+    
+    * contrib/debian/changelog: New file; debian packaging stuff.
+    * contrib/debian/compat: Likewise.
+    * contrib/debian/control: Likewise.
+    * contrib/debian/copyright: Likewise.
+    * contrib/debian/rules: Likewise.
+    * contrib/debian/source/format: Likewise.
+    * maint.mk (debuild): New rule; build debian packages.
+
+[33mcommit 7919ca57084f4c1b5cefc53cf9cf9911987f6486[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Thu Jul 10 16:28:43 2014 -0300
+
+    build: Sync Gnulib scripts
+    
+    * build-aux/git-log-fix: Updated to latest version.
+    * build-aux/git-version-gen: Likewise.
+    * build-aux/valgrind-tests.m4: Likewise.
+
+[33mcommit 85f56d8548e1e253615c6e98c11b34b18428e259[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Thu Jul 10 15:06:30 2014 -0300
+
+    tests: Fix server.sh call when $(builddir) != $(srcdir)
+    
+    * tests/Makefile.am (EXTRA_DIST): Add server.sh
+    * tests/server.sh: Use $1 as path to source dir.
+    * tests/tests.lua (tests.server.start): Update os.execute string.
+
+[33mcommit 1313591da8947057c840c268f79b34e11b27478f[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Thu Jul 10 14:47:43 2014 -0300
+
+    maint: Add missing #include <glib-object.h> directive
+    
+    * nclua/canvas.c: Likewise; required in systems where g_type_init must
+    be explicitly called.
+    * nclua/event/socket.c: Likewise.
+    * nclua/event/stopwatch.c: Likewise.
+    * tests/tests0.c: Likewise.
+
+[33mcommit e9cc336ad6d470dd98ae0dc1fdb10b5f0551c0bf[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Thu Jul 10 14:10:33 2014 -0300
+
+    build: Fix some makefiles
+    
+    * build-aux/Makefile.am.link: Replace .so by $(SOEXT).
+    * lib/Makefile.am (nclua.def, nclua.lib): Fix SOEXT usage.
+
+[33mcommit 08599bcd1d2e2c2888e54a6445810a14a0e088f4[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Thu Jul 10 14:08:45 2014 -0300
+
+    build: Check if g_type_init must be called explicitly
+    
+    * configure.ac: Define G_TYPE_INIT_WRAPPER in config.h if g_type_init
+    must be called explicitly.
+
+[33mcommit 1c655b5ce25a4f0ab91c78bdf922b66630a84938[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Wed Jul 9 16:50:22 2014 -0300
+
+    maint: Port to mingw
+    
+    * configure.ac: Add Win32 checks and definitions.
+    * Makefile.am: Setup Win32 stuff.
+    * nclua/Makefile.am: Likewise.
+    * nclua/event/Makefile.am: Likewise.
+    * lib/nclua.rc.in: New file; windres input.
+    * nclua/canvas.c (luaopen_nclua_canvas): Call G_TYPE_INIT_WRAPPER.
+    * nclua/event/socket.c (luaopen_nclua_event_socket): Likewise.
+    * nclua/event/stopwatch.c (luaopen_nclua_event_stopwatch): Likewise.
+    * tests/tests0.c (luaopen_tests0): Likewise.
+    * src/nclua.c (main): Replace gtk_widget_add_tick_callback by
+    g_timeout_add if GTK < 3.8.
+    * tests/Makefile.am: Likewise.
+    * tests/server.sh: New file; tests.pl wrapper script.
+    * tests/test-canvas-compose.lua: Use epsilon in all checks; skip checks
+    that fail on Win32.
+    * tests/test-event-socket-connect.lua: Fix typo; skip checks that fail
+    on Win32.
+    * tests/test-event-socket-receive.lua: Skip checks that fail on Win32.
+    * tests/tests.h (INVALID_PATH): New macro; expands to an invalid path.
+    * tests/test-libnclua-debug-dump-surface.c: Use INVALID_PATH.
+    * tests/test-libnclua-open.c: Likewise.
+    * tests/test-libncluaw-debug-dump-surface.c: Likewise.
+    * tests/test-libncluaw-open.c: Likewise.
+    * tests/tests.lua (tests.is_windows): New function; returns true if
+    we're on Win32.
+    (tests.server.start): Call server.pl via server.sh wrapper.
+    (tests.server.stop): Send KILL signal to server, instead of TERM.
+
+[33mcommit 49eebf932d29b6b56222e432a85c9c89660f1ec2[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Wed Jul 9 15:39:54 2014 -0300
+
+    examples: Add new example, luarocks
+    
+    * examples/luarocks/MEDIA-LICENSE: New file.
+    * examples/luarocks/SOFTWARE-LICENSE: New file.
+    * examples/luarocks/background.png: New file.
+    * examples/luarocks/game.lua: New file.
+    * examples/luarocks/main.ncl: New file.
+    * examples/luarocks/rock_big.gif: New file.
+    * examples/luarocks/rock_small.gif: New file.
+    * examples/luarocks/satellite.gif: New file.
+    * examples/luarocks/ship.gif: New file.
+
+[33mcommit aef980907bb63905d062ecfd1c7b6c25e9028c5b[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Wed Jul 9 15:39:13 2014 -0300
+
+    examples: Display event on screen in the input.lua example
+    
+    * examples/input.lua: Likewise.
+
+[33mcommit c566817ea053aeddc1d36c7c879c9b586045fe18[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Tue Apr 29 18:19:07 2014 -0300
+
+    build: Link canvas and stopwatch against C math library
+    
+    * nclua/Makefile.am (canvas_la_LDFLAGS): Likewise.
+    * nclua/event/Makefile.am (stopwatch_la_LDFLAGS): Likewise.
+    * configure.ac (LIBM): New variable, math library linker flags; defined
+    by Libtool's macro LT_LIB_M.
+
+[33mcommit 01d3e34c70b91c91f332ced4cc56fdcb730d53aa[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Tue Apr 29 18:15:31 2014 -0300
+
+    build: Add missing build-aux files to EXTRA_DIST
+    
+    * Makefile.am: Likewise.
+
+[33mcommit 6ea0c54c6fb4fa4699504a5beeff6305a27cd976[m
+Author: Rafael Diniz <rafaeldiniz@telemidia.puc-rio.br>
+Date:   Tue Apr 29 03:13:05 2014 -0300
+
+    Added debian/ directory. Many information still missing.
+
+[33mcommit bc35ab47ae429721824b9847f86ae8236935677d[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Thu Apr 10 18:52:17 2014 -0300
+
+    tests: Remove OS specific conditionals from tests
+    
+    * tests/tests.lua (tests.is_linux): New function; returns true if
+    we're on Linux.
+    (tests.is_freebsd): New function; returns true if we're on FreeBSD.
+    * tests/test-event-init-uptime.lua: Updated accordingly.
+    * tests/test-event.lua: Likewise.
+
+[33mcommit b47499425bc98eacb37e1de38c11a9868c87b817[m
+Author: Guilherme F. Lima <gflima@sdf.org>
+Date:   Wed Apr 9 19:53:30 2014 -0300
+
+    First commit
