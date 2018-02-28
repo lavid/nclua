@@ -44,3 +44,12 @@ ASSERT (tests.objeq (t3, {class='zip', type='save'}))
 local t4 = zip:filter ('zip', 'cancel')
 ASSERT (tests.objeq (t4, {class='zip', type='cancel'}))
 
+evt = {
+	class 	= 'zip',
+	type 	= 'open',
+	path 	= ZIPNAME,
+}
+
+zip.zip:enqueue(evt)
+
+zip.zip:cycle()

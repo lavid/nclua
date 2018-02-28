@@ -21,7 +21,7 @@ along with NCLua.  If not, see <https://www.gnu.org/licenses/>.  */
 #include "aux-glib.h"
 #include "aux-lua.h"
 
-// #include "zip.h"
+#include "zip.h"
 
 #include "callback.h"
 
@@ -30,6 +30,8 @@ along with NCLua.  If not, see <https://www.gnu.org/licenses/>.  */
 #define ZIP_IMPL "nclua.event.zip_impl"
 
 
+
+zip_t *file;
  
 
 
@@ -59,6 +61,16 @@ l_zip_cycle (unused (lua_State *L))
 static int
 l_zip_open (lua_State *L)
 {
+
+  assert(luaL_checkudata (L, index, SOUP), "not a zip event");
+
+  char *path = lua_tostring(L, -1);
+
+  if(path){
+    printf("%s\n", path);
+  }
+
+
   printf ("l_zip_open\n");
   return 0;
 }
