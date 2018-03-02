@@ -21,7 +21,8 @@ along with NCLua.  If not, see <https://www.gnu.org/licenses/>.  */
 #include "aux-glib.h"
 #include "aux-lua.h"
 #include <libsoup/soup.h>
-
+#include <curl/curl.h>
+#include <stdlib.h>
 #include "callback.h"
 
 /* Registry key for the soup metatable.  */
@@ -432,6 +433,102 @@ l_soup_request (lua_State *L)
   return 0;
 }
 
+struct string {
+  char *ptr;
+  size_t len;
+};
+
+void init_string(struct string *s) {
+  s->len = 0;
+  s->ptr = malloc(s->len+1);
+  if (s->ptr == NULL) {
+    fprintf(stderr, "malloc() failed\n");
+    exit(EXIT_FAILURE);
+  }
+  s->ptr[0] = '\0';
+}
+
+size_t writefunc(void *ptr, size_t size, size_t nmemb, struct string *s)
+{
+  size_t new_len = s->len + size*nmemb;
+  s->ptr = realloc(s->ptr, new_len+1);
+  if (s->ptr == NULL) {
+    fprintf(stderr, "realloc() failed\n");
+    exit(EXIT_FAILURE);
+  }
+  memcpy(s->ptr+s->len, ptr, size*nmemb);
+  s->ptr[new_len] = '\0';
+  s->len = new_len;
+
+  return size*nmemb;
+}
+
+static int
+l_curl_request (lua_State *L)
+{
+
+CURL *curl;
+CURLcode res;
+
+const char *uri;
+const char *cert;
+
+  uri = luaL_checkstring (L, 3);
+  cert = luaL_checkstring (L, 4);
+
+curl_global_init(CURL_GLOBAL_DEFAULT);
+
+      curl = curl_easy_init();
+      if(curl) {
+
+        struct string s;
+        init_string(&s);
+
+        curl_easy_setopt(curl, CURLOPT_CAPATH, cert);
+        curl_easy_setopt(curl, CURLOPT_URL, uri);
+
+        curl_easy_setopt(curl, CURLOPT_WRITEFUNCTION, writefunc);
+        curl_easy_setopt(curl, CURLOPT_WRITEDATA, &s);
+
+        res = curl_easy_perform(curl);
+
+        lua_pushnil (L);
+
+        lua_pushvalue (L, 1);         /* soup */
+        lua_pushvalue (L, 2);         /* method */
+        lua_pushvalue (L, 3);         /* uri */
+
+        lua_pushstring(L, s.ptr);    // ***** corrigir    
+        /*
+
+          O RETORNO PRECISA SER FEITO CORRETAMENTE. FALTA VERIFICAR COMO VOU RETORNAR PARA LUA. OLHAR O REQUEST NORMAL DO SOUP E O TEST 'test-event-http-soup-request.lua'
+  
+        */
+
+       // printf("%s\n", s.ptr); //************************
+        free(s.ptr); //******************
+
+
+        /* Check for errors */
+        if(res != CURLE_OK){
+          ASSERT (FALSE);
+          fprintf(stderr, "curl_easy_perform() failed: %s\n",
+                                      curl_easy_strerror(res));
+        }else{
+
+          ASSERT (TRUE);
+
+        }
+        /* always cleanup */
+        curl_easy_cleanup(curl);
+      }
+
+      curl_global_cleanup();
+
+return 0;
+}
+
+
 static const struct luaL_Reg soup_funcs[] = {
   {"__gc", __l_soup_gc},
   {"cancel", l_soup_cancel},
@@ -439,6 +536,7 @@ static const struct luaL_Reg soup_funcs[] = {
   {"is_soup", l_soup_is_soup},
   {"new", l_soup_new},
   {"request", l_soup_request},
+  {"request_https", l_curl_request},
   {NULL, NULL}
 };
 

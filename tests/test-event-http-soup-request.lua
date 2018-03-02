@@ -111,3 +111,9 @@ CYCLE_UNTIL (function () return DONE end)
 
 local authors = tests.read_file (tests.mk.top_srcdir..'/AUTHORS')
 ASSERT (full_body == authors)
+
+local session = soup.new ()
+
+ASSERT(soup.request_https, session, 'request', 'get', 'google.crt', 'https://www.google.com/', '', function () end)
+
+--local evt = {class='http', type='request', method='get', cert='google.crt', uri='https://www.google.com/'}

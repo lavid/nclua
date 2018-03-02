@@ -77,3 +77,9 @@ ASSERT (http:check (evt))
 -- Check valid cancel event.
 local evt = {class='http', type='cancel', session={}}
 ASSERT (http:check (evt))
+
+-- Check valid response event.
+local evt = {class='http', type='request', method='get', cert='google.crt',
+             uri='https://www.google.com/'}
+ASSERT (http:check (evt))
+

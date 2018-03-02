@@ -61,10 +61,11 @@ function http:check (evt)
    if evt.type == 'request' or evt.type == 'response' then
       check.event.option ('method', evt.method, method_list)
       check.event.string ('uri', evt.uri)
-      check.event.table ('headers', evt.headers, {})
+      check.event.table ('headers', evt.headers, {})      
       check.event.string ('body', evt.body, '')
       if evt.type == 'request' then
          check.event.number ('timeout', evt.timeout, 0)
+         check.event.string ('cert', evt.cert, '')
       else
          check.event.boolean ('finished', evt.finished, false)
          check.event.string ('error', evt.error, '')
@@ -150,42 +151,49 @@ function http:cycle ()
    while not http.INQ:is_empty () do
       local evt = http.INQ:dequeue ()
       assert (evt.class == http.class)
-      local session = evt.session
-      local soup = MAP:peer (session)
-      if evt.type == 'request' then
-         if soup ~= nil then
-            soup:cancel ()
-         else
-            soup = http_soup.new ()
-            MAP:bind (session, soup)
-         end
-         local status, errmsg = pcall (http_soup.request,
-                                       soup,
-                                       evt.method:upper (),
-                                       evt.uri,
-                                       evt.headers or {},
-                                       evt.body or '',
-                                       request_finished,
-                                       evt.timeout)
-         if status == false then
-            dispatch {
-               method=evt.method:lower (),
-               uri=evt.uri,
-               code=nil,
-               session=evt.session,
-               headers=nil,
-               body=nil,
-               finished=true,
-               error=errmsg
-            }
-            MAP:unbind (session, soup)
+      if evt.cert ~= nil then
+         local status, errmsg = pcall(http_soup.request_https, evt.method:upper (), evt.cert, evt.uri, evt.headers or {})
+         
+      else  
+
+         local session = evt.session
+         local soup = MAP:peer (session)
+         if evt.type == 'request' then
+            if soup ~= nil then
+               soup:cancel ()
+            else
+               soup = http_soup.new ()
+               MAP:bind (session, soup)
+            end
+            local status, errmsg = pcall (http_soup.request,
+                                          soup,
+                                          evt.method:upper (),
+                                          evt.uri,
+                                          evt.headers or {},
+                                          evt.body or '',
+                                          request_finished,
+                                          evt.timeout)
+            if status == false then
+               dispatch {
+                  method=evt.method:lower (),
+                  uri=evt.uri,
+                  code=nil,
+                  session=evt.session,
+                  headers=nil,
+                  body=nil,
+                  finished=true,
+                  error=errmsg
+               }
+               MAP:unbind (session, soup)
+            end
+
+         elseif evt.type == 'cancel' then
+            if soup ~= nil then
+               soup:cancel ()
+               MAP:unbind (session, soup)
+            end
          end
 
-      elseif evt.type == 'cancel' then
-         if soup ~= nil then
-            soup:cancel ()
-            MAP:unbind (session, soup)
-         end
       end
    end
    http_soup.cycle ()

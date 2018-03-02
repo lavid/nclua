@@ -31,7 +31,7 @@ along with NCLua.  If not, see <https://www.gnu.org/licenses/>.  */
 
 
 
-zip_t *file;
+struct zip_t *file;
  
 
 
@@ -62,7 +62,7 @@ static int
 l_zip_open (lua_State *L)
 {
 
-  assert(luaL_checkudata (L, index, SOUP), "not a zip event");
+  //assert(luaL_checkudata (L, index, ZIP), "not a zip event"); ------------- VERIFICAR!
 
   char *path = lua_tostring(L, -1);
 
