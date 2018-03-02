@@ -114,6 +114,11 @@ ASSERT (full_body == authors)
 
 local session = soup.new ()
 
-ASSERT(soup.request_https, session, 'request', 'get', 'google.crt', 'https://www.google.com/', '', function () end)
+
+session:request_https ('get', 'https://www.google.com/', 'google.crt', {}, '',
+                 request_cb)
+CYCLE_UNTIL (function () return DONE end)
+
+--ASSERT(soup.request_https, session, 'request', 'get', 'https://www.google.com/', 'google.crt', '', function () end)
 
 --local evt = {class='http', type='request', method='get', cert='google.crt', uri='https://www.google.com/'}

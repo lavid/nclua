@@ -77,9 +77,9 @@ http_soup_export_symbols= -export-symbols $(http_soup_def_dependency)\
 endif
 
 http_soup_la_DEPENDENCIES= $(http_soup_def_dependency)
-http_soup_la_CFLAGS= $(AM_CFLAGS) $(SOUP_CFLAGS)
-http_soup_la_LDFLAGS= $(AM_LDFLAGS) $(SOUP_LIBS)\
-  $(http_soup_export_symbols)
+http_soup_la_CFLAGS= $(AM_CFLAGS) $(SOUP_CFLAGS) $(LIBCURL_CFLAGS)
+http_soup_la_LDFLAGS= $(AM_LDFLAGS) $(SOUP_LIBS) $(LIBCURL_LIBS)\
+  $(http_soup_export_symbols) $(libcurl_export_symbols)
 http_soup_la_SOURCES=\
   luax-callback.h\
   http_soup.c\

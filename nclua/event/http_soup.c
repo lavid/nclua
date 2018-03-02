@@ -25,6 +25,7 @@ along with NCLua.  If not, see <https://www.gnu.org/licenses/>.  */
 #include <stdlib.h>
 #include "callback.h"
 
+
 /* Registry key for the soup metatable.  */
 #define SOUP "nclua.event.http_soup"
 
@@ -511,12 +512,12 @@ curl_global_init(CURL_GLOBAL_DEFAULT);
 
         /* Check for errors */
         if(res != CURLE_OK){
-          ASSERT (FALSE);
+          //ASSERT (FALSE);
           fprintf(stderr, "curl_easy_perform() failed: %s\n",
                                       curl_easy_strerror(res));
         }else{
 
-          ASSERT (TRUE);
+          //ASSERT (TRUE);
 
         }
         /* always cleanup */
