@@ -83,3 +83,7 @@ local evt = {class='http', type='request', method='get', cert='google.crt',
              uri='https://www.google.com/'}
 ASSERT (http:check (evt))
 
+http.INQ:enqueue(evt)
+
+http.cycle()
+

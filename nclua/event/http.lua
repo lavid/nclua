@@ -17,7 +17,7 @@ You should have received a copy of the GNU General Public License
 along with NCLua.  If not, see <https://www.gnu.org/licenses/>.  ]]--
 
 local http
-
+local io = io
 local assert = assert
 local pcall = pcall
 local type = type
@@ -151,8 +151,10 @@ function http:cycle ()
    while not http.INQ:is_empty () do
       local evt = http.INQ:dequeue ()
       assert (evt.class == http.class)
+    --  io.stdout:write ('eu estou passando nesse lua aqui')
       if evt.cert ~= nil then
-         local status, errmsg = pcall(http_soup.request_https, evt.method:upper (), evt.cert, evt.uri, evt.headers or {})
+         io.stdout:write ('eu estou passando nesse lua aqui')
+         local status, errmsg = pcall(http_soup.request_https, evt.method:upper (), evt.cert, evt.uri)
          
       else  
 

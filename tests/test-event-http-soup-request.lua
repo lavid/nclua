@@ -106,17 +106,34 @@ local function request_cb (status, soup, method, uri, code, headers, body,
    end
 end
 
+local function curl_request_cb (status, uri, cert, string,
+                           error)
+   TRACE (status, uri, cert, string)
+   tests.dump (status)
+   tests.dump (string)
+   tests.dump (cert)
+   ASSERT (status == true)
+  -- ASSERT (code == 200)
+  --[[ ASSERT (error == nil)
+   if #body == 0 then
+      DONE = true
+   else
+      full_body = full_body .. body
+   end--]]
+end
+
+
 session:request ('GET', URI, {Accept='text/plain'}, '', request_cb)
 CYCLE_UNTIL (function () return DONE end)
 
 local authors = tests.read_file (tests.mk.top_srcdir..'/AUTHORS')
 ASSERT (full_body == authors)
 
-local session = soup.new ()
+--local session = soup.new ()
 
 
-session:request_https ('get', 'https://www.google.com/', 'google.crt', {}, '',
-                 request_cb)
+session:request_https ('GET', 'https://www.google.com/', 'google.crt', {}, '',
+                 curl_request_cb)
 CYCLE_UNTIL (function () return DONE end)
 
 --ASSERT(soup.request_https, session, 'request', 'get', 'https://www.google.com/', 'google.crt', '', function () end)

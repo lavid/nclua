@@ -429,8 +429,11 @@ l_soup_request (lua_State *L)
   lua_pushcclosure (L, l_soup_request_callback_closure, 4);
   cb_data = luax_callback_data_ref (L, soup);
 
+ // luax_dump_stack(cb_data->L);
   soup_request_send_async (SOUP_REQUEST (soup->request), soup->cancel,
                            request_finished, cb_data);
+
+  //luax_dump_stack(cb_data->L);
   return 0;
 }
 
@@ -474,10 +477,17 @@ CURLcode res;
 const char *uri;
 const char *cert;
 
-  uri = luaL_checkstring (L, 3);
-  cert = luaL_checkstring (L, 4);
+  
+ // luax_dump_value(L, 0);
+ // luax_dump_value(L, 1);
 
-curl_global_init(CURL_GLOBAL_DEFAULT);
+  uri = luaL_checkstring (L, 3);
+ // luax_dump_value(L, 2);
+  cert = luaL_checkstring (L, 4);
+ // luax_dump_value(L, 3);
+  luax_dump_stack(L);
+
+  curl_global_init(CURL_GLOBAL_DEFAULT);
 
       curl = curl_easy_init();
       if(curl) {
@@ -493,13 +503,18 @@ curl_global_init(CURL_GLOBAL_DEFAULT);
 
         res = curl_easy_perform(curl);
 
-        lua_pushnil (L);
+        //free(L);
+        //L = luaL_newstate();
 
-        lua_pushvalue (L, 1);         /* soup */
-        lua_pushvalue (L, 2);         /* method */
-        lua_pushvalue (L, 3);         /* uri */
+        lua_settop(L, 0);    
+        lua_pushstring(L, uri);      
 
-        lua_pushstring(L, s.ptr);    // ***** corrigir    
+        lua_pushstring(L, cert);  
+        //lua_pushstring(L, "oii");
+        lua_pushstring(L, (s.ptr));
+
+        luax_dump_value(L, 3);
+        //luax_dump_stack(L);
         /*
 
           O RETORNO PRECISA SER FEITO CORRETAMENTE. FALTA VERIFICAR COMO VOU RETORNAR PARA LUA. OLHAR O REQUEST NORMAL DO SOUP E O TEST 'test-event-http-soup-request.lua'
