@@ -522,6 +522,9 @@ const char *cert;
         */
 
        // printf("%s\n", s.ptr); //************************
+
+        //onde ta a info da resposta? -- Neto --
+        
         free(s.ptr); //******************
 
 

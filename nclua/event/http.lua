@@ -152,10 +152,24 @@ function http:cycle ()
       local evt = http.INQ:dequeue ()
       assert (evt.class == http.class)
     --  io.stdout:write ('eu estou passando nesse lua aqui')
-      if evt.cert ~= nil then
+      if evt.cert ~= '' then
          io.stdout:write ('eu estou passando nesse lua aqui')
          local status, errmsg = pcall(http_soup.request_https, evt.method:upper (), evt.cert, evt.uri)
-         
+
+            if status == false then
+               dispatch {
+                  method=evt.method:lower (),
+                  uri=evt.uri,
+                  code=nil,
+                  session=evt.session,
+                  headers=nil,
+                  body=nil,
+                  finished=true,
+                  error=errmsg,
+                  cert = evt.cert,
+               }
+            end
+
       else  
 
          local session = evt.session
@@ -184,7 +198,7 @@ function http:cycle ()
                   headers=nil,
                   body=nil,
                   finished=true,
-                  error=errmsg
+                  error=errmsg,
                }
                MAP:unbind (session, soup)
             end
