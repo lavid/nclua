@@ -30,16 +30,7 @@ along with NCLua.  If not, see <https://www.gnu.org/licenses/>.  */
 #define ZIP_IMPL "nclua.event.zip_impl"
 
 
-
-struct zip_t *file;
- 
-
-
-
-
-
-
-
+zip_t* file;
 
 
 /*-
@@ -52,7 +43,8 @@ l_zip_cycle (unused (lua_State *L))
 {
 
   printf ("l_zip_cycle\n");
-  return 0;
+  return (g_main_context_iteration (NULL, FALSE), 0);
+
 }
 
 /*-
@@ -64,14 +56,29 @@ l_zip_open (lua_State *L)
 
   //assert(luaL_checkudata (L, index, ZIP), "not a zip event"); ------------- VERIFICAR!
 
-  char *path = lua_tostring(L, -1);
+  const char *path = lua_tostring(L, -1);
 
   if(path){
     printf("%s\n", path);
   }
 
 
-  printf ("l_zip_open\n");
+  printf ("l_zip_open beggining\n");
+
+  file = zip_open(path, 1, "r");
+
+  if(file){
+    printf("Zip open success\n");
+  }else{
+    printf("Zip open fail. Creating new Zip\n");
+    file = zip_open(path, 1, "w");
+  }
+
+  if(file){
+    printf("Zip creation success\n");
+  }else{
+    printf("Zip creation fail\n");
+  }
   return 0;
 }
 
