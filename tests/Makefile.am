@@ -145,6 +145,8 @@ scripts+= test-event-stopwatch-get-time.lua
 scripts+= test-event-zip.lua
 # sectionfilter_impl
 scripts+= test-event-sectionfilter.lua
+# bitwise_operators
+scripts+= test-bitwise.lua
 
 if WITH_EVENT_GEOLOCATION
 # event.geolocation (handler plugin)
