@@ -50,4 +50,3 @@ ASSERT (c:dump('test-canvas-dump2','jpeg'))
 local status, erromsg=c:dump('test-canvas-dump3','gif')
 ASSERT(status==false, erromsg=='format invalid')
 
-
