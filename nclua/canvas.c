@@ -1540,14 +1540,15 @@ l_canvas_dump (lua_State *L)
 {
   canvas_t *canvas;
   cairo_status_t err;
-  const char *text;
+  const char *text, *format;
   canvas = canvas_check (L, 1, NULL);
-
+ // luax_dump_stack(L);
   if( lua_gettop (L) >= 3 ){
   text=luaL_checkstring (L, 3);
-  
-    if (strcmp(text, "jpeg"))
+   
+    if (strcmp(text, "jpeg")==0)
     {
+       // strcat(format,text);
         int quality=75;
         if( lua_gettop (L) >=4 )
         {
@@ -1557,21 +1558,24 @@ l_canvas_dump (lua_State *L)
           if(quality<0)
             quality=0;
         }
-          err= cairo_image_surface_write_to_jpeg (canvas->sfc, luaL_checkstring (L, 2),quality);
+          format=luaL_checkstring (L, 2);
+          err= cairo_image_surface_write_to_jpeg (canvas->sfc, strcat(format, ".jpeg"),quality);
           if (unlikely (err != CAIRO_STATUS_SUCCESS))
           {
             lua_pushboolean (L, FALSE);
             lua_pushstring (L, cairo_status_to_string (err));
+
             return 2;
           }
           lua_pushboolean (L, TRUE);
-
-          return 11;
+        
+          return 1;
         
     }
-    else if (strcmp(text, "png"))
+    else if (strcmp(text, "png")==0)
     {
-      err = cairo_surface_write_to_png (canvas->sfc, luaL_checkstring (L, 2));
+      format=luaL_checkstring (L, 2);
+      err = cairo_surface_write_to_png (canvas->sfc, strcat(format, ".png"));
       if (unlikely (err != CAIRO_STATUS_SUCCESS))
       {
         lua_pushboolean (L, FALSE);
@@ -1580,29 +1584,32 @@ l_canvas_dump (lua_State *L)
       }
       lua_pushboolean (L, TRUE);
 
-      return 3;
+      return 1;
       
     }
     else
     {
+
       lua_pushboolean (L, FALSE);
       lua_pushstring (L, "format invalid");
-      return 4;
+      //luax_dump_stack(L);
+      return 2;
 
     }
   }
   else
   {
-    err = cairo_surface_write_to_png (canvas->sfc, luaL_checkstring (L, 2));
-   if (unlikely (err != CAIRO_STATUS_SUCCESS))
-      {
-        lua_pushboolean (L, FALSE);
-        lua_pushstring (L, cairo_status_to_string (err));
-        return 5;
-      }
-      lua_pushboolean (L, TRUE);
-
-      return 6;
+    format=luaL_checkstring (L, 2);
+    err= cairo_image_surface_write_to_jpeg (canvas->sfc, strcat(format, ".jpeg"),75);
+    if (unlikely (err != CAIRO_STATUS_SUCCESS))
+    {
+      lua_pushboolean (L, FALSE);
+      lua_pushstring (L, cairo_status_to_string (err));
+      return 2;
+    }
+    lua_pushboolean (L, TRUE);
+        
+    return 1;
   }
 }
 

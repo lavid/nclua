@@ -15,7 +15,6 @@ License for more details.
 You should have received a copy of the GNU General Public License
 along with NCLua.  If not, see <https://www.gnu.org/licenses/>.  ]]--
 
---https://www.lua.org/manual/5.2/manual.html#6.7
 
 local tests = require ('tests')
 local ASSERT = tests.ASSERT
@@ -23,8 +22,6 @@ local ASSERT_ERROR = tests.ASSERT_ERROR
 local TRACE = tests.trace
 local TRACE_SEP = tests.trace_sep
 
-local table = table
-local canvas = require ('nclua.canvas')
 
 local x=20
 local b=43
@@ -157,17 +154,6 @@ ASSERT(bit32.arshift(-1, 1) == 0xffffffff)
 ASSERT(bit32.arshift(-1, 24) == 0xffffffff)
 ASSERT(bit32.arshift(-1, 32) == 0xffffffff)
 ASSERT(bit32.arshift(-1, -1) == bit32.band(-1 * 2, 0xffffffff))
-
---[[ASSERT(0x12345678 << 4 == 0x123456780)
-ASSERT(0x12345678 << 8 == 0x1234567800)
-ASSERT(0x12345678 << -4 == 0x01234567)
-ASSERT(0x12345678 << -8 == 0x00123456)
-ASSERT(0x12345678 << 32 == 0x1234567800000000)
-ASSERT(0x12345678 << -32 == 0)
-ASSERT(0x12345678 >> 4 == 0x01234567)
-ASSERT(0x12345678 >> 8 == 0x00123456)
-ASSERT(0x12345678 >> 32 == 0)
-ASSERT(0x12345678 >> -32 == 0x1234567800000000)--]]
 
 
 -- some special cases
