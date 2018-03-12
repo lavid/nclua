@@ -1546,8 +1546,9 @@ l_canvas_dump (lua_State *L)
   if( lua_gettop (L) >= 3 ){
   text=luaL_checkstring (L, 3);
   
-    if (strcmp(text, "jpeg"))
+    if (strcmp(text, "jpeg")==0)
     {
+        
         int quality=75;
         if( lua_gettop (L) >=4 )
         {
@@ -1562,15 +1563,17 @@ l_canvas_dump (lua_State *L)
           {
             lua_pushboolean (L, FALSE);
             lua_pushstring (L, cairo_status_to_string (err));
+
             return 2;
           }
           lua_pushboolean (L, TRUE);
-
-          return 11;
+        
+          return 1;
         
     }
-    else if (strcmp(text, "png"))
+    else if (strcmp(text, "png")==0)
     {
+
       err = cairo_surface_write_to_png (canvas->sfc, luaL_checkstring (L, 2));
       if (unlikely (err != CAIRO_STATUS_SUCCESS))
       {
@@ -1580,14 +1583,15 @@ l_canvas_dump (lua_State *L)
       }
       lua_pushboolean (L, TRUE);
 
-      return 3;
+      return 1;
       
     }
     else
     {
       lua_pushboolean (L, FALSE);
       lua_pushstring (L, "format invalid");
-      return 4;
+
+      return 2;
 
     }
   }
@@ -1598,11 +1602,11 @@ l_canvas_dump (lua_State *L)
       {
         lua_pushboolean (L, FALSE);
         lua_pushstring (L, cairo_status_to_string (err));
-        return 5;
+        return 2;
       }
       lua_pushboolean (L, TRUE);
 
-      return 6;
+      return 1;
   }
 }
 
