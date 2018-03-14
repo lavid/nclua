@@ -25,7 +25,7 @@
   This data structure is used throughout the library to represent zip archive
   - forward declaration.
 */
-typedef struct zip_t zip_t;
+struct zip_t;
 
 /*
   Opens zip archive with compression level using the given mode.

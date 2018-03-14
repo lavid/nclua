@@ -29,8 +29,10 @@ along with NCLua.  If not, see <https://www.gnu.org/licenses/>.  */
 /* Test */
 #define ZIP_IMPL "nclua.event.zip_impl"
 
+typedef struct zip_t zipUdata;
 
-zip_t* file;
+
+zipUdata *file;
 
 
 /*-
@@ -54,8 +56,6 @@ static int
 l_zip_open (lua_State *L)
 {
 
-  //assert(luaL_checkudata (L, index, ZIP), "not a zip event"); ------------- VERIFICAR!
-
   const char *path = lua_tostring(L, -1);
 
   if(path){
@@ -64,14 +64,14 @@ l_zip_open (lua_State *L)
 
 
   printf ("l_zip_open beggining\n");
-
-  file = zip_open(path, 1, "r");
+    
+  file = zip_open(path, ZIP_DEFAULT_COMPRESSION_LEVEL, 'r');
 
   if(file){
     printf("Zip open success\n");
   }else{
     printf("Zip open fail. Creating new Zip\n");
-    file = zip_open(path, 1, "w");
+    file = zip_open(path, ZIP_DEFAULT_COMPRESSION_LEVEL, 'w');
   }
 
   if(file){
@@ -81,6 +81,8 @@ l_zip_open (lua_State *L)
   }
   return 0;
 }
+
+
 
 static const struct luaL_Reg funcs[] = {
   {"cycle", l_zip_cycle},
