@@ -24,6 +24,9 @@ local check = require ('nclua.event.check')
 local engine = require ('nclua.event.engine')
 local zip_impl = require ('nclua.event.zip_impl')
 
+
+local errMsg = "erro ao abrir zip"
+
 do
    zip = engine:new ()
    zip.class = 'zip'
@@ -55,6 +58,7 @@ function zip:filter (class, type)
    return filter
 end
 
+
 ---
 -- Cycles the zip engine once.
 --
@@ -70,7 +74,6 @@ function zip:cycle ()
   
       local status, errmsg = pcall (zip_impl.open,
                                     evt.path)
-
 
       tests.dump('\n\n\n\n')
       tests.dump(status)
@@ -91,7 +94,7 @@ function zip:cycle ()
         evt.type  = evt.type
         evt.path  = evt.path
         evt.error = nil
-        evt.zip   = "abriu"
+        --evt.zip   = zip_impl
         --TODO: fulfill event
         zip.OUTQ:enqueue (evt)
 
@@ -99,7 +102,7 @@ function zip:cycle ()
     end
   end
 
-  zip_impl.cycle ()
+  zip_impl:cycle ()
 
 end
 

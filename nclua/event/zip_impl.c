@@ -29,11 +29,20 @@ along with NCLua.  If not, see <https://www.gnu.org/licenses/>.  */
 /* Test */
 #define ZIP_IMPL "nclua.event.zip_impl"
 
-typedef struct zip_t zipUdata;
+/* Throws a run-time error.  */
+#define error_throw(L, msg)\
+  (lua_pushstring ((L), (msg)), lua_error ((L)))
 
 
-zipUdata *file;
+typedef struct {
 
+  struct zip_t *file;
+
+
+} l_zip_udata;
+
+
+l_zip_udata zipU;
 
 /*-
  * zip.cycle ()
@@ -56,7 +65,10 @@ static int
 l_zip_open (lua_State *L)
 {
 
-  const char *path = lua_tostring(L, -1);
+  l_zip_udata *zipTable;
+
+
+  const char *path = lua_tostring(L, 1);
 
   if(path){
     printf("%s\n", path);
@@ -65,21 +77,54 @@ l_zip_open (lua_State *L)
 
   printf ("l_zip_open beggining\n");
     
-  file = zip_open(path, ZIP_DEFAULT_COMPRESSION_LEVEL, 'r');
+  zipU.file = zip_open(path, ZIP_DEFAULT_COMPRESSION_LEVEL, 'r');
 
-  if(file){
+  if(zipU.file ){
     printf("Zip open success\n");
-  }else{
+  }
+  else{
     printf("Zip open fail. Creating new Zip\n");
-    file = zip_open(path, ZIP_DEFAULT_COMPRESSION_LEVEL, 'w');
-  }
+   
+    zipU.file  = zip_open(path, ZIP_DEFAULT_COMPRESSION_LEVEL, 'w');
 
-  if(file){
-    printf("Zip creation success\n");
-  }else{
-    printf("Zip creation fail\n");
+    if(zipU.file ){
+
+      printf("Zip creation success\n");
+
+    }else{
+
+      printf("Zip creation fail\n");
+      return error_throw (L, "erro ao abrir zip");
+
+    }
+  
   }
-  return 0;
+  
+
+  /* Create the user data pushing it onto the stack. We also pre-initialize
+   * the member of the userdata in case initialization fails in some way. If
+   * that happens we want the userdata to be in a consistent state for __gc. */
+  
+  zipTable        = (l_zip_udata *)lua_newuserdata(L, sizeof(*zipTable));
+  zipTable->file  = NULL;
+  
+
+  
+  /* Add the metatable to the stack. */
+  luaL_getmetatable(L, "ZIP_IMPL");
+  /* Set the metatable on the userdata. */
+  lua_setmetatable(L, -2);
+  lua_pushnumber(L, (int)zipU.file);
+
+
+
+  //luaL_setmetatable (L, ZIP_IMPL);
+  //lua_pushuserdata (file);
+
+
+  zip_close(zipU.file );
+
+  return 4;
 }
 
 
@@ -90,13 +135,38 @@ static const struct luaL_Reg funcs[] = {
   {NULL, NULL}
 };
 
+static const struct luaL_Reg methods[] = {
+  {NULL, NULL}
+};
+
+
+
 int luaopen_nclua_event_zip_impl (lua_State *L);
 
 int
 luaopen_nclua_event_zip_impl (lua_State *L)
 {
   G_TYPE_INIT_WRAPPER ();
-  luax_newmetatable (L, ZIP_IMPL);
-  luaL_setfuncs (L, funcs, 0);
-  return 1;
+    /* Create the metatable and put it on the stack. */
+    luaL_newmetatable(L, "zip");
+    /* Duplicate the metatable on the stack (We know have 2). */
+    lua_pushvalue(L, -1);
+    /* Pop the first metatable off the stack and assign it to __index
+     * of the second one. We set the metatable for the table to itself.
+     * This is equivalent to the following in lua:
+     * metatable = {}
+     * metatable.__index = metatable
+     */
+    lua_setfield(L, -2, "__index");
+ 
+    /* Set the methods to the metatable that should be accessed via object:func */
+    luaL_setfuncs(L, funcs, 0);
+    
+    /*
+    Register the object.func functions into the table that is at the top of the
+     * stack. */
+    //luaL_newlib(L, methods);
+    
+ 
+    return 1;
 }
