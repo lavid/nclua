@@ -90,11 +90,17 @@ function zip:cycle ()
 
       else
 
+        ---[[
+        id = math.random()*10000
+        --[[
+        id = math.ceil(math.random())
+        --]]
+        print('\neste eh o id:', id)
         evt.class = evt.class
         evt.type  = evt.type
         evt.path  = evt.path
         evt.error = nil
-        --evt.zip   = zip_impl
+        evt.zip   = id
         --TODO: fulfill event
         zip.OUTQ:enqueue (evt)
 
