@@ -59,6 +59,12 @@ function zip:filter (class, type)
 end
 
 
+local function zip_new_callback( zip_callback )
+  -- body
+  print("chamou callback")
+
+end
+
 ---
 -- Cycles the zip engine once.
 --
@@ -69,16 +75,16 @@ function zip:cycle ()
   
     local evt = zip.INQ:dequeue ()
     assert (evt.class == zip.class)
-  
+    local resultado
+
     if evt.type == 'open' then
   
-      local status, errmsg = pcall (zip_impl.open,
-                                    evt.path)
+      resultado = zip_impl.open( evt.path, zip_new_callback )
 
       tests.dump('\n\n\n\n')
       tests.dump(status)
   
-      if status == false then
+      if resultado == nil then
   
         evt.class = evt.class
         evt.type  = evt.type
@@ -89,6 +95,8 @@ function zip:cycle ()
         zip.OUTQ:enqueue (evt)
 
       else
+
+        zip_impl.close(resultado)
 
         ---[[
         id = math.random()*10000

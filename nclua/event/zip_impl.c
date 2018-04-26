@@ -25,6 +25,9 @@ along with NCLua.  If not, see <https://www.gnu.org/licenses/>.  */
 
 #include "callback.h"
 
+#define TESTDATA1 "Some test data 1...\0"
+
+
 /* Registry key for the zip_impl metatable.  */
 /* Test */
 #define ZIP_IMPL "nclua.event.zip_impl"
@@ -44,6 +47,20 @@ typedef struct {
 
 l_zip_udata zipU;
 
+
+
+
+static inline l_zip_udata *
+zip_check (lua_State *L, int index, struct zip_t **input)
+{
+  l_zip_udata *zipTable;
+  zipTable = (l_zip_udata *) luaL_checkudata (L, index, ZIP_IMPL);
+  tryset (input, zipTable->file);
+  return zipTable;
+}
+
+
+
 /*-
  * zip.cycle ()
  *
@@ -58,6 +75,35 @@ l_zip_cycle (unused (lua_State *L))
 
 }
 
+
+
+
+
+
+
+static int
+zip_open_callback(lua_State *L)
+{
+
+  l_zip_udata *zip;
+  luax_callback_data_t *cb_data;
+
+
+  luax_callback_data_get_data (cb_data, &L, (void **) &zip);
+
+
+  luax_callback_data_push_and_unref (cb_data);
+
+  lua_pushboolean (L, TRUE);
+
+  lua_call (L, 1, 0);
+
+
+
+}
+
+
+
 /*-
  * zip:open
  */
@@ -66,6 +112,7 @@ l_zip_open (lua_State *L)
 {
 
   l_zip_udata *zipTable;
+  luax_callback_data_t *cb_data;
 
 
   const char *path = lua_tostring(L, 1);
@@ -101,20 +148,25 @@ l_zip_open (lua_State *L)
   }
   
 
+
   /* Create the user data pushing it onto the stack. We also pre-initialize
    * the member of the userdata in case initialization fails in some way. If
    * that happens we want the userdata to be in a consistent state for __gc. */
   
-  zipTable        = (l_zip_udata *)lua_newuserdata(L, sizeof(*zipTable));
-  zipTable->file  = NULL;
-  
+  //luax_optudata (L, 1, ZIP_IMPL);
 
+  zipTable        = (l_zip_udata *)lua_newuserdata(L, sizeof(*zipTable));
+ 
+  g_assert_nonnull (zipTable);
+
+  zipTable->file  = zipU.file;
   
-  /* Add the metatable to the stack. */
-  luaL_getmetatable(L, "ZIP_IMPL");
-  /* Set the metatable on the userdata. */
-  lua_setmetatable(L, -2);
-  lua_pushnumber(L, (int)zipU.file);
+  luax_dump_stack(L);
+  
+  luaL_setmetatable(L, ZIP_IMPL);
+
+
+  //lua_call(L, 2, 0);
 
 
 
@@ -122,16 +174,38 @@ l_zip_open (lua_State *L)
   //lua_pushuserdata (file);
 
 
-  zip_close(zipU.file );
+  //zip_close(zipU.file );
 
-  return 4;
+  return 1;
 }
 
 
 
+/*-
+ * zip:open
+ */
+
+static int
+l_zip_close (lua_State *L)
+{
+  l_zip_udata *zipUData;
+
+  zipUData = (l_zip_udata *) lua_touserdata (L, 1);
+
+
+  zip_close(zipUData -> file );
+
+  return 0;
+}
+
+
+
+//*/
+
 static const struct luaL_Reg funcs[] = {
   {"cycle", l_zip_cycle},
   {"open", l_zip_open},
+  {"close", l_zip_close},
   {NULL, NULL}
 };
 
