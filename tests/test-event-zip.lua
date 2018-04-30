@@ -79,3 +79,14 @@ tests.dump(pilha)
 evt = AWAIT_EVENT()
 
 tests.dump(evt)
+
+local teste = evt.zip
+
+
+---[[
+zip:entry_open(teste)
+
+zip:entry_write(teste)
+--]]
+
+zip:close(teste)

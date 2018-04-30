@@ -59,9 +59,34 @@ function zip:filter (class, type)
 end
 
 
-local function zip_new_callback( zip_callback )
-  -- body
-  print("chamou callback")
+
+---
+-- Closes an opened zip file.
+--
+function zip:close (udata)
+
+  zip_impl.close(udata)
+
+end
+
+
+
+---
+-- writes an opened zip file.
+--
+function zip:entry_open (udata)
+
+  zip_impl.entry_open(udata)
+
+end
+
+
+---
+-- writes an opened zip file.
+--
+function zip:entry_write (udata)
+
+  zip_impl.entry_write(udata)
 
 end
 
@@ -91,26 +116,21 @@ function zip:cycle ()
         evt.path  = evt.path
         evt.error = 'nao abriu'
         evt.zip   = nil
-        --TODO: fulfill event
+
         zip.OUTQ:enqueue (evt)
 
       else
 
-        zip_impl.close(resultado)
 
-        ---[[
-        id = math.random()*10000
-        --[[
-        id = math.ceil(math.random())
-        --]]
-        print('\neste eh o id:', id)
+        print('\nzip open deu certo')
         evt.class = evt.class
         evt.type  = evt.type
         evt.path  = evt.path
         evt.error = nil
-        evt.zip   = id
-        --TODO: fulfill event
+        evt.zip   = resultado
+
         zip.OUTQ:enqueue (evt)
+        print('\nsaindo de zip open')
 
       end
     end
