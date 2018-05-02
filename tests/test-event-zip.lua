@@ -60,16 +60,11 @@ ASSERT (tests.objeq (t3, {class='zip', type='save'}))
 local t4 = zip:filter ('zip', 'cancel')
 ASSERT (tests.objeq (t4, {class='zip', type='cancel'}))
 
-evt = {
-	class 	= 'zip',
-	type 	= 'open',
-	path 	= ZIPNAME,
-}
-
 ---[[
 pilha = zip:send{
 	class 	= 'zip',
 	type 	= 'open',
+   mode  = 'w',
 	path 	= ZIPNAME,
 }
 
@@ -83,10 +78,11 @@ tests.dump(evt)
 local teste = evt.zip
 
 
+local nome  = "do_lua.txt"
+local texto = "0123456789"
 ---[[
-zip:entry_open(teste)
+zip:addFile(teste, nome, texto)
 
-zip:entry_write(teste)
 --]]
 
 zip:close(teste)

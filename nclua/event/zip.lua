@@ -69,26 +69,15 @@ function zip:close (udata)
 
 end
 
+function zip:addFile(udata, name, content)
 
+  local extension = string.sub(name, string.find(name, '.', 1, true) + 1, -1)
+  print(extension)
 
----
--- writes an opened zip file.
---
-function zip:entry_open (udata)
-
-  zip_impl.entry_open(udata)
+  zip_impl.add_file(udata, name, extension, content)
 
 end
 
-
----
--- writes an opened zip file.
---
-function zip:entry_write (udata)
-
-  zip_impl.entry_write(udata)
-
-end
 
 ---
 -- Cycles the zip engine once.
@@ -104,7 +93,7 @@ function zip:cycle ()
 
     if evt.type == 'open' then
   
-      resultado = zip_impl.open( evt.path, zip_new_callback )
+      resultado = zip_impl.open( evt.path, evt.mode )
 
       tests.dump('\n\n\n\n')
       tests.dump(status)

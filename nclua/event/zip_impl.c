@@ -114,8 +114,11 @@ l_zip_open (lua_State *L)
   l_zip_udata *zipTable;
   luax_callback_data_t *cb_data;
 
+  luax_dump_stack(L);
+
 
   const char *path = lua_tostring(L, 1);
+  const char *mode = lua_tostring(L, 2);
 
   if(path){
     printf("%s\n", path);
@@ -124,28 +127,12 @@ l_zip_open (lua_State *L)
 
   printf ("l_zip_open beggining\n");
     
-  zipU.file = zip_open(path, ZIP_DEFAULT_COMPRESSION_LEVEL, 'w');
+  zipU.file = zip_open(path, ZIP_DEFAULT_COMPRESSION_LEVEL, *mode);
 
   if(zipU.file ){
     printf("Zip open success\n");
   }
-  else{
-    printf("Zip open fail. Creating new Zip\n");
-   
-    zipU.file  = zip_open(path, ZIP_DEFAULT_COMPRESSION_LEVEL, 'w');
-
-    if(zipU.file ){
-
-      printf("Zip creation success\n");
-
-    }else{
-
-      printf("Zip creation fail\n");
-      return error_throw (L, "erro ao abrir zip");
-
-    }
   
-  }
   
 
 
@@ -198,50 +185,54 @@ l_zip_close (lua_State *L)
   return 0;
 }
 
+
 /*-
  * zip:entry_open
  */
 
 static int
-l_zip_entry_open (lua_State *L)
+l_zip_add_file (lua_State *L)
 {
+
+  printf("\nPILHA DO LUA\n ");
+  luax_dump_stack(L);
+  printf("\nTERMINOU PILHA DO LUA\n ");
+
   l_zip_udata *zipUData;
+  const char *name;
+  const char *extension;
+  const char *content;
 
   zipUData = (l_zip_udata *) lua_touserdata (L, 1);
+  name = lua_tostring(L, 2);
+  extension = lua_tostring(L, 3);
+  content = lua_tostring(L, 4);
+
+  printf("%s\t%d\n", content, strlen(content));
 
   int res;
-  res = zip_entry_open(zipUData -> file, "testeee.txt");
+
+  res = zip_entry_open(zipUData -> file, name);
 
   printf("\nresultado do entry open eh %d\n", &res);
 
+  if (!strcmp(extension, "txt"))
+  {
+  
+    res = zip_entry_write(zipUData -> file, content, strlen(content));
 
+    printf("\nresultado do entry write eh %d\n", &res);
+
+    res = zip_entry_close(zipUData -> file);
+
+    printf("\nresultado do entry close eh %d\n", &res);
+  
+  }
   return 0;
+
+
 }
 
-/*-
- * zip:entry_write
- */
-
-static int
-l_zip_entry_write (lua_State *L)
-{
-  l_zip_udata *zipUData;
-
-  zipUData = (l_zip_udata *) lua_touserdata (L, 1);
-
-  char *p = "teste oi gente";
-
-  int res;
-  res = zip_entry_write(zipUData -> file, (void *)p, sizeof(&p));
-
-  printf("\nresultado do entry write eh %d\n", &res);
-
-  res = zip_entry_close(zipUData -> file);
-
-  printf("\nresultado do entry close eh %d\n", &res);
-
-  return 0;
-}
 
 
 //*/
@@ -250,8 +241,7 @@ static const struct luaL_Reg funcs[] = {
   {"cycle", l_zip_cycle},
   {"open", l_zip_open},
   {"close", l_zip_close},
-  {"entry_open", l_zip_entry_open},
-  {"entry_write", l_zip_entry_write},
+  {"add_file", l_zip_add_file},
   {NULL, NULL}
 };
 
